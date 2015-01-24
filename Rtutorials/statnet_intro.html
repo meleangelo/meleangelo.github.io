@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Tutorial on estimation of network models</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<style type="text/css">
+body, td {
+   font-size: 18px;
+   font-family: Times;
+}
+code.r{
+  font-size: 16px;
+}
+pre {
+  font-size: 18px;
+  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+pre code {
+  font-size: 16px;
+  font-family: courier new, 'sans serif', 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+code {
+  font-size: 16px;
+  font-family: courier new, Times;
+}
+
+</style>
+
+<h1>Tutorial on estimation of network models</h1>
+
+<p>As in the previous tutorial, the gray boxes indicate the code, the white boxes indicate the output in R, and the rest is the text/explanations.   </p>
+
+<p>The package <code>statnet</code> allows you to estimate both logistic models and ERGMs. To install the package on your computer, use the command</p>
+
+<pre><code class="r">install.packages(&quot;statnet&quot;, dependencies = TRUE, repos = &quot;http://lib.stat.cmu.edu/R/CRAN/&quot;)
+install.packages(&quot;ergm.count&quot;, dependencies = TRUE, repos = &quot;http://lib.stat.cmu.edu/R/CRAN/&quot;)
+install.packages(&quot;latticeExtra&quot;, dependencies = TRUE, repos = &quot;http://lib.stat.cmu.edu/R/CRAN/&quot;)
+</code></pre>
+
+<p>It is important that you use the option <code>dependencies=TRUE</code>, because you need to install several packages in addition to the base package: this option will take care of that.</p>
+
+<p>To use the library you just type (there is a lot of output, because <code>R</code> loads many different packages, so be patient) </p>
+
+<pre><code class="r"># load the library
+library(statnet)
+</code></pre>
+
+<p>The package contains several network datasets. You can get a list of the data included by typing </p>
+
+<pre><code class="r"># check data in the package
+data(package = &quot;ergm&quot;)
+</code></pre>
+
+<p>Let&#39;s use a dataset we are familiar with: the network of florentine families.</p>
+
+<pre><code class="r"># load data of florentine families
+data(florentine)
+</code></pre>
+
+<p>The data contains the network of marriages and business relationships among the families. In addition there are three variables for each family: wealth (in thousands of lira), number of priorates (seats on the civic council), and totalities (total number of business ties and marriages in the dataset). To see a quick description we type</p>
+
+<pre><code class="r"># network of marriages
+flomarriage
+</code></pre>
+
+<pre><code>##  Network attributes:
+##   vertices = 16 
+##   directed = FALSE 
+##   hyper = FALSE 
+##   loops = FALSE 
+##   multiple = FALSE 
+##   bipartite = FALSE 
+##   total edges= 20 
+##     missing edges= 0 
+##     non-missing edges= 20 
+## 
+##  Vertex attribute names: 
+##     priorates totalties vertex.names wealth 
+## 
+## No edge attributes
+</code></pre>
+
+<p>and to see a brief desctiption of the business links we type</p>
+
+<pre><code class="r"># network of business relationships
+flobusiness
+</code></pre>
+
+<pre><code>##  Network attributes:
+##   vertices = 16 
+##   directed = FALSE 
+##   hyper = FALSE 
+##   loops = FALSE 
+##   multiple = FALSE 
+##   bipartite = FALSE 
+##   total edges= 15 
+##     missing edges= 0 
+##     non-missing edges= 15 
+## 
+##  Vertex attribute names: 
+##     priorates totalties vertex.names wealth 
+## 
+## No edge attributes
+</code></pre>
+
+<p>We can plot the network to get a better picture (note that this package has slightly different syntax than <code>igraph</code>). Here is the marriage network</p>
+
+<pre><code class="r"># plot network of marriages
+set.seed(1977)
+plot(flomarriage, displaylabels = TRUE)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAApVBMVEX9/v0AAAAAADkAAGUAOWUAOY8AZo8AZrU5AAA5ADk5AGU5OWU5OY85ZmU5ZrU5j485j9plAABlADllAGVlOQBlOTllOY9lZgBlZmVlZrVltbVltf2POQCPOTmPOWWPZgCPZo+Pj2WPtY+P27WP2/21ZgC1Zjm124+1/rW1/tq1/v3ajznaj2Xa24/a/rXa/tra/v39tWX924/9/rX9/tr9/v3/AACPo0NQAAAAN3RSTlP//////////////////////////////////////////////////////////////////////wD/rn+PdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAFjpJREFUeJztnQ172zaWRgd2s05cz9apMzPeld3Zaa1kam23lizm//+0Jb5IUOIHKILABe57nkSyKFqEcQQQBC+Av1SAJX9JnQCQBohnCsQzBeKZAvFMgXimQDxTIJ4pEM8UiGcKxDMF4pkC8UyBeKZAPFMgnikQzxSIZwrEMwXimQLxTIF4pkA8UyCeKRDPFIhnCsQzBeKZAvFMgXimQDxTIJ4pEM8UiGcKxDMF4pkC8UyBeKZAPFMgnikQzxSIZwrEMwXimQLxTIF4pkA8UyCeKRDPFIhnCsQzBeKZAvFMgXimQDxTIJ4pEM8UiGcKxDMF4pkC8UyBeKZAPFMgflUOH0XNfc8bt6/xU+MC8aui/L7//JI6HedA/Koo8cenjSr6m2pbF/8b9YASXzbK7+HTiyz0+kvw/KIeIL5s9Dl+o35+f6hd7+T5vn6A+LJp/dYV/PVrdbh7q9QDxJeN9fv+eSN/thU9WvWlY/3K5/pUbyt6iC+dxu9OiB++/PdnYfkrxIMkJBI/2KNFoBIMhCrYqRMxTCrxZHu0QiHE9+/fCZtPKf74tFGNnvr/+2dx9aIfCynx0jtl8ynF181cI152au4//Kke/yhJ/HeI72J7tIx4Xcrdx+yB+F4617e1eNmhVZnHksST9U5FfHklXrXu6J7iU4uXDfvdtTrHH25/V4/fChFfkb6aSy1e9mj99FBiq76GsneiPXeCeO+HH6T/AKLiaV8De0I6/STFU78U8oN28iF+NWgnH+JXg3bySYov4xxPO/lExZfQqqedfpriiwDimQLx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" alt="plot of chunk unnamed-chunk-2"/> </p>
+
+<p>and the business network is shown below</p>
+
+<pre><code class="r"># plot network of business
+set.seed(1977)
+plot(flobusiness, displaylabels = TRUE)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAApVBMVEX9/v0AAAAAADkAAGUAOWUAOY8AZo8AZrU5AAA5ADk5AGU5OWU5OY85ZmU5Zo85ZrU5j485j9plAABlADllAGVlOQBlOTllOY9lZgBlZjllZmVltbVltf2POQCPOTmPOWWPZgCPj2WPtY+P27WP2/21ZgC1Zjm1tWW124+1/rW1/tq1/v3ajznaj2Xa24/a/tra/v39tWX924/9/rX9/tr9/v3/AABLSKL1AAAAN3RSTlP//////////////////////////////////////////////////////////////////////wD/rn+PdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAE0VJREFUeJztnYl628YVRgvRqmRFaSNZSlqXUhKHdJWIdUSKyPs/WjEbNmIlMMAd/P/5LC4gTII4nMEswL1/iwkkf5t7A8g8UDwoFA8KxYNC8aBQPCgUDwrFg0LxoFA8KBQPCsWDQvGgUDwoFA8KxYNC8aBQPCgUDwrFg0LxoFA8KBQPCsWDQvGgUDwoFA8KxYNC8aBQPCgUDwrFg0LxoFA8KBQPCsWDQvGgUDwoFA8KxYNC8aBQPCgUDwrFg0LxoFA8KBQPCsWDQvGgUDwoFA8KxYNC8aBQPCgUDwrFg0LxoFA8KBQPCsWDQvGgUDwoFA/KYsUfrqOEu8qXbl6n3hp5LFe8svv+aTP3dkhl2eKPT2t1r/7e76OLjblliY+XLv7wcWPFJz+BeH/5p779RvFLFq+P8evYijelPH8LznLFW7tO/O2bemJuKR5IPEt8kcWLVw373Uof4w83f+jbF4oHEB/vouiHB7bqyyxWPGkGVLxq8Udzb8SsYIqPor8SfJo/GTPMji8nR5q07TkloOL/8i1+/7lymqCSWdocyOI9mj8+//bTW1xuUapBpbUr4HYcefXKEj8d3kv84fZtu45L48Sq+jeSnfjtXfLKG8VPhvdj/C4xehVXjBq9P+TEv6tu5qcNxU+H51b98Sl5+9XpOPFWL03Fq7vjM8VPitfOnHa9XZdK/Pv9uljVs8Qvjd06udlflcaJtW49UWzHkXmMXxjHn5XGxG6pVb+Log+Pa/vIjiOzVb8UAhkSpPiRUR2GENRT/Lj4HxMcCYofF+9jgmNB8eNC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" alt="plot of chunk unnamed-chunk-3"/> </p>
+
+<h2>Logistic regression models</h2>
+
+<p>Now we want to estimate a logistic regression model. We model the probability that two families have a marriage connection as a function of a constant and the sum of their wealth</p>
+
+<p>\[ \ln\left[\frac{P(g_{ij}=1)}{P(g_{ij}=0)}\right]  =	\beta_{0}+\beta_{1}\left(x_{i}+x_{j}\right) \]</p>
+
+<p>This is accomplished with the command</p>
+
+<pre><code class="r"># estimate logistic regression model
+model1 &lt;- ergm(flomarriage ~ edges + nodecov(&quot;wealth&quot;), estimate = &quot;MPLE&quot;)
+</code></pre>
+
+<p>The option <code>estimate=&quot;MPLE&quot;</code> tells <code>R</code> to estimate a logistic regression model.   </p>
+
+<p>To understand the notation, it is better to rewrite the model in terms of the probability for the entire network, instead of looking at a single link. It can be shown that the probability of observing network \( g \) is </p>
+
+<p>\[ 
+P(g;\beta,x)	=	\frac{\exp\left[\beta_{0}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}+\beta_{1}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left(x_{i}+x_{j}\right)\right]}{\prod_{i=1,j\neq i}\left[1+\exp\left(\beta_{0}+\beta_{1}\left(x_{i}+x_{j}\right)\right)\right]}
+ \]</p>
+
+<p>What does the numerator represents? </p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij} \)= <code>edges</code>
+  = number of links/edges in the network </p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left(x_{i}+x_{j}\right) \) = <code>nodecov(&quot;wealth&quot;)</code>
+ = number of links/edges in the network, weighted by the absolute difference in income of the nodes forming the link </p>
+
+<p>So in <code>R</code> we write the formula <code>flomarriage ~ edges + nodecov(&quot;wealth&quot;)</code> to estimate the model.<br/>
+To check the estimation results we type</p>
+
+<pre><code class="r"># show results of logistic regression model
+summary(model1)
+</code></pre>
+
+<pre><code>## 
+## ==========================
+## Summary of model fit
+## ==========================
+## 
+## Formula:   flomarriage ~ edges + nodecov(&quot;wealth&quot;)
+## 
+## Iterations:  NA 
+## 
+## Maximum Likelihood Results:
+##                Estimate Std. Error MCMC % p-value    
+## edges          -2.59493    0.53606     NA  &lt;1e-04 ***
+## nodecov.wealth  0.01055    0.00467     NA   0.026 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## For this model, the pseudolikelihood is the same as the likelihood.
+## 
+##      Null Deviance: 166  on 120  degrees of freedom
+##  Residual Deviance: 103  on 118  degrees of freedom
+##  
+## AIC: 107    BIC: 113    (Smaller is better.)
+</code></pre>
+
+<p>Interpreting the results is important. The output of the software provides the <code>Formula</code> of the model that we estimated. The <code>Iterations</code> have no meaning in this model, so we do not care.<br/>
+The table with <code>Maximum Likelihood Results</code> is the most important part. Here the output reports the estimated parameters (<code>Estimate</code>), the standard error (<code>Std. Error</code>), the Monte Carlo standard error (<code>MCMC %</code>) and the p-value for the t-tests (<code>p-value</code>).
+The stars are associated with the significance level of the estimated parameters. Remember, the smaller the p-value, the more confident we are about rejecting the hypothesis that our parameters are equal to zero.
+The <code>Null Deviance</code> is the fit of a null model, with no explanatory variables. The <code>Residual Deviance</code> is the fit of our model. As a rule of thumb you want some difference between the two numbers, otherwise your explanatory variables are not good predictors for the links.<br/>
+The <code>AIC</code> and <code>BIC</code> indicators are used to compare different models. So if you have several alternative models that you are considering, the rule of thumb is to prefer the one with the smallest AIC and BIC.<br/>
+In this model we estimate \( \beta_{0}=-2.59 \) and \( \beta_{1}=0.01 \), so our estimated model is 
+\[ \ln\left[\frac{P(g_{ij}=1)}{P(g_{ij}=0)}\right]  =  -2.59+0.01\left(x_{i}+x_{j}\right) \]
+and the probability of a link between <em>i</em> and <em>j</em> is estimated as </p>
+
+<p>\[  P(g_{ij}=1) = \frac{ \exp\left[ -2.59+0.01\left(x_{i}+x_{j}\right) \right] }{1+ \exp\left[ -2.59+0.01\left(x_{i}+x_{j}\right) \right]} \]
+We can now compute the probability of a link between two families that have zero wealth, for example, i.e. \( x_{i}=x_{j}=0 \), </p>
+
+<p>\[  P(g_{ij}=1) = \frac{ \exp\left[ -2.59 \right] }{1+ \exp\left[ -2.59\right]} =0.0698 \]  </p>
+
+<p>Let&#39;s compute the probability of a link between two families that have different wealth, for example, i.e. \( x_{i}=10 \) and \( x_{j}=2 \), </p>
+
+<p>\[  P(g_{ij}=1) = \frac{ \exp\left[ -2.59 + 0.01 \left(10+2\right) \right] }{1+ \exp\left[ -2.59 + 0.01 \left(10+2\right)\right]} =0.078 \]</p>
+
+<hr/>
+
+<p>Let&#39;s now consider an alternative model. We model the log-odds of a link as a function of a constant and the absolute difference in wealth for the two families</p>
+
+<p>\[ \ln\left[\frac{P(g_{ij}=1)}{P(g_{ij}=0)}\right]  =	\beta_{0}+\beta_{1}\left|x_{i}-x_{j}\right| \]</p>
+
+<p>This model is estimated as follows</p>
+
+<pre><code class="r"># estimate logistic regression model
+model2 &lt;- ergm(flomarriage ~ edges + absdiff(&quot;wealth&quot;), estimate = &quot;MPLE&quot;)
+</code></pre>
+
+<p>Again, to explain the formula, it is better to re-write the model in terms of probability for the entire network. It can be shown that the probability of observing network \( g \) is </p>
+
+<p>\[ 
+P(g;\beta,x)  =	\frac{\exp\left[\beta_{0}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}+\beta_{1}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left|x_{i}-x_{j}\right|\right]}{\prod_{i=1,j\neq i}\left[1+\exp\left(\beta_{0}+\beta_{1}\left|x_{i}-x_{j}\right|\right)\right]}
+ \]</p>
+
+<p>What does the numerator represents? </p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij} \)= <code>edges</code>
+  = number of links/edges in the network </p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left|x_{i}-x_{j}\right| \) = <code>absdiff(&quot;wealth&quot;)</code>
+ = number of links/edges in the network, weighted by the absolute difference in income of the nodes forming the link </p>
+
+<p>So in <code>R</code> we write the formula <code>flomarriage ~ edges + absdiff(&quot;wealth&quot;)</code> to estimate the model.<br/>
+To check the estimation results we type</p>
+
+<pre><code class="r"># show results of logistic regression model
+summary(model2)
+</code></pre>
+
+<pre><code>## 
+## ==========================
+## Summary of model fit
+## ==========================
+## 
+## Formula:   flomarriage ~ edges + absdiff(&quot;wealth&quot;)
+## 
+## Iterations:  NA 
+## 
+## Maximum Likelihood Results:
+##                Estimate Std. Error MCMC % p-value    
+## edges          -2.30204    0.40191     NA  &lt;1e-04 ***
+## absdiff.wealth  0.01552    0.00616     NA   0.013 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## For this model, the pseudolikelihood is the same as the likelihood.
+## 
+##      Null Deviance: 166  on 120  degrees of freedom
+##  Residual Deviance: 102  on 118  degrees of freedom
+##  
+## AIC: 106    BIC: 112    (Smaller is better.)
+</code></pre>
+
+<p>In your project, it is better to show a cleaner version of the results, instead of the raw output. Tables in business reports or journal articles usually look like this</p>
+
+<table cellspacing="0" align="center" style="border: none;">
+  <tr>
+    <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"></th>
+    <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 1</b></th>
+    <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 2</b></th>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;">\[ constant \]</td>
+    <td style="padding-right: 12px; border: none;">-2.59<sup style="vertical-align: 4px;">***</sup></td>
+    <td style="padding-right: 12px; border: none;">-2.30<sup style="vertical-align: 4px;">***</sup></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;"></td>
+    <td style="padding-right: 12px; border: none;">(0.54)</td>
+    <td style="padding-right: 12px; border: none;">(0.40)</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;">\[ wealth_i + wealth_j \]</td>
+    <td style="padding-right: 12px; border: none;">0.01<sup style="vertical-align: 4px;">*</sup></td>
+    <td style="padding-right: 12px; border: none;"></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;"></td>
+    <td style="padding-right: 12px; border: none;">(0.00)</td>
+    <td style="padding-right: 12px; border: none;"></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;">\[ |wealth_i - wealth_j| \]</td>
+    <td style="padding-right: 12px; border: none;"></td>
+    <td style="padding-right: 12px; border: none;">0.02<sup style="vertical-align: 4px;">*</sup></td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;"></td>
+    <td style="padding-right: 12px; border: none;"></td>
+    <td style="padding-right: 12px; border: none;">(0.01)</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid black;">AIC</td>
+    <td style="border-top: 1px solid black;">107.11</td>
+    <td style="border-top: 1px solid black;">105.95</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;">BIC</td>
+    <td style="padding-right: 12px; border: none;">112.68</td>
+    <td style="padding-right: 12px; border: none;">111.53</td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 2px solid black;">Log Likelihood</td>
+    <td style="border-bottom: 2px solid black;">-51.55</td>
+    <td style="border-bottom: 2px solid black;">-50.98</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 12px; border: none;" colspan="3"><span style="font-size:0.8em"><sup style="vertical-align: 4px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 4px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 4px;">*</sup>p &lt; 0.05</span></td>
+  </tr>
+</table>
+
+<p>For each variable we report the associated paramater, the standard error (in parenthesis) and the level of significance (with the stars). For each model, we report some measure of fit, like the AIC, BIC and the value of the likelihood in natural logs.</p>
+
+<h2>Introducing network variables as explanatory variables</h2>
+
+<p>Suppose we want to estimate a logistic model where the odds of a link also depend on the existence of a common friend between <em>i</em> and <em>j</em>. We modify Model 2 above to include this new variable, </p>
+
+<p>\[ \ln\left[\frac{P(g_{ij}=1\vert x_{i},x_{j},g_{-ij},\beta)}{P(g_{ij}=0\vert x_{i},x_{j},g_{-ij},\beta)}\right]  =	\beta_{0}+\beta_{1}\left|x_{i}-x_{j}\right|+\beta_{2}\left(\sum_{k\neq i,j}g_{jk}g_{ki}\right)
+  \]</p>
+
+<p>The third component \( \sum_{k\neq i,j}g_{jk}g_{ki} \) is the number of common neighbors of <em>i</em> and <em>j</em>. To estimate the model we use the following command </p>
+
+<pre><code class="r"># estimate logistic regression model
+model3 &lt;- ergm(flomarriage ~ edges + absdiff(&quot;wealth&quot;) + triangles, estimate = &quot;MPLE&quot;)
+</code></pre>
+
+<p>The probability of observing network g  is now</p>
+
+<p>\[ 
+P(g;\beta,x)  =	\frac{\exp\left[\beta_{0}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}+\beta_{1}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left|x_{i}-x_{j}\right|+\beta_{2}\sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\sum_{k\neq i,j}g_{jk}g_{ki}\right]}{c(\beta)}
+ \]</p>
+
+<p>The three network statistics are now </p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij} \) = <code>edges</code>
+  = number of links/edges in the network</p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\left|x_{i}-x_{j}\right| \) = <code>absdiff(&quot;wealth&quot;)</code>
+ = number of links/edges in the network, weighted by the absolute difference in income of the nodes forming the link</p>
+
+<p>. \( \sum_{i=1}^{n}\sum_{j\neq i}^{n}g_{ij}\sum_{k\neq i,j}g_{jk}g_{ki} \) = <code>triangles</code>
+ = number of triangles in the network     </p>
+
+<p>To see the estimated model we type </p>
+
+<pre><code class="r"># show results of logistic regression model
+summary(model3)
+</code></pre>
+
+<pre><code>## 
+## ==========================
+## Summary of model fit
+## ==========================
+## 
+## Formula:   flomarriage ~ edges + absdiff(&quot;wealth&quot;) + triangles
+## 
+## Iterations:  NA 
+## 
+## Maximum Pseudolikelihood Results:
+##                Estimate Std. Error MCMC % p-value    
+## edges          -2.36451    0.43866     NA  &lt;1e-04 ***
+## absdiff.wealth  0.01540    0.00616     NA   0.014 *  
+## triangle        0.16371    0.43589     NA   0.708    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Warning:  The standard errors are based on naive pseudolikelihood and are suspect.
+## 
+##      Null Pseudo-deviance: 166  on 120  degrees of freedom
+##  Residual Pseudo-deviance: 102  on 117  degrees of freedom
+##  
+## AIC: 108    BIC: 116    (Smaller is better.)
+</code></pre>
+
+<p>However, this method of estimation has problems, as we discussed in class. Therefore, the best way to proceed is to change the estimation method to <code>MLE</code> (instead of <code>MPLE</code>). This will make sure that the estimate is done properly, using Monte Carlo simulations. Whenever you do the estimation using Monte Carlo, remember to set the seed of the random number generator, i.e. typing the command <code>set.seed(0)</code>. If you do not set the seed, every time you run this estimation command, you may have slightly different estimates, because the simulations will be slightly differnt.</p>
+
+<pre><code class="r"># estimate ergm model with simulation method
+set.seed(0)
+model4 &lt;- ergm(flomarriage ~ edges + absdiff(&quot;wealth&quot;) + triangles, estimate = &quot;MLE&quot;, 
+    control = control.ergm(MCMC.samplesize = 10000))
+</code></pre>
+
+<pre><code>## Iteration 1 of at most 20: 
+## Convergence test P-value: 2.9e-159 
+## The log-likelihood improved by 0.0131 
+## Iteration 2 of at most 20: 
+## Convergence test P-value: 4.1e-68 
+## The log-likelihood improved by 0.005376 
+## Iteration 3 of at most 20: 
+## Convergence test P-value: 1.1e-25 
+## The log-likelihood improved by 0.002013 
+## Iteration 4 of at most 20: 
+## Convergence test P-value: 1.4e-03 
+## The log-likelihood improved by 0.0002638 
+## Iteration 5 of at most 20: 
+## Convergence test P-value: 1.1e-04 
+## The log-likelihood improved by 0.0003543 
+## Iteration 6 of at most 20: 
+## Convergence test P-value: 4.6e-01 
+## The log-likelihood improved by &lt; 0.0001 
+## Iteration 7 of at most 20: 
+## Convergence test P-value: 4.9e-01 
+## The log-likelihood improved by &lt; 0.0001 
+## Iteration 8 of at most 20: 
+## Convergence test P-value: 9.2e-01 
+## Convergence detected. Stopping.
+## The log-likelihood improved by &lt; 0.0001 
+## 
+## This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+</code></pre>
+
+<p>In the estimation options, we can modify the number of simulations for the Monte Carlo, with the option <code>control=control.ergm(MCMC.samplesize=10000)</code>: we use 10000 simulations for our estimation. There is some debate about how big you should set this number, but the theory suggest it shold be high: in general the higher the number of simulations, the more precise your estimates. However, setting the number of simulation very high also means that it will take longer to get an estimate. So there is a trade-off between precision and computational costs. The rule of thumb (there is a theoretical justification for it) is: if you have a network with \( n \) nodes, you should set the number of simulations to <em>at least</em> a multiple of \( n^2 \ln(n^2) \). In this case \( n^2 \ln(n^2) = 1420 \), so 10000 simulations should be sufficient for good precision. In general, it is a good idea to estimate the model several time, with different length of the simulations, and check if the estimated results change.<br/>
+The results of the estimation for <code>model4</code> are summarized below</p>
+
+<pre><code class="r"># show results of ergm model
+summary(model4)
+</code></pre>
+
+<pre><code>## 
+## ==========================
+## Summary of model fit
+## ==========================
+## 
+## Formula:   flomarriage ~ edges + absdiff(&quot;wealth&quot;) + triangles
+## 
+## Iterations:  20 
+## 
+## Monte Carlo MLE Results:
+##                Estimate Std. Error MCMC % p-value    
+## edges          -2.28677    0.45105      0  &lt;1e-04 ***
+## absdiff.wealth  0.01556    0.00631      0   0.015 *  
+## triangle       -0.04043    0.60238      0   0.947    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##      Null Deviance: 166  on 120  degrees of freedom
+##  Residual Deviance: 102  on 117  degrees of freedom
+##  
+## AIC: 108    BIC: 116    (Smaller is better.)
+</code></pre>
+
+<p>In addition to the results, we have a set of diagnostics for the simulation. The best way to check the simulation is usually to look at the figures.</p>
+
+<pre><code class="r"># run diagnostics for ergm model
+mcmc.diagnostics(model4)
+</code></pre>
+
+<pre><code>## Sample statistics summary:
+## 
+## Iterations = 10000:1009900
+## Thinning interval = 100 
+## Number of chains = 1 
+## Sample size per chain = 10000 
+## 
+## 1. Empirical mean and standard deviation for each variable,
+##    plus standard error of the mean:
+## 
+##                   Mean     SD Naive SE Time-series SE
+## edges           0.0109   3.88   0.0388         0.0451
+## absdiff.wealth  0.5851 254.33   2.5433         3.4084
+## triangle       -0.0078   2.39   0.0239         0.0264
+## 
+## 2. Quantiles for each variable:
+## 
+##                2.5%  25% 50% 75% 97.5%
+## edges            -7   -3   0   3     8
+## absdiff.wealth -482 -179  -4 172   515
+## triangle         -3   -2   0   1     6
+## 
+## 
+## Are sample statistics significantly different from observed?
+##             edges absdiff.wealth triangle Overall (Chi^2)
+## diff.      0.0109         0.5851  -0.0078              NA
+## test stat. 0.2419         0.1717  -0.2950          0.5042
+## P-val.     0.8089         0.8637   0.7680          0.9180
+## 
+## Sample statistics cross-correlations:
+##                 edges absdiff.wealth triangle
+## edges          1.0000         0.7710   0.7064
+## absdiff.wealth 0.7710         1.0000   0.6359
+## triangle       0.7064         0.6359   1.0000
+## 
+## Sample statistics auto-correlation:
+## Chain 1 
+##              edges absdiff.wealth  triangle
+## Lag 0    1.0000000       1.000000  1.000000
+## Lag 100  0.1281400       0.269102  0.099376
+## Lag 200  0.0375292       0.077451  0.023108
+## Lag 300 -0.0024955       0.033502 -0.005616
+## Lag 400  0.0002792       0.016036 -0.007799
+## Lag 500 -0.0104805      -0.006703  0.005087
+## 
+## Sample statistics burn-in diagnostic (Geweke):
+## Chain 1 
+## 
+## Fraction in 1st window = 0.1
+## Fraction in 2nd window = 0.5 
+## 
+##          edges absdiff.wealth       triangle 
+##          1.221          0.518          1.294 
+## 
+## P-values (lower = worse):
+##          edges absdiff.wealth       triangle 
+##         0.2221         0.6045         0.1957
+</code></pre>
+
+<pre><code>## Loading required package: latticeExtra
+</code></pre>
+
+<pre><code>## Warning: package &#39;latticeExtra&#39; was built under R version 3.0.2
+</code></pre>
+
+<pre><code>## Loading required package: RColorBrewer
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-10"/> </p>
+
+<p>The figure shows the results of the simulations. For each of the network statistics (<code>edges</code>, <code>absdiff.wealth</code> and <code>triangle</code>) the left graph shows the time series of the monte carlo simulation. If the simulation is correct, this should look like a i.i.d. sample. The figure on the right, shows the density estimated from the time-series. In general this density should look like a normal with mean zero. So in this model, we are immediately aware of a problem with the <code>triangles</code>. Indeed notice that the distribution does not look symmetric at all, and it is quite irregular. The other network statistics <code>edges</code> and <code>absdiff.wealth</code> are much more regular.   </p>
+
+<p>This is actually not surprising for this class of models. In general, when we introduce the <code>triangles</code>, the simulations become unstable. Possible practical solution to these problems are: 1) get rid of the triangles from the model; 2) insert additional variables and see if that changes the diagnostics; 3) run the estimation again, increasing the number of simulations.<br/>
+This problem has to do with the so-called <code>degeneracy</code> problem of ERGMs. Given the network data, some parameters will imply very high probability for networks that are implausible: for example some model will imply probability of almost 1 for a network where everybody is connected; other models imply very high probability for models where nobody is connected. When this happens, the simulation does not work well, and our estimates are suspicious. The most practical way to deal with this issue, is to run the diagnostics and figure out if there is any problem. If that is the case, we can change the formula of our model and estimate a different model. In general there is no easy fix.</p>
+
+</body>
+
+</html>
+

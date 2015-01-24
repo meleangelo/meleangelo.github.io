@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>A short R tutorial for GMBA</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<style type="text/css">
+body, td {
+   font-size: 18px;
+   font-family: Times;
+}
+code.r{
+  font-size: 16px;
+}
+pre {
+  font-size: 18px;
+  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+pre code {
+  font-size: 16px;
+  font-family: courier new, 'sans serif', 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+code {
+  font-size: 16px;
+  font-family: courier new, Times;
+}
+
+</style>
+
+<h1>A short R tutorial for GMBA</h1>
+
+<p>This is a simple introductory tutorial to R for the GMBA class. It provides a quick introduction of R and basic syntax. R is a software designed for statistical analysis, but it is very powerful for almost any type of application. It is open source, so you can download it for free, look at the source code, modify the source code and create your own code for a specific application.
+You will be able to master the basic commands and syntax in few weeks, and at the end of the course you should be able to write your own code to perform a network analysis on real world data.<br/>
+The secret for learning a language is to practice it. You will be required to work on your homeworks with R, and you will have to use it for your final project. What I suggest is that you work through the tutorials, and sometimes try a modification of the code, to see what happens. If you don&#39;t practice, you will not learn.</p>
+
+<p><br><br></p>
+
+<h2>Where to find help</h2>
+
+<p>Your best friend is Google. If you don&#39;t know how to do something, just google it: &ldquo;how to plot a vector in R&rdquo;. Usually someone has already wrote a short tutorial for you to use.<br/>
+In alternative, there is a very useful and quick online resource <a href="http://www.statmethods.net/">Quick-R</a>.<br/>
+Additional resources are linked in Blackboard.</p>
+
+<p><br><br></p>
+
+<h2>Preliminary commands</h2>
+
+<p>Let&#39;s start with simple commands. When you perform an analysis, you will create <em>objects</em>, that will be stored in R&#39;s memory. To see what is loaded in the memory, you can write the following command in the console.</p>
+
+<pre><code class="r">ls()
+</code></pre>
+
+<pre><code>## character(0)
+</code></pre>
+
+<p>In this case the memory is empty, so the system tells us that there is no object in the memory.<br/>
+It is important to write comments sometimes: in R you can insert a comment by using the 
+symbol <code>#</code>: anything following this symbol will be ignored by R and not run.</p>
+
+<pre><code class="r"># this is a comment, R will not run this
+</code></pre>
+
+<p>Using comments is important, because you can describe what the code is doing. This is especially useful when you are working on a project with several people. It is also useful for you: you may write a code and get back to it after some time, forgetting what exactly the code is doing. If you write comments, this will not be a problem, or it will be a smaller problem.<br/>
+R can easily do some simple math operations. For example we can write </p>
+
+<pre><code class="r">2 + 2  # what is 2+2?
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<p>and R spits out the result: 4. The aritmetic operations symbols are </p>
+
+<pre><code class="r">3 * 2  # multiplication
+</code></pre>
+
+<pre><code>## [1] 6
+</code></pre>
+
+<pre><code class="r">10/5  # division
+</code></pre>
+
+<pre><code>## [1] 2
+</code></pre>
+
+<pre><code class="r">10 - 4  # subtraction 
+</code></pre>
+
+<pre><code>## [1] 6
+</code></pre>
+
+<pre><code class="r">3^2  # power
+</code></pre>
+
+<pre><code>## [1] 9
+</code></pre>
+
+<p>For additional information about the symbols for mathematical operations, type</p>
+
+<pre><code>help(symbol)
+</code></pre>
+
+<p>which calls the help in R, with a description and several examples. Usually I skip directly to the examples.<br/>
+Let&#39;s create some variables. For example let&#39;s create a vector, x, that contains numbers from 1 to 10. We do that in the following way</p>
+
+<pre><code class="r">x &lt;- 1:10
+</code></pre>
+
+<p>Notice that to assign a value to a variable, we use the symbol <code>&lt;-</code>. To display the vector we just write its name</p>
+
+<pre><code class="r">x
+</code></pre>
+
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre>
+
+<p>If you want to see the vector in an <em>excel-like</em> table, you can type</p>
+
+<pre><code class="r">View(x)
+</code></pre>
+
+<p>R has many built-in functions that you can use. For example to create the vector x above, we could use the function &ldquo;seq&rdquo;. This creates a sequence of numbers, you have to give the initial number of the sequence, the final number of the sequence and the difference between two consecutive numbers in the sequence.
+If you want to see the help for this function you type</p>
+
+<pre><code>help(seq)
+</code></pre>
+
+<p>This will open an help file. To create the same sequence as above we type</p>
+
+<pre><code class="r">y &lt;- seq(from = 1, to = 10, by = 1)  # assign the sequence 1 to 10 to vector y
+x  # display x
+</code></pre>
+
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre>
+
+<pre><code class="r">y  # display y
+</code></pre>
+
+<pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre>
+
+<p>another way to create a sequence is to use the option <code>length</code></p>
+
+<pre><code class="r">y1 &lt;- seq(from = 0, to = 5, length = 20)
+</code></pre>
+
+<p>this will create a vector with 20 elements, from 0 to 5, with the sequence equally spaced between the extreme:</p>
+
+<pre><code class="r">y1
+</code></pre>
+
+<pre><code>##  [1] 0.0000 0.2632 0.5263 0.7895 1.0526 1.3158 1.5789 1.8421 2.1053 2.3684
+## [11] 2.6316 2.8947 3.1579 3.4211 3.6842 3.9474 4.2105 4.4737 4.7368 5.0000
+</code></pre>
+
+<p>There are other important built-in functions that you could use often </p>
+
+<pre><code class="r">sqrt(16)  # computes square root of 16
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<pre><code class="r">log(10)  # computes natural log of 10
+</code></pre>
+
+<pre><code>## [1] 2.303
+</code></pre>
+
+<pre><code class="r">exp(2)  # computes e^2
+</code></pre>
+
+<pre><code>## [1] 7.389
+</code></pre>
+
+<pre><code class="r">cos(2)  # computes cosine of 2
+</code></pre>
+
+<pre><code>## [1] -0.4161
+</code></pre>
+
+<p>We can certainly create more complicated variables, like \( z=x^2 +2 \) by typing</p>
+
+<pre><code class="r">z &lt;- x^2 + 2
+z
+</code></pre>
+
+<pre><code>##  [1]   3   6  11  18  27  38  51  66  83 102
+</code></pre>
+
+<p>and then plot the variables x and z</p>
+
+<pre><code class="r">plot(x, z)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-13"/> </p>
+
+<p>This plot is quite ugly. We can make use of the great graphics capabilities of R to make it look much better. Let&#39;s use some of the options for the function plot (that we can find in the help)</p>
+
+<pre><code>help(plot)
+</code></pre>
+
+<p>We can plot the function as a line (<code>type=&quot;l&quot;</code>), change the color of the line (<code>col=&quot;red&quot;</code>), and put a label on the axis (<code>xlab=&quot;Variable x&quot;, ylab=&quot;Variable z&quot;</code>), have a title for the graph (<code>main=&quot;Example Plot&quot;</code>), by typing </p>
+
+<pre><code class="r">plot(x, z, type = &quot;l&quot;, col = &quot;red&quot;, xlab = &quot;Variable x&quot;, ylab = &quot;Variable z&quot;, 
+    main = &quot;Example Plot&quot;)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAkFBMVEX9/v0AAAAAADkAAGUAOTkAOWUAOY8AZo8AZrU5AAA5ADk5AGU5OWU5OY85j9plAABlADllAGVlOQBlOY9lZmVltbVltf2POQCPOTmPOWWPZgCPjzmPtY+P29qP2/21ZgC1Zjm1tWW124+1/rW1/v3ajzna24/a/rXa/tra/v39tWX924/9/rX9/tr9/v3/AAAgWWN4AAAAMHRSTlP/////////////////////////////////////////////////////////////AP/cg8KHAAAACXBIWXMAAAsSAAALEgHS3X78AAANs0lEQVR4nO3dC1cjtx2G8ZpNCc4Gs6Sp2d7sJsFt8W2//7fraGwvBsagGUmjv/Q+z8lZwk3Huz9LozFj/Kc9Sfan3DeA8gS8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAi1Y3/PZu4rpaeH71p8eub5+//sxyHvE2Zgr486/uhr9avPzMcgK88bZ310/t/2ymnx53Dw3Y+nA/WE9+fJh8ely56bx7+PTbpHnnCL9q5/jZty8ns+fPzJovb97cZPxLxUkE3s3SdcN1mMPXT+vJqfYOcfhgy7ts35mdffsJ/vCZG+AL6LhWN3zbux+mx+XaKa4b8M10Mt/eXS0ayZn7yrn7xGbafHGzBjyeffthqd9Mm5XCfT1Lvf2e4d0aPz99yMHftHeA3YODP6zjs8M94mxXcPj21vvwLe7L5sDb73mpdwfomTvWH5b3A/z100fwx28HvrCe4TfTHxtjx9tu9F7Cv17q33w7S31hHZf6ydwBO9P1pGvGv93cHcBfwJ82d263x+bOeN/hVwewmUObrU47/O9L/W/HDaBb85ff3V/BH0/n2uPF2bJQaHXDe3Xaw2sFPPCqAU9CAS8a8KIBLxrwogEvGvCiAS8a8KIBLxrwogEvGvCiAS8a8KIBLxrwogEvGvCiAS9aCPyELJcQPuB7KXXAiwa8aMCLBrxowIsGvGjAiwa8aMCLFgx/+EVRk47nkANvuVD43cPhVzyt3/7aF+AtFwq/vX988dZ/aBq3by/fZcaL9Mo9/Bh//JVhHOONFx3+csAb6rU78Bq9ced0TqP48GzuSuite4rTOc+rumi0OtyZ8QqlgOd0zn5d7uzq66/THfj6A16zbnfgqy8R/OnVPTp2d8Bb6IJ7+IzfPcyGDU1jdMk9wlK//XLhNXmBN1BC+IsBn7+L7sBX3WV34KsOeM3ecQe+4t5zB77igNfsXXfgq+19d+CrDXjNPnAHvtI+cge+0oDX7EN34KvsY3fgqwx4zTzcga8wH3fgKwx4zbzcga8v4DXzcwe+tjzdga8t4DXzdQe+rrzdga8r4DXzdwe+pnq4A19TwGvWxx34eurlDnw9Aa9ZP3fga6mnO/C1BLxmfd2Br6Pe7sDXEfCa9XcHvoqA12yAO/AVNMQd+AoCXrNB7sAX3zB34IsPeM0GugNfeEPdgS884DUb7A580Q13B77ogNcswB34ggtxD4ffTHk16TwFufP68eWWF357//jirf/QFFaYOzO+1ALdw4/xx1cV5hg/ctnhBw9NIYW6p4CfnBp0g8inYPcop3M3K5b6cQt3D9/cfV3sVzeN/y2bu/EyAO9O41YzTudGLYI7M77AYrhHOcbPOMaPmg34wUPTwKK4A19ccdyBL61I7sCXFvCaxXIHvqyiuQNfVsBrFs8d+JKK6A58QcV0B76ggNcsqjvwxRTXHfhiAl6zyO7AF1Jsd+ALCXjNorsDX0Tx3YEvoQTuwJcQ8JqlcAfefkncgbcf8JqlcQfeeoncgTdeKnfgjQe8ZsncgTddOnfgTQe8ZgndgTdcSnfg7ZbUHXi7Aa9ZWnfgrZbYHXirAa9ZanfgbZbcHXiTpXcH3mTAazaCO/AGG8MdeHuN4g68vYDXbBx34K01kjvwxhrLHXhbjeYOvK2A12w8d+AtNaI78IYa0x14O43qDryZxnUH3kylwW+m7UuG80qTgY3sHv7asg/z9u36mteWDWls9yivJn3+1n9oOmt0d2a8icZ3Dz/Gb+84xgdXIvzgoel7Gdz94Ld3s33nYbx7yFNBN0yoHO6e8Pf/aA7h3fCb6Xz3MJm8PcQz4z3L4u4L/7j5/NgJ7zZ3y2Z/t7llczesPO7e8M1y/9cu+OZTu68LTueGZx1+v1927Nz3brqvZ83p3E3foaktk3uEXf2y3ci9dQfep1zunM7lLZs78FnL5w58zjK6e8I3Z+rX//2yiDo02YffPcya8/SOn8OEDE053f0fwLl98n3I1nNo+bK695nxK2Z8zPK6+x/jOx+ODxlavMzu7OpzBbxmud194I/X2HReZRMwtHTZ3ZnxWcrvDnyODLj32dV3/AAuZGjhioFvzuObPzmPj5QF9z4XYvDIXZxMuHsu9ctZ88eq51oPfGc23DmdGzsj7uzqR86KO/AjVxj8iqU+TmbcPXf1XxbrGzZ34dlx9z6dO/wXc2jBDLl7PoDzddH8t/kMfFCW3D2P8Y35ejKZRR1arwLhUwwtlyl34EfLlrvXI3f3f1z8dScBQ4tlzJ0ZP1LW3Pv8dC7y0FKZc/c+nYs/tFL23H1/+RHH+JAMunOMHyGL7sCnz6Q7P51Lnk13fjqXOqPu/HQucVbd+elc2sy689O5tJUOn2Johey6A58yw+5+19VfDXnEFnjL7r7Pnev9jMmPh64+0+7eS/2678M38vC23Xsc47d3PHLXI+Pu3vC92cXhrbt7H+N7s2vDm3dnV58k++6cx6eoAHfgE1SCO/DxK8Id+OiV4Q587ApxBz5ypbgDH7di3IGPWjnuwMesIHfgI1aSezj8Znrpmns1+KLcg+Hdy4i7Ol6bTAy+LPdg+NPF9ryMuBg8M/5YYe7hx/jLT6GWgi/NnV19nIpzTwE/OTXoBhVZee6R4DufVqcDX6B7+K7+8qsYyMCX6B5jc9eQS8/4It1jLPXbu+v/CMOX6R7nGL+Zdl19rQFfqDunc4GV6g58WMW6Ax9Uue7Ah1SwO/ABlewO/PCKdgd+aN/Kdgd+YIWzAz+w4t2BH1T57sAPqQJ34AdUgzvw/avCHfje1eEOfN8qcQe+X6U/bPMc8H2qhh34XlXkDnyPanIH3r+q3IH3ri534H2rzB14z2pzB96v6tyB96o+d+A9qufhurOA/7Aa2YH/uDrdgf+oSt2B/6Ba3YF/v2rdgX+3et2Bf6+K3YF/p5rdgb9YlQ/bPAf8hepmB/5StbsD31317sB3Vr878F0JuAP/tsq388eAf50EO/BvEnEH/mUay7wL+PNk2IE/T2e674E/S4kd+Oe03IE/JrXMu4BvU2MH/pCeO/B7wWXeBbzidN8Drznd98CLssvDy7prw6su865g+M30wmsK24cXZg+H3z3M27fr66eeQ+dOebrvI7yM+P3ji7f+Q2dOm113xqu7x3j9+AKP8eLLvEtyVw97EvjJqUE3aIRw38c5nbtalLS5Y5lvi7G52z3MyoGH/VCc07nlTSHwTPdTkU7nVj98LgEe9u9FOJ2buTert+dz9uBxf07odI5l/jwdeNhfpALPdH+VBjzsb1KAh70jAXjYu6oenuneXeXwsF+qbnjYL1YzPNP9neqFh/3daoWH/YMqhYf9o6qEZ7p/XIXwsPtUHzzsXtUGz3T3rC542L2rCR72HlUED3ufqoFnuverEnjY+1YHPOy9qwGe6T6g8uFhH1Tp8LAPrGx42AdXMjzsARUL/w32oAqFRz20EuGZ7BEqDx71KBUGz2SPVVHwqMerHHgme9RKgUc9cmXAwx69AuBZ41NkHh71NNmGZ7InyzI86gkzC89kT5tReNRTZxD+G5N9hIzBgz5WhuBBHzMb8N9AH7v88JhnKS886NnKBw961rLAc0jP3+jwmNtoVHjQ7TQePOimyn86R1kCXjTgRQNeNOBFA1404EUDXrRg+M104nr7KuLAmy4Ufvcwb9+ur596Dk1ZC4Xf3j++eOuGPBV40yhlzHjRgo/x2zuO8SWWcldPlksHP7wka0U5g1q4qcBnGNTCTQU+w6AWbirwGQa1cFOBzzCohZsKfIZBLdxU4DMMauGm5oGn7AEvGvCiAS8a8KIBLxrwogEvGvCiAS9aBnh3vfY8/rCniwOjDjm5WsQe1P39O65jCxzz82N7kdzbCyMvNT789stiv/kp/r/nKv69aTnvusY0MPf3X0Uede3uSu6ev7rx/Zbx4dfuti2jI21+/iX2mGdXlEdsc/sUe+Tl1T+bGe8GbWe+V3mO8e5eH7fd139FX+o3t39PsNSnmPEteHuP8v6HzQK/e5jFHnI1i3+M30zn7b9m5Hodij1z8O6oZBt+ezeLPWTjkwC+1xTyHrXZ36xj7+6KmPFuIsVu1V5JPos76PYvKeD7TUzPNgUc41O4uxKczi1TLPXJZrw7gFre1R8mZ3z8BPDN0Tj6Gbc794q/ZSzhPJ5MBLxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxoYvCHKzJfXDp7dkXy4Yld/pcol5wY/H41O/3REfD15ib77uvi+Fztzc+/fPrdPQnl8Mzt5a/tB92TE04XVi/7XKteUmrwLfrtU/tc7c+P7bPjPj8e39svr5/cB93/nby3938kec5s9tTg3TJ/XOm3963xcWV3T0ByS/1yfrwnHJ/KvIr9xCwjycFvbv/31T2PZeleX+k7fPve/t+LE7x7AabD011S/A4HC8nB7/72u3tW6V27xh/hj++5Gd9s+90Hnpf35a9VHuL14PerX2fHpxX/tDjCH9/bL2/2z8f4wy9BOS0Q1aUHf1i7V5PJn3+Zn5b6w3tuV3+1OO3q25XenffH/zU4FtKDpzbgRQNeNOBFA1404EUDXjTgRQNeNOBFA1404EUDXjTgRQNeNOBFA1404EX7P7LChszQees7AAAAAElFTkSuQmCC" alt="plot of chunk unnamed-chunk-14"/> </p>
+
+<p>Vectors do not have to be necessarily numeric. For example we can create a vector of names using the function <code>c()</code> (concatenate)</p>
+
+<pre><code class="r">names &lt;- c(&quot;Angelo&quot;, &quot;Brian&quot;, &quot;Sandy&quot;, &quot;Jenny&quot;, &quot;John&quot;, &quot;Carl&quot;)
+names  # show the vector of names
+</code></pre>
+
+<pre><code>## [1] &quot;Angelo&quot; &quot;Brian&quot;  &quot;Sandy&quot;  &quot;Jenny&quot;  &quot;John&quot;   &quot;Carl&quot;
+</code></pre>
+
+<p>Let&#39;s check what is loaded in the memory now.</p>
+
+<pre><code class="r">ls()
+</code></pre>
+
+<pre><code>## [1] &quot;names&quot; &quot;x&quot;     &quot;y&quot;     &quot;y1&quot;    &quot;z&quot;
+</code></pre>
+
+<p>Now the memory contains all the variables we created: <code>x</code>, <code>y</code>, <code>y1</code>, <code>z</code> and <code>names</code>.<br/>
+If we want to remove a vector, e.g. <code>x</code>, we can type</p>
+
+<pre><code class="r">rm(x)  # remove x from memory
+ls()  # show variables in memory
+</code></pre>
+
+<pre><code>## [1] &quot;names&quot; &quot;y&quot;     &quot;y1&quot;    &quot;z&quot;
+</code></pre>
+
+<p>Now the vector <code>x</code> is not in the memory anymore.    </p>
+
+<p><br><br>    </p>
+
+<h2>Vectors and Matrices</h2>
+
+<p>We have already looked at some example of vectors. Let&#39;s be more specific.<br/>
+A vector is a variable that contains a set of elements.</p>
+
+<pre><code class="r">x &lt;- c(2, 3.1, 5.2, 3.8)  # creates vector x with 4 numeric elements
+x  # shows x
+</code></pre>
+
+<pre><code>## [1] 2.0 3.1 5.2 3.8
+</code></pre>
+
+<pre><code class="r">x[2]  # shows element 2 of x
+</code></pre>
+
+<pre><code>## [1] 3.1
+</code></pre>
+
+<pre><code class="r">x[2:4]  # shows elements 2, 3 and 4 of x
+</code></pre>
+
+<pre><code>## [1] 3.1 5.2 3.8
+</code></pre>
+
+<pre><code class="r">length(x)  # length of vector x
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<p>Suppose you have two vectors <code>x</code> and <code>y</code>, of same length (in this case 4). You can combine them into a matrix</p>
+
+<pre><code class="r">y &lt;- c(1, 2, 3, 4)  # create vector y
+M &lt;- cbind(x, y)  # create matrix M, by attaching x and y (column)
+y
+</code></pre>
+
+<pre><code>## [1] 1 2 3 4
+</code></pre>
+
+<pre><code class="r">M  # show matrix M
+</code></pre>
+
+<pre><code>##        x y
+## [1,] 2.0 1
+## [2,] 3.1 2
+## [3,] 5.2 3
+## [4,] 3.8 4
+</code></pre>
+
+<pre><code class="r">M[3, 2]  # shows element at row 3 and column 2 of matrix M
+</code></pre>
+
+<pre><code>## y 
+## 3
+</code></pre>
+
+<pre><code class="r">M[1:3, ]  # shows elements in rows 1 to 3, and all colums of matrix M
+</code></pre>
+
+<pre><code>##        x y
+## [1,] 2.0 1
+## [2,] 3.1 2
+## [3,] 5.2 3
+</code></pre>
+
+<pre><code class="r">M[, 1]  # shows only column 1 of matrix M
+</code></pre>
+
+<pre><code>## [1] 2.0 3.1 5.2 3.8
+</code></pre>
+
+<p>You can create the matrix directly using another command, <code>matrix</code></p>
+
+<pre><code class="r">N &lt;- matrix(c(x, y), nrow = 4)  # creates matrix N with 4 rows, using the 
+# vectors x and y as inputs
+N  # notice that N is equivalent to M
+</code></pre>
+
+<pre><code>##      [,1] [,2]
+## [1,]  2.0    1
+## [2,]  3.1    2
+## [3,]  5.2    3
+## [4,]  3.8    4
+</code></pre>
+
+<p>You can create matrices by attaching the vectors by row</p>
+
+<pre><code class="r">P &lt;- rbind(x, y)  # creates matrix P, attaching x and y (row)
+P
+</code></pre>
+
+<pre><code>##   [,1] [,2] [,3] [,4]
+## x    2  3.1  5.2  3.8
+## y    1  2.0  3.0  4.0
+</code></pre>
+
+<p>This generates a matrix with 2 rows and 4 columns, row 1 being <code>x</code>, and row 2 being <code>y</code>.<br/>
+To find out the dimensions of a matrix we use <code>dim</code></p>
+
+<pre><code class="r">dim(M)  # 4 rows and 2 columns
+</code></pre>
+
+<pre><code>## [1] 4 2
+</code></pre>
+
+<p>The last type of objects that we consider are called <code>LOGICAL</code>. For example </p>
+
+<pre><code class="r">FF &lt;- (2 + 2 == 5)
+</code></pre>
+
+<p>The object <code>FF</code> contains the result of a statement, i.e. that the sum of 2 and 2 is equal to 5: this statement is FALSE. And indeed, if you check the content of <code>FF</code></p>
+
+<pre><code class="r">FF
+</code></pre>
+
+<pre><code>## [1] FALSE
+</code></pre>
+
+<p>Notice that in this statement we use <code>==</code>. Similar constructs are </p>
+
+<pre><code class="r">TT &lt;- (2 + 2 &gt; 3)  # 2+2&gt;3 is TRUE
+FF2 &lt;- (20 &lt; 10)  # 20&lt;10 is a FALSE statement
+TT2 &lt;- (&quot;Angelo&quot; != &quot;Angela&quot;)
+</code></pre>
+
+<p>We can create vectors of logical objects</p>
+
+<pre><code class="r">a &lt;- c(10, 2, 3, 13)
+b &lt;- c(11, 4, 1, 12)
+check &lt;- (a &gt; b)  # is the entry of a  greater than the same entry of b?
+check
+</code></pre>
+
+<pre><code>## [1] FALSE FALSE  TRUE  TRUE
+</code></pre>
+
+<pre><code class="r">cbind(a, b, check)
+</code></pre>
+
+<pre><code>##       a  b check
+## [1,] 10 11     0
+## [2,]  2  4     0
+## [3,]  3  1     1
+## [4,] 13 12     1
+</code></pre>
+
+<p>Notice that when the logical is in a matrix with other numeric objects, <code>TRUE</code> is transformed in 1 and <code>FALSE</code> is transformed in 0.   </p>
+
+<p><br>
+<strong>Other useful commands</strong></p>
+
+<pre><code class="r">rep(0, times = 10)  # generates a vector of zero, repeated 10 times
+</code></pre>
+
+<pre><code>##  [1] 0 0 0 0 0 0 0 0 0 0
+</code></pre>
+
+<pre><code class="r">rep(1:4, times = 2)  # generetes a vector that repeats the seqence 1:4 for 2 times
+</code></pre>
+
+<pre><code>## [1] 1 2 3 4 1 2 3 4
+</code></pre>
+
+<p>You can check the help for other ways to create vectors using <code>rep</code>.    </p>
+
+<pre><code class="r">t(M)  # transpose of matrix M
+</code></pre>
+
+<pre><code>##   [,1] [,2] [,3] [,4]
+## x    2  3.1  5.2  3.8
+## y    1  2.0  3.0  4.0
+</code></pre>
+
+<pre><code class="r">2 * M  # multiplies each entry of matrix M by 2
+</code></pre>
+
+<pre><code>##         x y
+## [1,]  4.0 2
+## [2,]  6.2 4
+## [3,] 10.4 6
+## [4,]  7.6 8
+</code></pre>
+
+<p><br><br></p>
+
+<h2>Loops and writing your own functions</h2>
+
+<p>Sometimes you want to perform the same operation multiple times. For example you want to write numbers from 1 to 5. One way to do it is to type</p>
+
+<pre><code>print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+</code></pre>
+
+<p>and the output would be</p>
+
+<pre><code>## [1] 1
+</code></pre>
+
+<pre><code>## [1] 2
+</code></pre>
+
+<pre><code>## [1] 3
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<pre><code>## [1] 5
+</code></pre>
+
+<p>But it is painful. We can use a construct called <code>for</code> loop. </p>
+
+<pre><code class="r">for (i in 1:5) print(i)
+</code></pre>
+
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+</code></pre>
+
+<p>The loop uses <code>i</code> as a counter: the first time the variable <code>i</code> assumes value 1, and therefore we print 1; the second time <code>i</code> assumes value 2, and we print 2; and so on, until <code>i</code> assumes value 5, and the loop stops.<br/>
+It is a good idea to use brakets. For example</p>
+
+<pre><code class="r">x &lt;- 0
+for (i in 1:10) {
+    print(i)
+    x &lt;- x + i
+    print(paste(&quot;x =&quot;, x))
+}
+</code></pre>
+
+<pre><code>## [1] 1
+## [1] &quot;x = 1&quot;
+## [1] 2
+## [1] &quot;x = 3&quot;
+## [1] 3
+## [1] &quot;x = 6&quot;
+## [1] 4
+## [1] &quot;x = 10&quot;
+## [1] 5
+## [1] &quot;x = 15&quot;
+## [1] 6
+## [1] &quot;x = 21&quot;
+## [1] 7
+## [1] &quot;x = 28&quot;
+## [1] 8
+## [1] &quot;x = 36&quot;
+## [1] 9
+## [1] &quot;x = 45&quot;
+## [1] 10
+## [1] &quot;x = 55&quot;
+</code></pre>
+
+<p>The loop starts from <code>x</code>=0 and adds <code>i</code> at each iteration: the first time <code>i=1</code> so x=1; the second time, <code>i=2</code> and therefore x=1+2=3; and so on. The brakets and indentation helps us to keep track of the loop and are just a convention that makes it easier to debug.<br/>
+You don&#39;t need to loop only over numbers. For example, you can loop over the entries of a vector containing names (character variables)</p>
+
+<pre><code class="r">people &lt;- c(&quot;John&quot;, &quot;Vanessa&quot;, &quot;Carly&quot;)
+for (i in people) {
+    print(i)
+}
+</code></pre>
+
+<pre><code>## [1] &quot;John&quot;
+## [1] &quot;Vanessa&quot;
+## [1] &quot;Carly&quot;
+</code></pre>
+
+<p>Sometimes you want to loop around the entries of a matrix and perform some operation. Let&#39;s say you want to compute the sum of all the entries of a matrix.
+Let&#39;s consider the matrix <code>D</code></p>
+
+<pre><code class="r">d &lt;- seq(from = 1, to = 25, by = 1)
+D &lt;- matrix(d, nrow = 5)
+</code></pre>
+
+<p>Now we want to compute the sum of all the entries in <code>D</code>:</p>
+
+<pre><code class="r">sumD &lt;- 0  # initialize the sum to zero
+for (i in 1:5) {
+    # i indicates the row
+    for (j in 1:5) {
+        # j indicates the column
+        sumD = sumD + D[i, j]
+    }
+}
+</code></pre>
+
+<p>The result is </p>
+
+<pre><code class="r">sumD
+</code></pre>
+
+<pre><code>## [1] 325
+</code></pre>
+
+<p>Incidentally, you will not need to do this, since you can just use the built-in function <code>sum()</code> to compute the sum of the entries in a matrix</p>
+
+<pre><code class="r">sum(D)
+</code></pre>
+
+<pre><code>## [1] 325
+</code></pre>
+
+<p><br>
+You can also write your own functions, if they are not provided by R. For example, let&#39;s write a function that takes two numbers and computes the sum.</p>
+
+<pre><code class="r">mysum &lt;- function(a, b) {
+    x &lt;- a + b
+    return(x)
+}
+</code></pre>
+
+<p>The function <code>mysum</code> takes two numbers <code>a</code> and <code>b</code>, and returns the value <code>x=a+b</code>. Let&#39;s test if it works</p>
+
+<pre><code class="r">mysum(3, 4)  # gives 7
+</code></pre>
+
+<pre><code>## [1] 7
+</code></pre>
+
+<pre><code class="r">mysum(4, 10)  # returns 14
+</code></pre>
+
+<pre><code>## [1] 14
+</code></pre>
+
+<p>Neat! At this point you have been exposed to most of the commands in R.  </p>
+
+<p><br><br></p>
+
+<h2>Installing and using packages</h2>
+
+<p>R has many packages, which collect functions and data, to be used for all sort of data analysis and applications. 
+You can install and load the packages into R with few commands</p>
+
+<pre><code class="r">library()  # see all packages installed 
+search()  # see packages currently loaded
+</code></pre>
+
+<pre><code>##  [1] &quot;.GlobalEnv&quot;        &quot;package:knitr&quot;     &quot;package:stats&quot;    
+##  [4] &quot;package:graphics&quot;  &quot;package:grDevices&quot; &quot;package:utils&quot;    
+##  [7] &quot;package:datasets&quot;  &quot;package:methods&quot;   &quot;Autoloads&quot;        
+## [10] &quot;package:base&quot;
+</code></pre>
+
+<p>If you want to install the package <code>igraph</code>, which contains several functions for network analysis, you type</p>
+
+<pre><code>install.packages(&quot;igraph&quot;, dependencies=TRUE)
+install.packages(&quot;igraph&quot;, dependencies=TRUE, repos=&quot;http://lib.stat.cmu.edu/R/CRAN/&quot;)
+</code></pre>
+
+<p>The software will ask you for a repository, you just choose the one that is closest to your location. In the second line I have chosen the repository at Carnegie Mellon University, but you can choose another one from <a href="http://cran.r-project.org/mirrors.html">http://cran.r-project.org/mirrors.html</a>.
+It is a good idea to have the option <code>dependencies=TRUE</code>, because some packages depend on the
+availability of other packages, so if those are not already installed in your system, they will be installed now.</p>
+
+<p><br><br></p>
+
+<h2>Loading data into R</h2>
+
+<h3>Interactive data.frame creation</h3>
+
+<p>R is designed for data analysis, therefore most of the times you will have to load the data into the memory from some external source. However, you can create your data interactively, if you want.</p>
+
+<pre><code># create a data frame from scratch 
+age &lt;- c(25, 30, 56)                   # create vector with ages
+gender &lt;- c(&quot;male&quot;, &quot;female&quot;, &quot;male&quot;)  # create vector with gender
+weight &lt;- c(160, 110, 220)             # create vector with weight
+mydata &lt;- data.frame(age,gender,weight)# create data frame containing the 3 variables
+mydata                                 # shows data frame
+</code></pre>
+
+<pre><code>##   age gender weight
+## 1  25   male    160
+## 2  30 female    110
+## 3  56   male    220
+</code></pre>
+
+<p>If you want to look at a single variable in the data.frame (say age), you can call it as</p>
+
+<pre><code class="r">mydata$age  # shows the variable age in data.frame mydata
+</code></pre>
+
+<pre><code>## [1] 25 30 56
+</code></pre>
+
+<p>or you can use the same method we have shown for matrices</p>
+
+<pre><code class="r">mydata[, 1]  # shows column 1 of mydata, i.e the variable age
+</code></pre>
+
+<pre><code>## [1] 25 30 56
+</code></pre>
+
+<p><br></p>
+
+<h3>Importing data in .csv format</h3>
+
+<p>Usually data are stored in external files in your computer and can be in different formats. R is pretty flexible and it can read and load data in several formats: .txt, .csv, .xls, .xlsx. It can also load data from other statistical packages, like Stata, SAS, and SPSS.<br/>
+Let&#39;s consider using data in .csv format. First thing, look at the help for this </p>
+
+<pre><code>help(read.table)
+</code></pre>
+
+<p>Suppose you have a <code>mydata.csv</code> file (comma separated file) in your directory, and the first line contains the names of the variables in your dataset. You can use</p>
+
+<pre><code class="r">setwd(&quot;C:/Users/amele1/Dropbox/NetOrgJHU/GMBA_spring2014/&quot;)
+mydata &lt;- read.table(&quot;mydata.csv&quot;, header = TRUE, sep = &quot;,&quot;)
+</code></pre>
+
+<pre><code>## Warning: cannot open file &#39;mydata.csv&#39;: No such file or directory
+</code></pre>
+
+<pre><code>## Error: cannot open the connection
+</code></pre>
+
+<pre><code class="r"># mydata &lt;- read.csv(&#39;mydata.csv&#39;, header=TRUE, sep=&#39;,&#39;)
+</code></pre>
+
+<p>The data contain two columns</p>
+
+<pre><code class="r">mydata
+</code></pre>
+
+<pre><code>##   age gender weight
+## 1  25   male    160
+## 2  30 female    110
+## 3  56   male    220
+</code></pre>
+
+<p><br></p>
+
+<h3>Importing data in tab separated format</h3>
+
+<p>If your data are in a text file and variables are separated by a tab, then you can use</p>
+
+<pre><code>mydata &lt;- read.table(&quot;mydata.csv&quot;, header=TRUE, sep = &quot;\t&quot;)
+</code></pre>
+
+<p><br></p>
+
+<h3>Importing data from Excel</h3>
+
+<p>The <strong>best</strong> way to import data in excel format (.xls or .xlsx) is to save them as .csv files and use the code shown above. However, if you really want to upload data in this format you can do it, but the procedure is a little involved.
+First, let&#39;s remove the data and load the dataset in excel format (.xlsx). For this we need a package called <code>gdata</code>.</p>
+
+<pre><code>rm(mydata)
+install.packages(&quot;gdata&quot;, dependencies=TRUE, 
+                 repos=&quot;http://lib.stat.cmu.edu/R/CRAN/&quot;)  # installs package gdata
+library(gdata)                                # loads package gdata
+mydata&lt;-read.xls(&quot;mydata.xls&quot;, 
+                 perl=&quot;C:/strawberry/perl/bin/perl&quot;) # loads data into memory
+</code></pre>
+
+<pre><code>## Warning: package &#39;gdata&#39; was built under R version 2.15.3
+</code></pre>
+
+<pre><code>## gdata: read.xls support for &#39;XLS&#39; (Excel 97-2004) files ENABLED.
+## 
+## gdata: read.xls support for &#39;XLSX&#39; (Excel 2007+) files ENABLED.
+## 
+## Attaching package: &#39;gdata&#39;
+## 
+## The following object(s) are masked from &#39;package:stats&#39;:
+## 
+## nobs
+## 
+## The following object(s) are masked from &#39;package:utils&#39;:
+## 
+## object.size
+</code></pre>
+
+<p>If you get an error with this package, it is probably because you don&#39;t have Perl installed in your machine. Go to <a href="http://www.perl.org/get.html">http://www.perl.org/get.html</a>, download the appropriate Perl version, and install it. You can follow this <a href="http://www.screenr.com/QiN8">twotorial</a>, which explain the process.<br/>
+Now let&#39;s take a look at the data</p>
+
+<pre><code class="r">mydata
+</code></pre>
+
+<pre><code>##      name age
+## 1  Angelo  35
+## 2    John  32
+## 3   Sarah  32
+## 4 Andreas  22
+## 5   Julia  42
+</code></pre>
+
+<p>For new excel files in format <code>.xlsx</code> you can use the same command</p>
+
+<pre><code>mydata&lt;-read.xls(&quot;mydata.xlsx&quot;, 
+                 perl=&quot;C:/strawberry/perl/bin/perl&quot;) # loads data into memory
+</code></pre>
+
+<p><br></p>
+
+<h3>Importing data from other statistical packages</h3>
+
+<p>To import data in other formats, you need to install the package <code>foreign</code>. </p>
+
+<p>From Stata</p>
+
+<pre><code># input Stata file
+library(foreign)
+mydata &lt;- read.dta(&quot;mydata.dta&quot;)
+</code></pre>
+
+<p>From SPSS</p>
+
+<pre><code>library(foreign)
+read.spss(&quot;mydata.sav&quot;)
+</code></pre>
+
+<p>From SAS (transport format)</p>
+
+<pre><code>library(foreign)
+read.export(&quot;mydata.xpt&quot;)
+</code></pre>
+
+<p><br><br></p>
+
+<h2>Sample data analysis session</h2>
+
+<p>For this let&#39;s use a dataset that is already in R.</p>
+
+<pre><code class="r">rm(list = ls())  # clears memory
+data(trees)  # load dataset trees into memory
+head(trees)  # show first few rows of the data
+</code></pre>
+
+<pre><code>##   Girth Height Volume
+## 1   8.3     70   10.3
+## 2   8.6     65   10.3
+## 3   8.8     63   10.2
+## 4  10.5     72   16.4
+## 5  10.7     81   18.8
+## 6  10.8     83   19.7
+</code></pre>
+
+<p>To understand what is in the dataset, we can just use the help</p>
+
+<pre><code>?trees
+</code></pre>
+
+<p>We can summarize the data using </p>
+
+<pre><code class="r">summary(trees)
+</code></pre>
+
+<pre><code>##      Girth          Height       Volume    
+##  Min.   : 8.3   Min.   :63   Min.   :10.2  
+##  1st Qu.:11.1   1st Qu.:72   1st Qu.:19.4  
+##  Median :12.9   Median :76   Median :24.2  
+##  Mean   :13.2   Mean   :76   Mean   :30.2  
+##  3rd Qu.:15.2   3rd Qu.:80   3rd Qu.:37.3  
+##  Max.   :20.6   Max.   :87   Max.   :77.0
+</code></pre>
+
+<p>As discussed above, when you want to analyze only a variable of the dataset (say Height), you use <code>trees$Height</code>.</p>
+
+<pre><code class="r">summary(trees$Height)
+</code></pre>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##      63      72      76      76      80      87
+</code></pre>
+
+<p>Otherwise, an alternative is to take the columns of the datasets and create a variable from each. You can do this by simply typing</p>
+
+<pre><code class="r">attach(trees)  # will create one variable for each column  of the data.frame
+</code></pre>
+
+<p>If you want to summarize the variable Height, now you can just type</p>
+
+<pre><code class="r">summary(Height)
+</code></pre>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##      63      72      76      76      80      87
+</code></pre>
+
+<p>Let plot some histograms</p>
+
+<pre><code class="r">hist(Height)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-53"/> </p>
+
+<p>Again we can make this histogram look much better</p>
+
+<pre><code class="r">hist(Height, col = &quot;blue&quot;, main = &quot;Height of Tree&quot;, xlab = &quot;Height&quot;)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAflBMVEX9/v0AAAAAADkAAGUAAP8AOTkAOWUAOY8AZo8AZrU5AAA5ADk5AGU5OY85j7U5j9plAABlADllAGVlOTllOY9lZgBlZjlltf2POQCPOTmPOWWPZgCP2/21ZgC124+1/rW1/v3ajzna24/a/rXa/v39tWX924/9/rX9/tr9/v01KrSyAAAAKnRSTlP//////////////////////////////////////////////////////wAyqPBcAAAACXBIWXMAAAsSAAALEgHS3X78AAAOWElEQVR4nO2dC3fayhVGr+zeutCkOOkD0uLWtDaP//8HKwnJBj8yc3Qmwwzf3mslZkE+hnM2Iw1YUn47gCS/XfoFwGVAvCiIFwXxoiBeFMSLgnhREC8K4kVBvCiIFwXxoiBeFMSLgnhREC8K4kVBvCiIFwXxoiBeFMSLgnhREC8K4kW5WvG7+9vHw2G/6v4+u2vg5JGH5Zvsdt7crPt/0/TMfvWLvQBK4s94feSheSt+vAfxFXIqftPKWw53tTJv/3N/99Q+8u95c/vYy50dM92/Wxx13z0d79rO21v71c0/um3A8DyH1xv1oiD+oZ+2i/6u3urv8078cTKfiH84ueeN+P6e8XlenrBmrlj8cTN9+zi4u33sxG/n7Tth0/TiF0et44Z9O28n9e6+/etk4z+Kn73cPHnCS9WWAgHxz8cbN+tO/HOncNdv6nvNJ+L7h9o3xfID8d1a7+V5Xm5cprI0XLH4cVP/mfj2ccRfH6/ie3fjXSeb+rfif7ap7yS/PM/LjZoRED+sxe6e3izuXsWfL+4On4h/eZ7XGxWjIL4X1Wrq72r3/ePHuUH8dj463Axr9U/Ej89zcqNerlb8z3iu3VoC1MQPi/26P4OnQE38cW0+u/SruDxy4uEI4kVBvCiIFwXxoiBeFMSLgnhREC8K4kVBvCiIFwXxoiBeFMSLgnhREC8K4kVBvCiIFwXxoiBeFMSLgnhREC8K4kVBvChh8dv5cEmRDK8GshEUv18NFwrhzOKrIih+9/3x7CdcB8x4UcL7+OFSAuzjrwtW9aJMEd+MJH81F6XxcukCTHhmfF2VBmn+4KOudiD+BcSfMV4T9oPVXV2VBkH8OfvVZ9cGq6vSIIh/w+7b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" alt="plot of chunk unnamed-chunk-54"/> </p>
+
+<p>Next we can look at the scatter plots</p>
+
+<pre><code class="r">pairs(trees)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAnFBMVEX9/v0AAAAAADkAAGUAOY8AZrU5AAA5ADk5AGU5OQA5OTk5OWU5ZmU5ZrU5j9plAABlADllAGVlOY9lZjllZmVlZrVlj49ltbVltf2POQCPOTmPOWWPZmWPZo+Pj2WPtY+P29qP2/21ZgC1Zjm1ZmW1jzm1j4+1tWW1/v3ajznatWXa29ra/rXa/tra/v39tWX924/9/rX9/tr9/v28ujstAAAANHRSTlP///////////////////////////////////////////////////////////////////8AS1ciZQAAAAlwSFlzAAALEgAACxIB0t1+/AAAFdBJREFUeJztnQt727iVhks78U47O/ZstunY6aYdKbPdaDu1Lvz//60EKVu8gDwADwB+JL73mWQUiZdPeMVDkITEP5QkS/6wdACyDBSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKRSfKZsQf3oons2f4Sv7ovh4frK8Yl6wz1I9+2idpX7FPs8K2YT4b7uyPI74ODwfns+fXm0v2Gc5PF++/q91FvPK/29D+zbEX7788W53KO52ltfOn8vfvpv/LC+MzLK/29lnMa+MzLM+tiF+V2k0KoccnkfEH8yma5tl/3z565+ts5hXvttXsz62IL4q9efP33ZWI5U/e6mvXrDP8m13+fLf1lnMK3+yr2Z9bEL86eFuZ/4MX7l8fS2tPTXzgn0WqXPHUk/WDMVnCsVnCsVnCsVnCsVnymbEF/6vzJhl4pWVQfGhXlkZFB/qlZVB8aFeWRke4gsIGGeKOOLdJ41HYXm0ILBxRCheBWwcEYqfSVNWYeOIUPw8iiYAbBwRip8HxScGpaVZ6hMD09INsHHqAeRF8XF0UopXARunrAcNmsGhI1C8Ctg4FB8X2Dgs9XFBi9M6bXso7r9zi48FbBxT6s8//0rxkYCNU+/jL19+pPg4wMapSn21fz/9QPFxgI0jQvEqYOOIULwK2DgiFK8CNo4IxauAjSNC8Spg44hQvArYOCIUrwI2jgjFq4CNI0LxKmDjiFC8Ctg4IhSvAjaOCMWrgI1jrsf/8lQ8jk5K8Spg44z/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" alt="plot of chunk unnamed-chunk-55"/> </p>
+
+<pre><code class="r">pairs(trees, pch = 19, cex = 0.5, col = &quot;red&quot;)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-55"/> </p>
+
+<p>These scatter plots shows the relationships among variables. For example, it looks like there some sort of linear relationship between volume and girth. We could compute correlations to check</p>
+
+<pre><code class="r">cor(trees)  # computes correlation for all the variables in the data
+</code></pre>
+
+<pre><code>##         Girth Height Volume
+## Girth  1.0000 0.5193 0.9671
+## Height 0.5193 1.0000 0.5982
+## Volume 0.9671 0.5982 1.0000
+</code></pre>
+
+<pre><code class="r">cor(cbind(Girth, Height, Volume))  # computes correlation for all the variables
+</code></pre>
+
+<pre><code>##         Girth Height Volume
+## Girth  1.0000 0.5193 0.9671
+## Height 0.5193 1.0000 0.5982
+## Volume 0.9671 0.5982 1.0000
+</code></pre>
+
+<pre><code class="r">cor(Girth, Height)  # computes correlation between girth and height
+</code></pre>
+
+<pre><code>## [1] 0.5193
+</code></pre>
+
+<p>We could probably run a simple regression to estimate the relationship between girth and height. To do this in R is very simple</p>
+
+<pre><code class="r">model1 &lt;- lm(formula = Girth ~ Volume)
+</code></pre>
+
+<p>This will create the object <code>model1</code>, containing the results of our linear regression, where Girth is our Y (dependent) variable, and Volume is our X (independent) variable.
+Notice that we write the formula as: <code>Girth ~ Volume</code>. The constant is automatically included.<br/>
+To visualize the results of the regression we type</p>
+
+<pre><code class="r">model1
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = Girth ~ Volume)
+## 
+## Coefficients:
+## (Intercept)       Volume  
+##       7.678        0.185
+</code></pre>
+
+<p>or to have some more detail</p>
+
+<pre><code class="r">summary(model1)
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = Girth ~ Volume)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -1.294 -0.574 -0.152  0.713  1.525 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  7.67786    0.30863    24.9   &lt;2e-16 ***
+## Volume       0.18463    0.00902    20.5   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1 
+## 
+## Residual standard error: 0.812 on 29 degrees of freedom
+## Multiple R-squared: 0.935,   Adjusted R-squared: 0.933 
+## F-statistic:  419 on 1 and 29 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>Let&#39;s see the plot of our regression line on the scatter</p>
+
+<pre><code class="r">plot(Volume, Girth, pch = 19, col = &quot;red&quot;, xlim = c(0, 100), ylim = c(0, 30))
+abline(model1)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAgVBMVEX9/v0AAAAAADkAAGUAOTkAOY8AZrU5AAA5ADk5AGU5OWU5OY85ZrU5j485j9plAABlADllAGVlOQBlOY9lZmVltf2POQCPOTmPOWWPZgCPj2WPtY+P29qP2/21ZgC124+1/rW1/v3ajzna/tra/v39tWX924/9/rX9/tr9/v3/AAA9mzIYAAAAK3RSTlP//////////////////////////////////////////////////////wD/ne+1LwAAAAlwSFlzAAALEgAACxIB0t1+/AAADQBJREFUeJzt3Q1X28gZhuE16cKmpCZpC0nbwBYXG4v//wPrkQ3YWHIk652Pd577PrvLnqWdGF+MPmxL81tDkv2W+wFQnoAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBcNeNGAFw140YAXDXjRgBdtCvyMSi4i/IT/L8UOeNGAFw140YAXDXjRJsOvrtqTg0+PY4emrE2FX9/dtl+Xvz+NHJqyNhX++dvjwdfhQ1PWmPGiTd7HP9+wj/cYR/WiRYAf+DYAZc3idG7+wKbeXRYHdw8b9dU1B3eusjidW845nXOX1ekcM95ZBqdzQX7BPt5ZnM6JBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxowIsGvGjAiwa8aMCLBrxkrFAhWVAHXq7tZAderNdtPPBazY7+pTvgq2rvkA54nQ6O5IFX6cMJHPAaHZ23Ay/RsQXwAnW9TAd89XW/Ogt85fW9KA981fW/FwN8xZ16C85ioYKwENXx6mPA5+4kgAF8uzjF6svYoSluv3jH3QC+XZyCpUnK6pdrgE2Gv7n4+eORpUnKasDSb9MP7tZ3s8tmydIk5TRoxT+O6qtr2PMeAZ6VJnM29GmfDL+6ml3cc3BXSMNn21T4sO7c+m4OfAmN2chavIDTNA+XwGdv3L7VYsZvWvzlM/B5G/l0T97HP9/M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" alt="plot of chunk unnamed-chunk-60"/> </p>
+
+</body>
+
+</html>
+
