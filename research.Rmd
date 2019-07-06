@@ -1,5 +1,42 @@
 ---
-title: "research"
+title: "Research"
 ---
 
-I study a lot of stuff
+## Publications
+* [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), forthcoming *American Economic Journal: Economic Policy* (previously circulated as: Segregation in Social Networks: A structural approach)
+    + [Replication files](https://github.com/meleangelo/segnet)    
+      
+
+* [A structural model of dense network formation](files/bayesnet_march2016.pdf), May 2017, *Econometrica*, vol. 85, issue 3, pages 825-850 [(published version)](https://www.econometricsociety.org/publications/econometrica/2017/05/01/structural-model-dense-network-formation)
+    + Online appendices: [A](files/bayesnet_march2016_appendixA.pdf) [B](files/bayesnet_march2016_appendixB.pdf) [C](files/bayesnet_march2016_appendixC.pdf) [D](files/bayesnet_march2016_appendixD.pdf) [E](files/bayesnet_march2016_appendixE.pdf)
+    + [`netnew`](https://github.com/meleangelo/netnew): R package for replication
+    + Old versions: [November 2011](files/bayesnet_oct2011.pdf)  [July 2013](files/bayesnet_july2013.pdf) [March 2015](files/bayesnet_march2015.pdf)
+    + [Old codes](files/bayesnet_replic.zip) for July 2013 version
+
+
+* [Viral Altruism? Generosity and social contagion in online networks](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2441467), March 2016, *Sociological Science* (with [Mario Macis](https://sites.google.com/site/mmacis/) and [Nicola Lacetera](https://sites.google.com/site/nicolacetera/) )
+
+* [Structural Models of Complementary Choices](files/ComplementaryChoices.pdf), *Marketing Letters*, 25, 3, pp: 245-256 Springer
+(with Steve Berry, Ahmed Khwaja, Vineet Kumar, Andres Musalem, Ken Wilbur, Greg Allenby, Bharat Anand, Pradeep Chintagunta, Michael Hanemann, Przemek Jeziorski)
+*Choice Symposium Invited Submission from* Marketing Letters
+
+* [Poisson Indices of Segregation](files/pps_applied.pdf) (2013) *Regional Science and Urban Economics*  43, pages 65–85
+    + [Example](files/webexample.zip): includes R code, R package, data for New York, readme files
+    + Spatial Dissimilarity: [1990](files/sdism90_all.csv) [2000](files/sdism_all.csv) -- Spatial Exposure: [1990](files/sexp90_all.csv) [2000](sexp_all.csv) -- Spatial Fragmentation: [1990](files/sfrag90_all.csv)  [2000](files/sfrag_all.csv)
+
+
+## Revisions
+* [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2018.pdf), December 2018, revision requested from *Journal of Business and Economic Statistics*
+     + Old versions: [Sept 2017](files/homophily_sept2017.pdf)
+
+* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMarch2019.pdf), April 2019, Re-submitted to *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
+     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
+     + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
+
+
+## Working papers and work in progress
+
+
+## Old stuff
+
+
