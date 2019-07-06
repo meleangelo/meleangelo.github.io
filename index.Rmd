@@ -2,8 +2,9 @@
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 <img src="images/Angelo_Mele.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
-I am an associate professor at the Johns Hopkins Carey Business School.
 
-I study social networks and how they shape the individual socioeconomic outcome. 
+I am an Associate Professor at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
+
+I study how social interactions shape individual socioeconomic outcomes.  
 
 I have a PhD in Economics from [University of Illinois at Urbana-Champaign](https://economics.illinois.edu) and a Master of Arts in Economics from [New York University](https://as.nyu.edu/econ.html) and a Laurea in Economia Politica from [Bocconi University](https://www.unibocconi.eu/)
