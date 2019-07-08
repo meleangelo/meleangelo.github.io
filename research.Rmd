@@ -2,6 +2,8 @@
 title: "Research"
 ---
 
+My research studies how social interactions affect individual and aggregated economic performance. 
+
 ## Publications
 * [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), forthcoming *American Economic Journal: Economic Policy* (previously circulated as: Segregation in Social Networks: A structural approach)
     + [Replication files](https://github.com/meleangelo/segnet)    

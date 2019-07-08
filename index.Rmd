@@ -5,6 +5,8 @@
 
 I am an Associate Professor at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
 
-I study how social interactions shape individual socioeconomic outcomes.  
+I study how social interactions shape individual and aggregate 
+socioeconomic outcomes, using tools from economic theory, 
+econometrics, applied probability and computational methods.
 
-I have a PhD in Economics from [University of Illinois at Urbana-Champaign](https://economics.illinois.edu) and a Master of Arts in Economics from [New York University](https://as.nyu.edu/econ.html) and a Laurea in Economia Politica from [Bocconi University](https://www.unibocconi.eu/)
+I received a PhD in Economics from [University of Illinois at Urbana-Champaign](https://economics.illinois.edu), a Master of Arts in Economics from [New York University](https://as.nyu.edu/econ.html) and a Laurea in Economia Politica from [Bocconi University](https://www.unibocconi.eu/)
