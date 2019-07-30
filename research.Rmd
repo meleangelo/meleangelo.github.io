@@ -40,7 +40,7 @@ My research studies how social interactions affect individual and aggregated eco
 
 ## Working papers and work in progress
 
-* Spectral inference for large stochastic blockmodels with nodal covariates, July 2019 (with Lingxin Hao, Joshua Cape and Carey Priebe)
+* [Spectral inference for large stochastic blockmodels with nodal covariates](grdpg_july2019), July 2019 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/))
 
 * [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com))
 
@@ -50,7 +50,7 @@ My research studies how social interactions affect individual and aggregated eco
 
 ## Old stuff
 
-* [Racial Segregation and Public School Expenditure](files/LaFerraraMele.pdf) (with [Eliana La Ferrara](http://didattica.unibocconi.eu/mypage/index.php?IdUte=49273&cognome=LA%20FERRARA&nome=ELIANA&urlBackMy=) )
+* [Racial Segregation and Public School Expenditure](files/LaFerraraMele.pdf) (2006) (with [Eliana La Ferrara](http://didattica.unibocconi.eu/mypage/index.php?IdUte=49273&cognome=LA%20FERRARA&nome=ELIANA&urlBackMy=) )
 
-* [Who is afraid of the big bad wolf?]
+* [Who is afraid of the big bad wolf? Do pedophiles live closer to schools?](files/sexoff_paper.pdf) (2008)
 
