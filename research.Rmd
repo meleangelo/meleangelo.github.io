@@ -40,9 +40,9 @@ My research studies how social interactions affect individual and aggregated eco
 
 ## Working papers and work in progress
 
-* [Spectral inference for large stochastic blockmodels with nodal covariates](grdpg_july2019), July 2019 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/))
+* [Spectral inference for large stochastic blockmodels with nodal covariates](files/grdpg_august2019.pdf), July 2019 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Submitted
 
-* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com))
+* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
 * Creativity and Market Success: Evidence from the movie industry (Jan 2018) (with Sharon Kim and [Shweta Gaonkar](http://shwetagaonkar.com))
 
