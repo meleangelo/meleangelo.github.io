@@ -28,12 +28,13 @@ My research studies how social interactions affect individual and aggregated eco
 
 
 ## Revisions
+* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMarch2019.pdf), November 2019, Conditionally accepted, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
+     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
+     + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
+
 * [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2018.pdf), December 2018, revision requested from *Journal of Business and Economic Statistics*
      + Old versions: [Sept 2017](files/homophily_sept2017.pdf)
 
-* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMarch2019.pdf), April 2019, Re-submitted to *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
-     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
-     + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
 
 * [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
 
