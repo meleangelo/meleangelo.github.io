@@ -36,7 +36,7 @@ My research studies how social interactions affect individual and aggregated eco
      + Old versions: [Sept 2017](files/homophily_sept2017.pdf)
 
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject  and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
 
 
 ## Working papers and work in progress
