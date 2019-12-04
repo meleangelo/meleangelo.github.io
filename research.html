@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -86,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -247,18 +247,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -362,14 +350,14 @@ $(document).ready(function () {
 <div id="revisions" class="section level2">
 <h2>Revisions</h2>
 <ul>
-<li><a href="files/homophily_dec2018.pdf">A Structural Model of Homophily and Clustering in Social Networks</a>, December 2018, revision requested from <em>Journal of Business and Economic Statistics</em>
-<ul>
-<li>Old versions: <a href="files/homophily_sept2017.pdf">Sept 2017</a></li>
-</ul></li>
-<li><a href="files/MeleZhuMarch2019.pdf">Approximate Variational Estimation for a Model of Network Formation</a>, April 2019, Re-submitted to <em>Review of Economics and Statistics</em> (with <a href="http://www.math.fsu.edu/People/faculty.php?id=1472">Lingjiong Zhu</a> )
+<li><a href="files/MeleZhuMarch2019.pdf">Approximate Variational Estimation for a Model of Network Formation</a>, November 2019, Conditionally accepted, <em>Review of Economics and Statistics</em> (with <a href="http://www.math.fsu.edu/People/faculty.php?id=1472">Lingjiong Zhu</a> )
 <ul>
 <li><a href="https://github.com/meleangelo/mfergm"><code>mfergm</code></a>: Replication package on Github</li>
 <li>Old versions: <a href="files/MeleZhuSeptember2017.pdf">Sept 2017</a> <a href="files/MeleZhuFeb2017.pdf">February 2017</a> <a href="http://networks.seas.harvard.edu/papers/mele_zhu.pdf">June 2015</a> <a href="https://arxiv.org/abs/1702.00308">Arxiv</a></li>
+</ul></li>
+<li><a href="files/homophily_dec2018.pdf">A Structural Model of Homophily and Clustering in Social Networks</a>, December 2018, revision requested from <em>Journal of Business and Economic Statistics</em>
+<ul>
+<li>Old versions: <a href="files/homophily_sept2017.pdf">Sept 2017</a></li>
 </ul></li>
 <li><a href="files/firmnetworks_ergm_dec2018">A model of inter-organizational network formation</a>, December 2018, Reject and Resubmit from <em>Organization Science</em> (with <a href="http://shwetagaonkar.com">Shweta Gaonkar</a>)</li>
 </ul>
@@ -408,6 +396,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
