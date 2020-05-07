@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -86,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -235,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -246,18 +246,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -337,7 +325,7 @@ $(document).ready(function () {
 
 <div id="at-johns-hopkins-university" class="section level2">
 <h2>At Johns Hopkins University</h2>
-<p>Nonlinear Econometrics for Finance, MS Finance</p>
+<p>Nonlinear Econometrics for Finance, MS Finance: Spring I 2020, Spring I 2021</p>
 <p>Networked Organizations, Global MBA: Spring II 2012, 2013, Fall I 2014, 2015 and 2016</p>
 <p>Networked Organizations, Exec MBA: Summer 2012, 2013, 2014, 2015</p>
 <p>Statistical Analysis, MS Finance: Fall I 2018</p>
@@ -348,9 +336,6 @@ $(document).ready(function () {
 <h2>Short Courses</h2>
 <p>Social and Economic Networks: PhD level, University of Cagliari, Italy, July 2017</p>
 <p>Guest lecture: Computational Social Science, Sociology Department, Johns Hopkins University, March 2019</p>
-</div>
-<div id="fun-stuff-in-italian-only-sorry" class="section level2">
-<h2>Fun stuff (in italian only, sorry)</h2>
 </div>
 
 
@@ -370,6 +355,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

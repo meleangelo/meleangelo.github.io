@@ -5,7 +5,7 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
-* [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), forthcoming *American Economic Journal: Economic Policy* (previously circulated as: Segregation in Social Networks: A structural approach)
+* [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), May 2020, *American Economic Journal: Economic Policy*, vol. 12, issue 2, pages 228-257 (previously circulated as: Segregation in Social Networks: A structural approach)
     + [Replication files](https://github.com/meleangelo/segnet)    
       
 
@@ -32,8 +32,8 @@ My research studies how social interactions affect individual and aggregated eco
      + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
      + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
 
-* [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2018.pdf), December 2018, revision requested from *Journal of Business and Economic Statistics*
-     + Old versions: [Sept 2017](files/homophily_sept2017.pdf)
+* [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), May2020, resubmitted to *Journal of Business and Economic Statistics*
+     + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
 
 
 * [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject  and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
