@@ -36,7 +36,7 @@ My research studies how social interactions affect individual and aggregated eco
      + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
 
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject  and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject  and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
 
 ## Working papers and work in progress
@@ -45,9 +45,20 @@ My research studies how social interactions affect individual and aggregated eco
 
 * [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
-* Creativity and Market Success: Evidence from the movie industry (Jan 2018) (with Sharon Kim and [Shweta Gaonkar](http://shwetagaonkar.com))
+* Creativity and Market Success: Evidence from the movie industry (Jan 2018) (with Sharon Kim and [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
 * Approximate Variational Inference for a Model of Social Interactions (December 2016)
+
+## New and in progress
+
+* Estimation of dynamic random dot product graphs (with Avanti Athreya, Joshua Cape, Lingxin Hao, Cong Mu and Carey Priebe)
+
+* Business card networks (with Juan Nelson Martinez Dahbura and Takanori Nishida)
+
+* Model-based subsequent inference in stochastic blockmodel graphs with vertex covariates via spectral methods  (with Cong Mu, Avanti Athreya, Joshua Cape, Lingxin Hao and Carey Priebe)
+
+* Latent Communities in Employment Relation and Wage Distribution: A Network Approach (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe)
+
 
 ## Old stuff
 
