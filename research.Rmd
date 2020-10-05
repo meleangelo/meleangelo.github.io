@@ -57,7 +57,7 @@ My research studies how social interactions affect individual and aggregated eco
 
 * Estimation of dynamic random dot product graphs (with Avanti Athreya, Joshua Cape, Lingxin Hao, Cong Mu and Carey Priebe)
 
-* Business card networks (with Juan Nelson Martinez Dahbura and Takanori Nishida)
+* Business card networks (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu)
 
 
 
