@@ -31,27 +31,26 @@ My research studies how social interactions affect individual and aggregated eco
 * [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMarch2019.pdf), November 2019, Conditionally accepted, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
      + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
      + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
-
+      
+     
 * [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), May2020, Conditionally accepted *Journal of Business and Economic Statistics*
      + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
 
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), December 2018, Reject  and Resubmit from *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), Re-submitted to *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
 
+* Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), September 2020, Reject and Resubmit at  *Strategic Entrepreneurship Journal*
 
-## Working papers and work in progress
+* [On identifying unobserved heterogeneity in stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Reject and Resubmit
+
+## Working and submitted papers
 
 * [Spectral inference for large stochastic blockmodels with nodal covariates](files/grdpg_august2019.pdf), July 2019 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Submitted
-
-* [On identifying unobserved heterogeneity in stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Submitted
 
 * **Title omitted because of double blind submission** (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe), Submitted
 
 * [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
-* Creativity and Market Success: Evidence from the movie industry (Jan 2018) (with Sharon Kim and [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
-
-* Approximate Variational Inference for a Model of Social Interactions (December 2016)
 
 ## New and in progress
 
@@ -59,12 +58,11 @@ My research studies how social interactions affect individual and aggregated eco
 
 * Business card networks (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu)
 
-
-
-* Latent Communities in Employment Relation and Wage Distribution: A Network Approach (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe)
+* Latent Communities in Employment Relations and Wage Distribution: A Network Approach (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe)
 
 
 ## Old stuff
+* Approximate Variational Inference for a Model of Social Interactions (December 2016)
 
 * [Racial Segregation and Public School Expenditure](files/LaFerraraMele.pdf) (2006) (with [Eliana La Ferrara](http://didattica.unibocconi.eu/mypage/index.php?IdUte=49273&cognome=LA%20FERRARA&nome=ELIANA&urlBackMy=) )
 
