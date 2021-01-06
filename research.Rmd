@@ -5,6 +5,11 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
+* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMay2020.pdf), May 2020, forhtcoming, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
+     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
+     + Old versions: [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
+      
+     
 * [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), May 2020, *American Economic Journal: Economic Policy*, vol. 12, issue 2, pages 228-257 (previously circulated as: Segregation in Social Networks: A structural approach)
     + [Replication files](https://github.com/meleangelo/segnet)    
       
@@ -28,11 +33,6 @@ My research studies how social interactions affect individual and aggregated eco
 
 
 ## Revisions
-* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMarch2019.pdf), November 2019, Conditionally accepted, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
-     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
-     + Old versions: [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
-      
-     
 * [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), May2020, Conditionally accepted *Journal of Business and Economic Statistics*
      + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
 
