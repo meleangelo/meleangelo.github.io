@@ -5,7 +5,7 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
-* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMay2020.pdf), May 2020, forhtcoming, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
+* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMay2020.pdf), May 2020, forthcoming, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
      + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
      + Old versions: [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
       
