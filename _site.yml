@@ -3,6 +3,8 @@ output_dir: "."
 navbar:
   title: "Angelo Mele"
   left:
+    - text: "CV"
+      href: cv.pdf
     - text: "Research"
       href: research.html
     - text: "Teaching"
