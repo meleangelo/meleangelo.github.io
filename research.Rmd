@@ -41,11 +41,13 @@ My research studies how social interactions affect individual and aggregated eco
 
 * Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), September 2020, Reject and Resubmit at  *Strategic Entrepreneurship Journal*
 
-* [On identifying unobserved heterogeneity in stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Reject and Resubmit
+* [On spectral algorithms for community detection in
+stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Resubmitted
 
 ## Working and submitted papers
 
-* [Spectral inference for large stochastic blockmodels with nodal covariates](files/grdpg_august2019.pdf), July 2019 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Submitted
+* [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), March 2021 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Submitted
+   + Old versions: [August 2019](files/grdpg_august2019.pdf)
 
 * **Title omitted because of double blind submission** (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe), Submitted
 
@@ -56,7 +58,7 @@ My research studies how social interactions affect individual and aggregated eco
 
 * Estimation of dynamic random dot product graphs (with Avanti Athreya, Joshua Cape, Lingxin Hao, Cong Mu and Carey Priebe)
 
-* Business card networks (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu)
+* An econometric analysis of business card exchange networks (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu)
 
 * Latent Communities in Employment Relations and Wage Distribution: A Network Approach (with Lingxin Hao, Avanti Athreya, Joshua Cape, Cong Mu and Carey Priebe)
 
