@@ -37,12 +37,13 @@ My research studies how social interactions affect individual and aggregated eco
      + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
 
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_dec2018), Re-submitted to *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), Sept 2020, Re-submitted to *Organization Science* (with [Shweta Gaonkar](http://shwetagaonkar.com))
+    + Old versions: [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
 
 * Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), September 2020, Reject and Resubmit at  *Strategic Entrepreneurship Journal*
 
 * [On spectral algorithms for community detection in
-stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Resubmitted
+stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), Feb 2021, Resubmitted
 
 ## Working and submitted papers
 
