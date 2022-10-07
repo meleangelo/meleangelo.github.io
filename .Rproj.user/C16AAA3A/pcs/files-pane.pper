@@ -1,9 +1,9 @@
 {
-    "path" : "~/Dropbox/homepageUIUC/github/meleangelo.github.io/files",
-    "sortOrder" : [
+    "path": "~/Dropbox/homepageUIUC/github/meleangelo.github.io/files",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }
