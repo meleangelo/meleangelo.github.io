@@ -1,17 +1,27 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="images/Angelo_Mele.jpg" style="width:30%; border:4px solid; margin-right: 4px" align="left">
+<img src="images/Angelo_Mele.jpg" style="width:25%; border:4px solid; margin-right: 12px" align="left">
 
-I am an Associate Professor of Economics (without tenure) at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
+I am an Associate Professor of Economics (untenured) at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
 
 [**Curriculum Vitae**](cv.pdf)   
-   
-       
-I study how social interactions shape individual and aggregate 
-socioeconomic outcomes, using tools from economic theory, 
-econometrics, applied probability and computational methods.
 
-I received a PhD in Economics from [University of Illinois at Urbana-Champaign](https://economics.illinois.edu), a Master of Arts in Economics from [New York University](https://as.nyu.edu/econ.html) and a Laurea in Economia Politica from [Bocconi University](https://www.unibocconi.eu/)
+**Email**: [angelo.mele@jhu.edu](mailto:angelo.mele@jhu.edu)  
+       
+I study how social and strategic interactions shape individual and aggregate 
+socioeconomic outcomes, using tools from economic theory, 
+econometrics, machine learning, applied probability and computational methods.
+
+
+
+### News
+[January 2023](): [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext) with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472), is now out in the  *Review of Economics and Statistics*  105 (1): 113–124. We show that a mean-field variational approximation of the ERGM normalizing constant has vanishingly small error in large networks. We suggest a simple iterative algorithm to estimate the model that scales in order $n^2$ steps.
+
+[January 2023](): New paper [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf) with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida, forthcoming at *AEA Papers and Proceedings*. We study the formation of professional networks using data from Eight, a contact management and social network app from Sansan, Inc. in Japan. We find homophily and shared contacts are the main determinants of professional contacts, using a structural modeling approach and a scalable estimation method for large networks.
+
+[January 2023](): New working paper [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082) with [Co-Pierre Georg](https://cogeorg.github.io). We study the emergence of dependency networks among software packages, guided by a structural model of network formation. We find evidence that externalities, competition and homophily contribute to the shape of the dependency network.
+
+[October 2022](): Our paper [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf)with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/), is forthcoming at *Journal of Business and Economic Statistics*. We show that we can estimate SBMs with discrete nodal covariates using Adjacency Spectral Embeddings (ASE). This method scales very well with the size of the network and faster than variational EM algorithms. We also provide a CLT for the estimated covariate parameters. Works well in a random effect approach, and for most (nondegenerate) fixed effects approaches.
 
 

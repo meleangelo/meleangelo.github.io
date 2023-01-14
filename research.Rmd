@@ -5,26 +5,29 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
-* [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), Jan 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), forthcoming at *AEA Papers and Proceedings*
+* [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext), Jan 2023, *Review of Economics and Statistics*  105 (1): 113–124 (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
+     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
+     + Old versions: [Accepted Version: May 2020](files/MeleZhuMay2020.pdf)  [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)         
+     &nbsp;
+      
+* [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), Jan 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), forthcoming at *AEA Papers and Proceedings*&nbsp;
 
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), Oct 2022 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), forthcoming at *Journal of Business and Economic Statistics*
    + Old versions: [August 2019](files/grdpg_august2019.pdf)
-   + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs
-
+   + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs 
+&nbsp;         
+   
 * [On spectral algorithms for community detection in
 stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), August 2021, forthcoming, *IEEE Transactions of Network Science and Engineering* ([journal link](https://ieeexplore.ieee.org/document/9782588))
+&nbsp;
 
 * [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), May2020, forthcoming, *Journal of Business and Economic Statistics* ([journal version](https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1930013))
-     + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)
+     + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)    
+&nbsp;    
 
-
-* [Approximate Variational Estimation for a Model of Network Formation](files/MeleZhuMay2020.pdf), May 2020, forthcoming, *Review of Economics and Statistics* (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
-     + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
-     + Old versions: [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)
-      
-     
 * [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), May 2020, *American Economic Journal: Economic Policy*, vol. 12, issue 2, pages 228-257 (previously circulated as: Segregation in Social Networks: A structural approach)
-    + [Replication files](https://github.com/meleangelo/segnet)    
+    + [Replication files](https://github.com/meleangelo/segnet)       
+&nbsp;    
       
 
 * [A structural model of dense network formation](files/bayesnet_march2016.pdf), May 2017, *Econometrica*, vol. 85, issue 3, pages 825-850 [(published version)](https://www.econometricsociety.org/publications/econometrica/2017/05/01/structural-model-dense-network-formation)
@@ -32,7 +35,7 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
     + [`netnew`](https://github.com/meleangelo/netnew): R package for replication
     + Old versions: [November 2011](files/bayesnet_oct2011.pdf)  [July 2013](files/bayesnet_july2013.pdf) [March 2015](files/bayesnet_march2015.pdf)
     + [Old codes](files/bayesnet_replic.zip) for July 2013 version    
-
+&nbsp;
 
 * [Viral Altruism? Generosity and social contagion in online networks](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2441467), March 2016, *Sociological Science* (with [Mario Macis](https://sites.google.com/site/mmacis/) and [Nicola Lacetera](https://sites.google.com/site/nicolacetera/) )
 
@@ -52,11 +55,12 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 * [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), May 2022, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com))
     + Old versions: [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
-    + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).
-
+    + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
+&nbsp;
 
 * [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), August 2021
-  + [lighthergm](https://github.com/sansan-inc/lighthergm): R library for scalable estimation of HERGMs
+  + [lighthergm](https://github.com/sansan-inc/lighthergm): R library for scalable estimation of HERGMs    
+&nbsp;
 
 
 * [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
