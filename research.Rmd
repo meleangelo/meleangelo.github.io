@@ -14,8 +14,9 @@ My research studies how social interactions affect individual and aggregated eco
 
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), Oct 2022 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), forthcoming at *Journal of Business and Economic Statistics*
    + Old versions: [August 2019](files/grdpg_august2019.pdf)
-   + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs 
-&nbsp;         
+   + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs     
+&nbsp;   
+
    
 * [On spectral algorithms for community detection in
 stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), August 2021, forthcoming, *IEEE Transactions of Network Science and Engineering* ([journal link](https://ieeexplore.ieee.org/document/9782588))
