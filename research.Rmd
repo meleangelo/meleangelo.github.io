@@ -22,7 +22,7 @@ My research studies how social interactions affect individual and aggregated eco
 stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.02156)  (with Cong Mu, Avanti Athreya, [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), August 2021, forthcoming, *IEEE Transactions of Network Science and Engineering* ([journal link](https://ieeexplore.ieee.org/document/9782588))
 &nbsp;
 
-* [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), May2020, forthcoming, *Journal of Business and Economic Statistics* ([journal version](https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1930013))
+* [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), (June 2022), *Journal of Business and Economic Statistics*, vol. 40, issue 3, pages 1377-1389 ([journal version](https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1930013))
      + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)    
 &nbsp;    
 
