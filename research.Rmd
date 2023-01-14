@@ -5,6 +5,8 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
+* [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), Jan 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), forthcoming at *AEA Papers and Proceedings*
+
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), Oct 2022 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), forthcoming at *Journal of Business and Economic Statistics*
    + Old versions: [August 2019](files/grdpg_august2019.pdf)
    + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs
@@ -44,6 +46,8 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 
 ## Working papers,  submitted, revised
+* [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082), Jan 2023 (with [Co-Pierre Georg](https://cogeorg.github.io)) 
+
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
 * [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), May 2022, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com))
