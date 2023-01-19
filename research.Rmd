@@ -54,12 +54,12 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), May 2022, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com))
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), May 2022, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com)) Revision Requested,  *Journal of Economic Behavior and Organization*
     + Old versions: [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
     + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
 &nbsp;
 
-* [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), August 2021
+* [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), August 2021 *new version coming soon*
   + [lighthergm](https://github.com/sansan-inc/lighthergm): R library for scalable estimation of HERGMs    
 &nbsp;
 
