@@ -5,6 +5,8 @@
 
 I am an Associate Professor of Economics (untenured) at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
 
+In Fall 2023, I will be in Sabbatical Leave at UPENN Economics department. 
+
 [**Curriculum Vitae**](cv.pdf)   
 
 **Email**: [angelo.mele@jhu.edu](mailto:angelo.mele@jhu.edu)  
@@ -16,6 +18,10 @@ econometrics, machine learning, applied probability and computational methods.
 
 
 ### News
+[May 2023](): [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), is now out in *AEA Papers and Proceedings 2023*. We study the formation of professional networks using data from Eight, a contact management and social network app from Sansan, Inc. in Japan. We find homophily and shared contacts are the main determinants of professional contacts, using a structural modeling approach and a scalable estimation method for large networks.
+
+[April 2023](): I have received an [IDIES Seed Funding Grant](https://www.idies.jhu.edu/2023-seed-awardees/) to study software dependency networks (with [Co-Pierre Georg](https://cogeorg.github.io)). 
+
 [January 2023](): [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext) with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472), is now out in the  *Review of Economics and Statistics*  105 (1): 113–124. We show that a mean-field variational approximation of the ERGM normalizing constant has vanishingly small error in large networks. We suggest a simple iterative algorithm to estimate the model that scales in order $n^2$ steps.
 
 [January 2023](): New paper [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf) with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida, forthcoming at *AEA Papers and Proceedings*. We study the formation of professional networks using data from Eight, a contact management and social network app from Sansan, Inc. in Japan. We find homophily and shared contacts are the main determinants of professional contacts, using a structural modeling approach and a scalable estimation method for large networks.

@@ -5,13 +5,13 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
+* [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), May 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida),  *AEA Papers and Proceedings 2023*&nbsp;
+
 * [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext), Jan 2023, *Review of Economics and Statistics*  105 (1): 113–124 (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
      + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
      + Old versions: [Accepted Version: May 2020](files/MeleZhuMay2020.pdf)  [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)         
      &nbsp;
       
-* [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), Jan 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), forthcoming at *AEA Papers and Proceedings*&nbsp;
-
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), Oct 2022 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), forthcoming at *Journal of Business and Economic Statistics*
    + Old versions: [August 2019](files/grdpg_august2019.pdf)
    + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs     
@@ -54,8 +54,8 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_sept2020.pdf), May 2022, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com)) Revision Requested,  *Journal of Economic Behavior and Organization*
-    + Old versions: [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
+* [A model of inter-organizational network formation](files/firmnetworks_ergm_may2023.pdf), May 2023, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com)) Revision submitted,  *Journal of Economic Behavior and Organization*
+    + Old versions: [sept 2020](files/firmnetworks_ergm_sept2020.pdf) [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
     + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
 &nbsp;
 
