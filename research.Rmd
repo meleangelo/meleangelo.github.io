@@ -5,6 +5,11 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
+* [A model of inter-organizational network formation](https://www.sciencedirect.com/science/article/abs/pii/S0167268123002615) (with [Shweta Gaonkar](http://shwetagaonkar.com)), October 2023,   *Journal of Economic Behavior and Organization* 214: 82-104
+    + Old versions: [may 2023](files/firmnetworks_ergm_may2023.pdf) [sept 2020](files/firmnetworks_ergm_sept2020.pdf) [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
+    + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
+&nbsp;
+
 * [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), May 2023 (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida),  *AEA Papers and Proceedings 2023*&nbsp;
 
 * [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext), Jan 2023, *Review of Economics and Statistics*  105 (1): 113–124 (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
@@ -53,11 +58,6 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 * [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082), Jan 2023 (with [Co-Pierre Georg](https://cogeorg.github.io)) 
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
-
-* [A model of inter-organizational network formation](files/firmnetworks_ergm_may2023.pdf), May 2023, submitted (with [Shweta Gaonkar](http://shwetagaonkar.com)) Revision submitted,  *Journal of Economic Behavior and Organization*
-    + Old versions: [sept 2020](files/firmnetworks_ergm_sept2020.pdf) [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
-    + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
-&nbsp;
 
 * [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), August 2021 *new version coming soon*
   + [lighthergm](https://github.com/sansan-inc/lighthergm): R library for scalable estimation of HERGMs    

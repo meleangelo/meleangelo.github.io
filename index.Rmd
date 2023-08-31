@@ -18,6 +18,10 @@ econometrics, machine learning, applied probability and computational methods.
 
 
 ### News
+[August 2023](): I started my sabbatical at UPENN Economics Department. 
+
+[August 2023](): [A model of inter-organizational network formation](files/firmnetworks_ergm_may2023.pdf) (with [Shweta Gaonkar](http://shwetagaonkar.com)) has been accepted at *Journal of Economic Behavior and Organization*. We study a model of network formation with application to the venture capital co-investment decisions. We also show how entry or minimum capital requirements modify the structure of the network, by simulating the estimated model in these couterfactual scenarios. 
+
 [May 2023](): [Homophily and Community Structure at Scale: An Application to a Large Professional Network](files/PP-Article.pdf), (with Juan Nelson Martinez Dahbura, Shota Komatsu and Takanori Nishida), is now out in *AEA Papers and Proceedings 2023*. We study the formation of professional networks using data from Eight, a contact management and social network app from Sansan, Inc. in Japan. We find homophily and shared contacts are the main determinants of professional contacts, using a structural modeling approach and a scalable estimation method for large networks.
 
 [April 2023](): I have received an [IDIES Seed Funding Grant](https://www.idies.jhu.edu/2023-seed-awardees/) to study software dependency networks (with [Co-Pierre Georg](https://cogeorg.github.io)). 
