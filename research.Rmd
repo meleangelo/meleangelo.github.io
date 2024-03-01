@@ -5,7 +5,7 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
-* [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), Oct 2022 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), *Journal of Business and Economic Statistics* 41(4), pp 1364-1376
+* [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), December 2023 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), *Journal of Business and Economic Statistics* 41(4), pp 1364-1376
    + Old versions: [August 2019](files/grdpg_august2019.pdf)
    + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs     
 &nbsp;   
