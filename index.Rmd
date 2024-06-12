@@ -3,7 +3,7 @@
 
 <img src="images/Angelo_Mele.jpg" style="width:25%; border:4px solid; margin-right: 12px" align="left">
 
-I am an Associate Professor of Economics (untenured) at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), and the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu).
+I am an Associate Professor of Economics at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu) and the [Data Science and AI Institute](https://ai.jhu.edu).
 
 
 [**Curriculum Vitae**](cv.pdf)   
