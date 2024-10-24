@@ -6,12 +6,12 @@ My research studies how social interactions affect individual and aggregated eco
 
 ## Publications
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), December 2023 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), *Journal of Business and Economic Statistics* 41(4), pp 1364-1376
-   + Old versions: [August 2019](files/grdpg_august2019.pdf)
+<!-- + Old versions: [August 2019](files/grdpg_august2019.pdf) -->
    + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs     
 &nbsp;   
 
 * [A model of inter-organizational network formation](https://www.sciencedirect.com/science/article/abs/pii/S0167268123002615) (with [Shweta Gaonkar](http://shwetagaonkar.com)), October 2023,   *Journal of Economic Behavior and Organization* 214: 82-104
-    + Old versions: [may 2023](files/firmnetworks_ergm_may2023.pdf) [sept 2020](files/firmnetworks_ergm_sept2020.pdf) [Dec 2018](files/firmnetworks_ergm_dec2018.pdf)
+<!--    + Old versions: [may 2023](files/firmnetworks_ergm_may2023.pdf) [sept 2020](files/firmnetworks_ergm_sept2020.pdf) [Dec 2018](files/firmnetworks_ergm_dec2018.pdf) -->
     + [Example of code](files/OnlineAppendix.pdf) and [data](files/data.RData): files to explain the estimation and counterfactual simulations in the paper. Data are fake (we cannot share the original data).    
 &nbsp;
 
@@ -19,7 +19,7 @@ My research studies how social interactions affect individual and aggregated eco
 
 * [Approximate Variational Estimation for a Model of Network Formation](https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext), Jan 2023, *Review of Economics and Statistics*  105 (1): 113–124 (with [Lingjiong Zhu](http://www.math.fsu.edu/People/faculty.php?id=1472) )
      + [`mfergm`](https://github.com/meleangelo/mfergm): Replication package	on Github
-     + Old versions: [Accepted Version: May 2020](files/MeleZhuMay2020.pdf)  [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)         
+<!--     + Old versions: [Accepted Version: May 2020](files/MeleZhuMay2020.pdf)  [March 2019](files/MeleZhuMarch2019.pdf) [Sept 2017](files/MeleZhuSeptember2017.pdf) [February 2017](files/MeleZhuFeb2017.pdf) [June 2015](http://networks.seas.harvard.edu/papers/mele_zhu.pdf)  [Arxiv](https://arxiv.org/abs/1702.00308)   -->      
      &nbsp;
       
 
@@ -29,7 +29,7 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 &nbsp;
 
 * [A Structural Model of Homophily and Clustering in Social Networks](files/homophily_dec2019_revisionJBES.pdf), (June 2022), *Journal of Business and Economic Statistics*, vol. 40, issue 3, pages 1377-1389 ([journal version](https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1930013))
-     + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)    
+<!--     + Old versions: [Dec 2018](files/homophily_dec2018.pdf) [Sept 2017](files/homophily_sept2017.pdf)    -->
 &nbsp;    
 
 * [Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools](files/segnet_revisionAEJ.pdf), May 2020, *American Economic Journal: Economic Policy*, vol. 12, issue 2, pages 228-257 (previously circulated as: Segregation in Social Networks: A structural approach)
@@ -40,9 +40,10 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 * [A structural model of dense network formation](files/bayesnet_march2016.pdf), May 2017, *Econometrica*, vol. 85, issue 3, pages 825-850 [(published version)](https://www.econometricsociety.org/publications/econometrica/2017/05/01/structural-model-dense-network-formation)
     + Online appendices: [A](files/bayesnet_march2016_appendixA.pdf) [B](files/bayesnet_march2016_appendixB.pdf) [C](files/bayesnet_march2016_appendixC.pdf) [D](files/bayesnet_march2016_appendixD.pdf) [E](files/bayesnet_march2016_appendixE.pdf)
     + [`netnew`](https://github.com/meleangelo/netnew): R package for replication
-    + Old versions: [November 2011](files/bayesnet_oct2011.pdf)  [July 2013](files/bayesnet_july2013.pdf) [March 2015](files/bayesnet_march2015.pdf)
-    + [Old codes](files/bayesnet_replic.zip) for July 2013 version    
+<!--    + Old versions: [November 2011](files/bayesnet_oct2011.pdf)  [July 2013](files/bayesnet_july2013.pdf) [March 2015](files/bayesnet_march2015.pdf)
+    + [Old codes](files/bayesnet_replic.zip) for July 2013 version    -->
 &nbsp;
+
 
 * [Viral Altruism? Generosity and social contagion in online networks](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2441467), March 2016, *Sociological Science* (with [Mario Macis](https://sites.google.com/site/mmacis/) and [Nicola Lacetera](https://sites.google.com/site/nicolacetera/) )
 
@@ -56,7 +57,7 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 
 ## Working papers,  submitted, revised
-* [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082), Feb 2024 (with Cornelius Fritz, [Co-Pierre Georg](https://cogeorg.github.io) and Michael Schweinberger)
+* [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082), (with Cornelius Fritz, [Co-Pierre Georg](https://cogeorg.github.io) and Michael Schweinberger)
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
@@ -65,13 +66,13 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 &nbsp;
 
 
-* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), November 2018 (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
+* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
 
-* Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), September 2020, Reject and Resubmit at  *Strategic Entrepreneurship Journal*
+* Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), Reject and Resubmit at  *Strategic Entrepreneurship Journal*
 
 ## New and in progress
 
-* Spectral estimation of a dynamic network formation model (2021) (with Avanti Athreya, Joshua Cape, Cong Mu, Lingxing Hao and Carey Priebe)
+* Spectral estimation of a dynamic network formation model (with Avanti Athreya, Joshua Cape, Cong Mu, Lingxing Hao and Carey Priebe)
 * A variational exchange algorithm for Bayesian estimation of ERGM models
 * Microeconomic foundations of a latent position network model
 * Network (video)games (with Micah Pollak and Phil Solimine)
@@ -79,9 +80,9 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 
 ## Old stuff
-* Approximate Variational Inference for a Model of Social Interactions (December 2016)
+* Approximate Variational Inference for a Model of Social Interactions 
 
-* [Racial Segregation and Public School Expenditure](files/LaFerraraMele.pdf) (2006) (with [Eliana La Ferrara](http://didattica.unibocconi.eu/mypage/index.php?IdUte=49273&cognome=LA%20FERRARA&nome=ELIANA&urlBackMy=) )
+* [Racial Segregation and Public School Expenditure](files/LaFerraraMele.pdf) (with [Eliana La Ferrara](http://didattica.unibocconi.eu/mypage/index.php?IdUte=49273&cognome=LA%20FERRARA&nome=ELIANA&urlBackMy=) )
 
-* [Who is afraid of the big bad wolf? Do pedophiles live closer to schools?](files/sexoff_paper.pdf) (2008)
+* [Who is afraid of the big bad wolf? Do pedophiles live closer to schools?](files/sexoff_paper.pdf) 
 
