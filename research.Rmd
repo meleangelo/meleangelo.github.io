@@ -57,7 +57,7 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 
 ## Working papers,  submitted, revised
-* [A Strategic Model of Software Dependency Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082), (with Cornelius Fritz, [Co-Pierre Georg](https://cogeorg.github.io) and Michael Schweinberger)
+* [Vulnerability Webs: Systemic Risk in Software Networks](https://arxiv.org/abs/2402.13375), (with Cornelius Fritz, [Co-Pierre Georg](https://cogeorg.github.io) and Michael Schweinberger)
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
