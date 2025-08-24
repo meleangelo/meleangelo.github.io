@@ -1,22 +1,33 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+---
+
+---
+
 <img src="images/Angelo_Mele.jpg" style="width:20%; border:4px solid; margin-right: 12px" align="left">
 
-I am an Associate Professor of Economics at Johns Hopkins University, [Carey Business School](https://carey.jhu.edu), an affiliate of the [Hopkins Population Center](https://popcenter.jhu.edu), the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu) and the [Data Science and AI Institute](https://ai.jhu.edu).
 
-
-[**Curriculum Vitae**](cv.pdf)   
-
-**Email**: [angelo.mele@jhu.edu](mailto:angelo.mele@jhu.edu)  
-       
-I study how social and strategic interactions shape individual and aggregate 
-socioeconomic outcomes, using tools from economic theory, 
+I am an Economist and Data Scientist in the Pricing Algorithms team at Wayfair, where I use causal inference, machine learning and applied econometrics to optimize pricing. Before then, I was an Associate Professor of Applied Economics at Johns Hopkins University [Carey Business School](https://carey.jhu.edu) where I studied how social and strategic interactions shape individual and aggregate 
+socioeconomic outcomes, using a mix of economic theory, 
 econometrics, machine learning, applied probability and computational methods.
+I also had affiliations at the [Hopkins Population Center](https://popcenter.jhu.edu), the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu) and the [Data Science and AI Institute](https://ai.jhu.edu).
 
 
+[**Academic CV**](cv.pdf)   
 
-### News
+**Email**: [meleangelo@gmail.com](mailto:meleangelo@gmail.com)  
+
+
+---
+
+---
+
+### News and Updates
+[Summer 2025](): I joined Wayfair as an Economist.
+
+[April 2025](): Seminar at George Mason University, Department of Statistics
+
 [November 2024](): New version of the paper on software networks, with new title [Vulnerability Webs: Systemic Risk in Software Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5013411)
 
 [November 15, 2024](): Seminar presentation at University of Glasgow

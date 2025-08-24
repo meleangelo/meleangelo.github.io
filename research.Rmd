@@ -5,6 +5,9 @@ title: "Research"
 My research studies how social interactions affect individual and aggregated economic performance. 
 
 ## Publications
+* [A Strategic Model of Software Dependency Networks](https://dl.acm.org/doi/10.1145/3670865.3673519) December 2024, with Cornelius Fritz, Co-Pierre Georg, Michael Schweinberger
+*Proceedings of the 25th ACM Conference on Economics and Computation EC24*, pp 863-892
+
 * [Spectral estimation of large stochastic blockmodels with discrete nodal covariates](files/grdpg_march2021.pdf), December 2023 (with [Lingxin Hao](https://soc.jhu.edu/directory/lingxin-hao), [Joshua Cape](https://jcape1.github.io) and [Carey Priebe](https://www.ams.jhu.edu/~priebe/)), *Journal of Business and Economic Statistics* 41(4), pp 1364-1376
 <!-- + Old versions: [August 2019](files/grdpg_august2019.pdf) -->
    + [grdpg](https://github.com/meleangelo/grdpg): R package to implement spectral methods for SBMs     
@@ -57,18 +60,20 @@ stochastic blockmodel graphs with vertex covariates](https://arxiv.org/abs/2007.
 
 
 ## Working papers,  submitted, revised
+* [Estimating Network Models using Neural Networks](https://arxiv.org/abs/2502.01810), preliminary
+
 * [Vulnerability Webs: Systemic Risk in Software Networks](https://arxiv.org/abs/2402.13375), (with Cornelius Fritz, [Co-Pierre Georg](https://cogeorg.github.io) and Michael Schweinberger), Submitted
 
 * Latent Communities in Employment Relations and Wage Distributions: A Network Approach (with Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu and Carey Priebe), Submitted
 
-* [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), *new version coming soon*
+* [A structural model of business card exchange networks](https://arxiv.org/abs/2105.12704) (with Juan Nelson Martinez Dahbura, Takanori Nishida and Shota Komatsu), 
   + [lighthergm](https://github.com/sansan-inc/lighthergm): R library for scalable estimation of HERGMs    
 &nbsp;
 
 
-* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), (with [Shweta Gaonkar](http://shwetagaonkar.com)), *new version coming soon*
+* [A structural model of firm collaborations with unobserved heterogeneity](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047), (with [Shweta Gaonkar](http://shwetagaonkar.com)), 
 
-* Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com)), Reject and Resubmit at  *Strategic Entrepreneurship Journal*
+* Creativity and Market Success: Evidence from the movie industry (with [Shweta Gaonkar](http://shwetagaonkar.com))
 
 ## New and in progress
 
