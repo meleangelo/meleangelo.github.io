@@ -1,0 +1,8 @@
+# Single source of truth for footer and contact (structure §6.1)
+github: "https://github.com/meleangelo"
+linkedin: "https://www.linkedin.com/in/angelo-mele-b246182/"
+scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+x: "https://twitter.com/angelo_mele"
+email: "meleangelo@gmail.com"
+cv_pdf_path: "assets/files/cv.pdf"
+resume_pdf_path: "assets/files/resume.pdf"

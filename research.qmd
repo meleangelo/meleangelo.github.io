@@ -1,0 +1,104 @@
+---
+title: "Research"
+---
+
+My research studies how social interactions affect individual and aggregated economic performance.
+
+## Selected papers
+
+::: {.card .p-3 .mb-3}
+**A Strategic Model of Software Dependency Networks**  
+Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · *ACM EC24*, 2024
+
+Structural model of dependency networks among software packages; externalities, competition, homophily.
+
+[PDF](https://dl.acm.org/doi/10.1145/3670865.3673519)
+:::
+
+::: {.card .p-3 .mb-3}
+**Spectral estimation of large stochastic blockmodels with discrete nodal covariates**  
+Lingxin Hao, Joshua Cape, Angelo Mele, Carey Priebe · *JBES* 41(4), 2023
+
+ASE for SBMs with discrete covariates; scales well; CLT for covariate parameters.
+
+[PDF](files/grdpg_march2021.pdf) · [Code (grdpg)](https://github.com/meleangelo/grdpg)
+:::
+
+::: {.card .p-3 .mb-3}
+**A model of inter-organizational network formation**  
+Shweta Gaonkar, Angelo Mele · *Journal of Economic Behavior and Organization* 214, 2023
+
+Network formation with application to VC co-investment; entry and capital requirements counterfactuals.
+
+[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0167268123002615) · [Code/Data](files/OnlineAppendix.pdf)
+:::
+
+::: {.card .p-3 .mb-3}
+**Approximate Variational Estimation for a Model of Network Formation**  
+Lingjiong Zhu, Angelo Mele · *Review of Economics and Statistics* 105(1), 2023
+
+Mean-field variational approximation of ERGM normalizing constant; iterative $n^2$ algorithm.
+
+[PDF](https://direct.mit.edu/rest/article-abstract/105/1/113/98191) · [Code (mfergm)](https://github.com/meleangelo/mfergm)
+:::
+
+::: {.card .p-3 .mb-3}
+**A structural model of dense network formation**  
+*Econometrica* 85(3), 2017
+
+Structural model of dense network formation.
+
+[PDF](files/bayesnet_march2016.pdf) · [Published](https://www.econometricsociety.org/publications/econometrica/2017/05/01/structural-model-dense-network-formation) · [Code (netnew)](https://github.com/meleangelo/netnew)
+:::
+
+---
+
+## Topics
+
+Pricing / Platforms / Networks / Methods / Causal inference
+
+---
+
+## Full publications list
+
+### 2024
+
+- **A Strategic Model of Software Dependency Networks** — Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · *Proceedings of the 25th ACM Conference on Economics and Computation EC24*, pp 863–892 · [PDF](https://dl.acm.org/doi/10.1145/3670865.3673519)
+
+### 2023
+
+- **Spectral estimation of large stochastic blockmodels with discrete nodal covariates** — Lingxin Hao, Joshua Cape, Angelo Mele, Carey Priebe · *Journal of Business and Economic Statistics* 41(4), pp 1364–1376 · [PDF](files/grdpg_march2021.pdf) · [grdpg](https://github.com/meleangelo/grdpg)
+- **A model of inter-organizational network formation** — Shweta Gaonkar, Angelo Mele · *Journal of Economic Behavior and Organization* 214: 82–104 · [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0167268123002615) · [Code/Data](files/OnlineAppendix.pdf)
+- **Homophily and Community Structure at Scale** — Juan Nelson Martinez Dahbura, Shota Komatsu, Takanori Nishida, Angelo Mele · *AEA Papers and Proceedings 2023* · [PDF](files/PP-Article.pdf)
+- **Approximate Variational Estimation for a Model of Network Formation** — Lingjiong Zhu, Angelo Mele · *Review of Economics and Statistics* 105(1): 113–124 · [PDF](https://direct.mit.edu/rest/article-abstract/105/1/113/98191) · [mfergm](https://github.com/meleangelo/mfergm)
+
+### 2022
+
+- **On spectral algorithms for community detection in stochastic blockmodel graphs with vertex covariates** — Cong Mu, Avanti Athreya, Lingxin Hao, Joshua Cape, Carey Priebe, Angelo Mele · *IEEE Trans. Network Science and Engineering* 9(5) · [arXiv](https://arxiv.org/abs/2007.02156)
+- **A Structural Model of Homophily and Clustering in Social Networks** — *Journal of Business and Economic Statistics* 40(3), pp 1377–1389 · [PDF](files/homophily_dec2019_revisionJBES.pdf)
+
+### 2020
+
+- **Does school desegregation promote diverse interactions?** — *American Economic Journal: Economic Policy* 12(2), pp 228–257 · [PDF](files/segnet_revisionAEJ.pdf) · [segnet](https://github.com/meleangelo/segnet)
+
+### 2017
+
+- **A structural model of dense network formation** — *Econometrica* 85(3), pp 825–850 · [PDF](files/bayesnet_march2016.pdf) · [netnew](https://github.com/meleangelo/netnew)
+
+### 2016
+
+- **Viral Altruism? Generosity and social contagion in online networks** — Mario Macis, Nicola Lacetera, Angelo Mele · *Sociological Science*
+
+### Other
+
+- **Structural Models of Complementary Choices** — Steve Berry, Ahmed Khwaja, Vineet Kumar, Andres Musalem, Ken Wilbur, Greg Allenby, Bharat Anand, Pradeep Chintagunta, Michael Hanemann, Przemek Jeziorski, Angelo Mele · *Marketing Letters* 25(3), pp 245–256 · [PDF](files/ComplementaryChoices.pdf)
+- **Poisson Indices of Segregation** — *Regional Science and Urban Economics* 43, pp 65–85 · [PDF](files/pps_applied.pdf)
+
+---
+
+## Working papers / submitted
+
+- **Vulnerability Webs: Systemic Risk in Software Networks** — Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5013411)
+- **Estimating Network Models using Neural Networks** — [arXiv](https://arxiv.org/abs/2502.01810)
+- **A structural model of business card exchange networks** — Juan Nelson Martinez Dahbura, Takanori Nishida, Shota Komatsu, Angelo Mele · [arXiv](https://arxiv.org/abs/2105.12704) · [lighthergm](https://github.com/sansan-inc/lighthergm)
+- **A structural model of firm collaborations with unobserved heterogeneity** — Shweta Gaonkar, Angelo Mele · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047)

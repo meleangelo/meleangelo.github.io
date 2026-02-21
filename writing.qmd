@@ -1,0 +1,10 @@
+---
+title: "Writing"
+---
+
+Notes on pricing, causal inference, networks, and measurement — intuition, methods, and practical takeaways.
+
+::: {.callout-note}
+## Coming soon
+Posts will appear here. Add `.qmd` files under `posts/` with dates (e.g. `2026-02-21-slug.qmd`) and they will be listed automatically.
+:::

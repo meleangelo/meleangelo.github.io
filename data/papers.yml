@@ -1,0 +1,22 @@
+# Phase 2: wire research.qmd to render from this; Phase 1: pages can hardcode
+# Fields: title, authors, year, venue, abstract_blurb, tags, links (pdf, code, slides), featured
+- title: "A Strategic Model of Software Dependency Networks"
+  authors: "Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger"
+  year: 2024
+  venue: "ACM EC24"
+  abstract_blurb: "Structural model of dependency networks among software packages; externalities, competition, homophily."
+  tags: [networks, platforms, structural]
+  links:
+    pdf: "https://dl.acm.org/doi/10.1145/3670865.3673519"
+  featured: true
+
+- title: "Spectral estimation of large stochastic blockmodels with discrete nodal covariates"
+  authors: "Lingxin Hao, Joshua Cape, Angelo Mele, Carey Priebe"
+  year: 2023
+  venue: "Journal of Business and Economic Statistics"
+  abstract_blurb: "ASE for SBMs with discrete covariates; scales well; CLT for covariate parameters."
+  tags: [networks, methods]
+  links:
+    pdf: "files/grdpg_march2021.pdf"
+    code: "https://github.com/meleangelo/grdpg"
+  featured: true

@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: meleangelo@gmail.com\nLinkedIn: angelo-mele-b246182\nGitHub: meleangelo\nX (Twitter): @angelo_mele\n\nI’m happy to hear about:\n\nHiring conversations — pricing, causal inference, data science roles\nResearch collaborations — networks, structural models, causal measurement\nSpeaking — seminars, workshops, conferences"
+  },
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Notes on pricing, causal inference, networks, and measurement — intuition, methods, and practical takeaways.\n\n\n\n\n\n\nNoteComing soon\n\n\n\nPosts will appear here. Add .qmd files under posts/ with dates (e.g. 2026-02-21-slug.qmd) and they will be listed automatically."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Angelo Mele",
+    "section": "",
+    "text": "Economist & data scientist working on pricing, causal inference, and networked markets.\nI build measurement systems for demand and policy, and develop methods for inference at scale.\n\n\nPricing Algorithms (Wayfair)\nCausal Measurement\nNetwork Econometrics\nOpen-source R/Python\nPlatform Markets\n\n\nSelected work Contact\n\n\n\n\n\nPricing & demand\n\nPrice elasticity, promo effects, margin optimization\nDemand models (hierarchical, discrete choice, ML)\nResearch →\n\n\n\nCausal inference\n\nExperiments, quasi-experiments, DML at scale\nMeasurement systems for product and policy\nResearch →\n\n\n\nNetworks\n\nNetwork formation, structural models, embeddings\nSoftware and platform ecosystems\nResearch →\n\n\n\n\n\n\n\n\nPricing algorithms and causal measurement\nDemand and pricing optimization at scale; causal inference and ML in production.\nResearch\n\n\nSoftware dependency networks\nStructural model of package dependencies; systemic risk and vulnerability.\nPaper (EC24) · Research\n\n\nSpectral methods for stochastic blockmodels\nASE for SBMs with discrete covariates; scalable estimation and CLT.\nPDF · Code (grdpg) · Research\n\n\nApproximate variational estimation for network formation\nMean-field variational approximation for ERGM; \\(n^2\\) algorithm.\nPDF · Code (mfergm) · Research\n\n\n\n\n\nI am an Economist and Data Scientist in the Pricing Algorithms team at Wayfair, where I use causal inference, machine learning and applied econometrics to optimize pricing. Before that, I was an Associate Professor of Applied Economics at Johns Hopkins University (Carey Business School), where I studied how social and strategic interactions shape individual and aggregate outcomes, using economic theory, econometrics, ML, applied probability and computational methods. Affiliations included the Hopkins Population Center, Institute for Data Intensive Engineering and Science (DIES), and the Data Science and AI Institute. My academic research is published in top economics journals, such as Econometrica, Review of Economics and Statistics, Journal of Business and Economic Statistics, American Economic Journal, ACM EC, and others.\n\n\n\n\n\nJanuary 2026: Seminar at University of Central Florida\nDecember 2025: Seminar and visit at the Cowles Foundation - Yale University\nSummer 2025: Joined Wayfair as Economist (Pricing Algorithms).\nApril 2025: Seminar at George Mason University, Department of Statistics.\nNovember 2024: Vulnerability Webs: Systemic Risk in Software Networks — new version on SSRN.\n\nMore updates →"
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Angelo Mele",
+    "section": "",
+    "text": "Pricing & demand\n\nPrice elasticity, promo effects, margin optimization\nDemand models (hierarchical, discrete choice, ML)\nResearch →\n\n\n\nCausal inference\n\nExperiments, quasi-experiments, DML at scale\nMeasurement systems for product and policy\nResearch →\n\n\n\nNetworks\n\nNetwork formation, structural models, embeddings\nSoftware and platform ecosystems\nResearch →"
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Angelo Mele",
+    "section": "",
+    "text": "Pricing algorithms and causal measurement\nDemand and pricing optimization at scale; causal inference and ML in production.\nResearch\n\n\nSoftware dependency networks\nStructural model of package dependencies; systemic risk and vulnerability.\nPaper (EC24) · Research\n\n\nSpectral methods for stochastic blockmodels\nASE for SBMs with discrete covariates; scalable estimation and CLT.\nPDF · Code (grdpg) · Research\n\n\nApproximate variational estimation for network formation\nMean-field variational approximation for ERGM; \\(n^2\\) algorithm.\nPDF · Code (mfergm) · Research"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Angelo Mele",
+    "section": "",
+    "text": "I am an Economist and Data Scientist in the Pricing Algorithms team at Wayfair, where I use causal inference, machine learning and applied econometrics to optimize pricing. Before that, I was an Associate Professor of Applied Economics at Johns Hopkins University (Carey Business School), where I studied how social and strategic interactions shape individual and aggregate outcomes, using economic theory, econometrics, ML, applied probability and computational methods. Affiliations included the Hopkins Population Center, Institute for Data Intensive Engineering and Science (DIES), and the Data Science and AI Institute. My academic research is published in top economics journals, such as Econometrica, Review of Economics and Statistics, Journal of Business and Economic Statistics, American Economic Journal, ACM EC, and others."
+  },
+  {
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
+    "title": "Angelo Mele",
+    "section": "",
+    "text": "January 2026: Seminar at University of Central Florida\nDecember 2025: Seminar and visit at the Cowles Foundation - Yale University\nSummer 2025: Joined Wayfair as Economist (Pricing Algorithms).\nApril 2025: Seminar at George Mason University, Department of Statistics.\nNovember 2024: Vulnerability Webs: Systemic Risk in Software Networks — new version on SSRN.\n\nMore updates →"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research studies how social interactions affect individual and aggregated economic performance."
+  },
+  {
+    "objectID": "research.html#selected-papers",
+    "href": "research.html#selected-papers",
+    "title": "Research",
+    "section": "Selected papers",
+    "text": "Selected papers\n\nA Strategic Model of Software Dependency Networks\nCornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · ACM EC24, 2024\nStructural model of dependency networks among software packages; externalities, competition, homophily.\nPDF\n\n\nSpectral estimation of large stochastic blockmodels with discrete nodal covariates\nLingxin Hao, Joshua Cape, Angelo Mele, Carey Priebe · JBES 41(4), 2023\nASE for SBMs with discrete covariates; scales well; CLT for covariate parameters.\nPDF · Code (grdpg)\n\n\nA model of inter-organizational network formation\nShweta Gaonkar, Angelo Mele · Journal of Economic Behavior and Organization 214, 2023\nNetwork formation with application to VC co-investment; entry and capital requirements counterfactuals.\nPDF · Code/Data\n\n\nApproximate Variational Estimation for a Model of Network Formation\nLingjiong Zhu, Angelo Mele · Review of Economics and Statistics 105(1), 2023\nMean-field variational approximation of ERGM normalizing constant; iterative \\(n^2\\) algorithm.\nPDF · Code (mfergm)\n\n\nA structural model of dense network formation\nEconometrica 85(3), 2017\nStructural model of dense network formation.\nPDF · Published · Code (netnew)"
+  },
+  {
+    "objectID": "research.html#topics",
+    "href": "research.html#topics",
+    "title": "Research",
+    "section": "Topics",
+    "text": "Topics\nPricing / Platforms / Networks / Methods / Causal inference"
+  },
+  {
+    "objectID": "research.html#full-publications-list",
+    "href": "research.html#full-publications-list",
+    "title": "Research",
+    "section": "Full publications list",
+    "text": "Full publications list\n\n2024\n\nA Strategic Model of Software Dependency Networks — Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · Proceedings of the 25th ACM Conference on Economics and Computation EC24, pp 863–892 · PDF\n\n\n\n2023\n\nSpectral estimation of large stochastic blockmodels with discrete nodal covariates — Lingxin Hao, Joshua Cape, Angelo Mele, Carey Priebe · Journal of Business and Economic Statistics 41(4), pp 1364–1376 · PDF · grdpg\nA model of inter-organizational network formation — Shweta Gaonkar, Angelo Mele · Journal of Economic Behavior and Organization 214: 82–104 · PDF · Code/Data\nHomophily and Community Structure at Scale — Juan Nelson Martinez Dahbura, Shota Komatsu, Takanori Nishida, Angelo Mele · AEA Papers and Proceedings 2023 · PDF\nApproximate Variational Estimation for a Model of Network Formation — Lingjiong Zhu, Angelo Mele · Review of Economics and Statistics 105(1): 113–124 · PDF · mfergm\n\n\n\n2022\n\nOn spectral algorithms for community detection in stochastic blockmodel graphs with vertex covariates — Cong Mu, Avanti Athreya, Lingxin Hao, Joshua Cape, Carey Priebe, Angelo Mele · IEEE Trans. Network Science and Engineering 9(5) · arXiv\nA Structural Model of Homophily and Clustering in Social Networks — Journal of Business and Economic Statistics 40(3), pp 1377–1389 · PDF\n\n\n\n2020\n\nDoes school desegregation promote diverse interactions? — American Economic Journal: Economic Policy 12(2), pp 228–257 · PDF · segnet\n\n\n\n2017\n\nA structural model of dense network formation — Econometrica 85(3), pp 825–850 · PDF · netnew\n\n\n\n2016\n\nViral Altruism? Generosity and social contagion in online networks — Mario Macis, Nicola Lacetera, Angelo Mele · Sociological Science\n\n\n\nOther\n\nStructural Models of Complementary Choices — Steve Berry, Ahmed Khwaja, Vineet Kumar, Andres Musalem, Ken Wilbur, Greg Allenby, Bharat Anand, Pradeep Chintagunta, Michael Hanemann, Przemek Jeziorski, Angelo Mele · Marketing Letters 25(3), pp 245–256 · PDF\nPoisson Indices of Segregation — Regional Science and Urban Economics 43, pp 65–85 · PDF"
+  },
+  {
+    "objectID": "research.html#working-papers-submitted",
+    "href": "research.html#working-papers-submitted",
+    "title": "Research",
+    "section": "Working papers / submitted",
+    "text": "Working papers / submitted\n\nVulnerability Webs: Systemic Risk in Software Networks — Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger · SSRN\nEstimating Network Models using Neural Networks — arXiv\nA structural model of business card exchange networks — Juan Nelson Martinez Dahbura, Takanori Nishida, Shota Komatsu, Angelo Mele · arXiv · lighthergm\nA structural model of firm collaborations with unobserved heterogeneity — Shweta Gaonkar, Angelo Mele · SSRN"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download my academic CV or a one-page resume for industry roles.\nAcademic CV (PDF) Resume (PDF)\nLast updated: 2025."
+  }
+]

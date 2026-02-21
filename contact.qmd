@@ -1,0 +1,19 @@
+---
+title: "Contact"
+---
+
+**Email:** [meleangelo@gmail.com](mailto:meleangelo@gmail.com)
+
+**LinkedIn:** [angelo-mele-b246182](https://www.linkedin.com/in/angelo-mele-b246182/)
+
+**GitHub:** [meleangelo](https://github.com/meleangelo)
+
+**X (Twitter):** [@angelo_mele](https://twitter.com/angelo_mele)
+
+---
+
+I'm happy to hear about:
+
+- **Hiring conversations** — pricing, causal inference, data science roles
+- **Research collaborations** — networks, structural models, causal measurement
+- **Speaking** — seminars, workshops, conferences

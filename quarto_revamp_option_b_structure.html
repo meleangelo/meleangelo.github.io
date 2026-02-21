@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>quarto_revamp_option_b_structure – Angelo Mele</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assets/img/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3408a85d3597037cc8bc239ca0f630d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.scss">
+<meta property="og:title" content="Angelo Mele">
+<meta property="og:description" content="Economist &amp; data scientist working on pricing, causal inference, and networked markets.">
+<meta property="og:site_name" content="Angelo Mele">
+<meta name="twitter:title" content="Angelo Mele">
+<meta name="twitter:description" content="Economist &amp; data scientist working on pricing, causal inference, and networked markets.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Angelo Mele</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./writing.html"> 
+<span class="menu-text">Writing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="quarto-website-revamp-option-b-detailed-structure-guide" class="level1">
+<h1>Quarto Website Revamp (Option B) — Detailed Structure Guide</h1>
+<p><strong>Goal:</strong> Modernize <code>meleangelo.github.io</code> into a Quarto site optimized for an <em>economist + data scientist in tech</em>, while keeping maintenance low.</p>
+<p>This document is designed to be dropped into Cursor as a build guide/spec.</p>
+<hr>
+<section id="guiding-principles" class="level2">
+<h2 class="anchored" data-anchor-id="guiding-principles">0) Guiding principles</h2>
+<ol type="1">
+<li><strong>Above-the-fold clarity:</strong> In &lt;20 seconds, a visitor should know <em>who you are, what you do, and what to click next</em>.</li>
+<li><strong>Tech-sector proof over chronology:</strong> “Selected work” + “case studies” beat a long “News” feed.</li>
+<li><strong>Two audiences, two paths:</strong>
+<ul>
+<li><em>Industry</em>: Hiring managers, product/data leaders, founders → want impact, methods, case studies.<br>
+</li>
+<li><em>Academia</em>: Researchers/students → want papers, talks, teaching, replication/code.</li>
+</ul></li>
+<li><strong>Maintainability:</strong> Prefer Quarto-native features (cards, listings, bibliographies) and simple data files (<code>.yml</code>, <code>.bib</code>).</li>
+</ol>
+<hr>
+</section>
+<section id="proposed-site-map-navigation" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-site-map-navigation">1) Proposed site map (navigation)</h2>
+<p><strong>Top navbar:</strong> - Home - Research (Academic) - Writing (Notes) - CV - Contact</p>
+<p><strong>Footer:</strong> - LinkedIn, GitHub, Google Scholar, X (optional) - Copyright - Short tagline</p>
+<p><strong>Note:</strong> “Work (Industry)” page is deferred for now; can be added later as <code>work.qmd</code> if needed. Optional: keep a minimal <code>work.qmd</code> (e.g.&nbsp;“Coming soon”) and hide it from the navbar until content is ready, to reserve the URL.</p>
+<p><strong>Rationale:</strong> Your current site is paper-centric and “news”-forward. The revamp makes <em>positioning + proof</em> primary, while preserving the academic library.</p>
+<hr>
+</section>
+<section id="repository-folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="repository-folder-structure">2) Repository / folder structure</h2>
+<p>Recommended layout inside your existing GitHub Pages repo:</p>
+<pre><code>.
+├── _quarto.yml
+├── index.qmd
+├── research.qmd
+├── writing.qmd
+├── cv.qmd
+├── contact.qmd
+├── styles.scss
+├── assets/
+│   ├── img/
+│   │   ├── headshot.jpg
+│   │   ├── social-card.png
+│   │   └── favicon.png
+│   └── files/
+│       ├── cv.pdf
+│       └── (optional) one-page-resume.pdf
+├── data/
+│   ├── papers.yml
+│   ├── talks.yml
+│   ├── projects.yml
+│   └── links.yml
+├── posts/
+│   ├── _metadata.yml
+│   ├── 2026-02-xx-pricing-elasticity-marketing.qmd
+│   └── 2026-02-xx-network-systemic-risk.qmd
+└── README.md</code></pre>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<ul>
+<li><code>data/*.yml</code> keeps content clean and easy to edit.</li>
+<li><strong>Phase 1 (launch):</strong> Content can live in the <code>.qmd</code> files or a single <code>data/site.yml</code>; keep it simple.</li>
+<li><strong>Phase 2 (when ready):</strong> Split into <code>papers.yml</code>, <code>projects.yml</code>, etc. and wire pages to render from them.</li>
+<li><code>posts/</code> uses Quarto “listing” to generate a blog/notes feed.</li>
+<li><code>assets/files/cv.pdf</code> gives you a stable URL and no rendering surprises.</li>
+<li><strong>Placeholders:</strong> Use a placeholder for <code>social-card.png</code> and <code>favicon.png</code> (e.g.&nbsp;same image or a simple 1200×630 PNG) until final art is ready, so Open Graph and Twitter cards don’t break.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="global-config-_quarto.yml-specification" class="level2">
+<h2 class="anchored" data-anchor-id="global-config-_quarto.yml-specification">3) Global config: <code>_quarto.yml</code> specification</h2>
+<section id="required-fields" class="level3">
+<h3 class="anchored" data-anchor-id="required-fields">3.1 Required fields</h3>
+<ul>
+<li><code>project: type: website</code></li>
+<li><code>website: title</code>, <code>site-url</code>, <code>repo-url</code></li>
+<li><code>navbar</code> with the pages above</li>
+<li><code>page-footer</code> with social links</li>
+<li><code>format: html:</code> theme + typography + code tools</li>
+</ul>
+</section>
+<section id="seo-and-social" class="level3">
+<h3 class="anchored" data-anchor-id="seo-and-social">3.2 SEO and social</h3>
+<p>Include: - <code>site-url</code> (your canonical) - <code>open-graph: true</code> - <code>twitter-card: true</code> - <code>favicon</code> - <code>metadata</code> (author, description) - Add <code>assets/img/social-card.png</code> for link previews.</p>
+</section>
+<section id="analytics-optional" class="level3">
+<h3 class="anchored" data-anchor-id="analytics-optional">3.3 Analytics (optional)</h3>
+<ul>
+<li>Plausible or GA4. Keep optional; don’t block launch.</li>
+</ul>
+<p><strong>Rationale:</strong> Tech audiences share links; social previews and good metadata materially increase click-through.</p>
+<hr>
+</section>
+</section>
+<section id="style-system-styles.scss" class="level2">
+<h2 class="anchored" data-anchor-id="style-system-styles.scss">4) Style system: <code>styles.scss</code></h2>
+<section id="brand-goals" class="level3">
+<h3 class="anchored" data-anchor-id="brand-goals">4.1 Brand goals</h3>
+<ul>
+<li>Clean, high-contrast, modern (Bootstrap 5 feel)</li>
+<li>Comfortable reading width</li>
+<li>Cards for scanability</li>
+<li>Avoid “academic wiki page” vibe</li>
+</ul>
+</section>
+<section id="scss-targets" class="level3">
+<h3 class="anchored" data-anchor-id="scss-targets">4.2 SCSS targets</h3>
+<ul>
+<li>Increase base font size and line height</li>
+<li>Limit content width (e.g., 820–920px for text pages)</li>
+<li>Card styling: subtle shadow, rounded corners</li>
+<li>Button styles: consistent “PDF / Code / Slides” pills</li>
+<li>Link styling: understated but clear (hover underline)</li>
+</ul>
+<p><strong>Deliverable:</strong> One SCSS file that overrides theme variables. <strong>Keep it minimal for easy updates:</strong> start with two classes only: - <code>.card</code> (or use Quarto’s built-in card class) for all card layouts (hero chips, papers, selected work). - <code>.btn-action</code> (or similar) for PDF / Code / Slides / Summary buttons. Add <code>.paper-card</code> or <code>.case-card</code> only if you later need distinct layouts; avoid extra classes until then.</p>
+<hr>
+</section>
+</section>
+<section id="page-by-page-detailed-structure" class="level2">
+<h2 class="anchored" data-anchor-id="page-by-page-detailed-structure">5) Page-by-page detailed structure</h2>
+</section>
+</section>
+<section id="home-index.qmd" class="level1">
+<h1>5.1 Home: <code>index.qmd</code></h1>
+<p><strong>Purpose:</strong> Immediate positioning + proof + next click.</p>
+<section id="sections-top-to-bottom" class="level3">
+<h3 class="anchored" data-anchor-id="sections-top-to-bottom">Sections (top to bottom)</h3>
+<section id="a-hero-above-the-fold" class="level4">
+<h4 class="anchored" data-anchor-id="a-hero-above-the-fold">A) Hero (above the fold)</h4>
+<ul>
+<li>Headline: 8–14 words</li>
+<li>Subheadline: 1–2 lines with your “triangle” (Economics × ML × Networks/Pricing)</li>
+<li>Proof chips row (3–5 chips):<br>
+Example chips:
+<ul>
+<li>Pricing Algorithms (Wayfair)</li>
+<li>Causal Measurement</li>
+<li>Network Econometrics</li>
+<li>Open-source R/Python</li>
+<li>Platform Markets</li>
+</ul></li>
+<li>Two primary buttons:
+<ul>
+<li>“Selected work” → anchors to section</li>
+<li>“Contact” → contact page</li>
+</ul></li>
+</ul>
+<p><strong>Rationale:</strong> This is where tech visitors decide relevance.</p>
+</section>
+<section id="b-what-i-do-3-cards" class="level4">
+<h4 class="anchored" data-anchor-id="b-what-i-do-3-cards">B) What I do (3 cards)</h4>
+<p>Each card: - Title - 2 bullet points (problems you solve) - 1 bullet (methods) - Link: - Pricing → Research page (or anchor) - Causal → Research page - Networks → Research page</p>
+</section>
+<section id="c-selected-work-68-items" class="level4">
+<h4 class="anchored" data-anchor-id="c-selected-work-68-items">C) Selected work (6–8 items)</h4>
+<p>A grid of cards. Each card: - Title - 1–2 line “why it matters” - Links row: - PDF - Code - Slides (optional) - Summary (optional)</p>
+<p>Data source: <code>data/projects.yml</code> or curated in-page.</p>
+</section>
+<section id="d-featured-writing-optional-3-recent" class="level4">
+<h4 class="anchored" data-anchor-id="d-featured-writing-optional-3-recent">D) Featured writing (optional, 3 recent)</h4>
+<p>Show 3 most recent notes from <code>posts/</code>.</p>
+</section>
+<section id="e-mini-bio-credibility" class="level4">
+<h4 class="anchored" data-anchor-id="e-mini-bio-credibility">E) Mini bio + credibility</h4>
+<ul>
+<li>3–5 lines</li>
+<li>Logos or text list of venues (journals, conferences, employers)</li>
+</ul>
+</section>
+<section id="f-updates-last-23-only" class="level4">
+<h4 class="anchored" data-anchor-id="f-updates-last-23-only">F) Updates (last 2–3 only)</h4>
+<p>Keep it short and link to <code>/writing</code> or <code>/updates</code>.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="research-academic-research.qmd" class="level1">
+<h1>5.2 Research (Academic): <code>research.qmd</code></h1>
+<p><strong>Purpose:</strong> A skimmable library with categories, selected items, and clean linking.</p>
+<section id="structure" class="level3">
+<h3 class="anchored" data-anchor-id="structure">Structure</h3>
+<section id="a-selected-papers-top" class="level4">
+<h4 class="anchored" data-anchor-id="a-selected-papers-top">A) Selected papers (top)</h4>
+<ul>
+<li>6–10 featured papers (cards)</li>
+<li>Each card includes:
+<ul>
+<li>Title</li>
+<li>Authors (small)</li>
+<li>Year + venue</li>
+<li>2–3 line summary:
+<ul>
+<li>The question</li>
+<li>The method</li>
+<li>The result/implication</li>
+</ul></li>
+<li>Links:
+<ul>
+<li>PDF</li>
+<li>Code</li>
+<li>Talk (optional)</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Data source: <code>data/papers.yml</code></p>
+</section>
+<section id="b-topics-tags" class="level4">
+<h4 class="anchored" data-anchor-id="b-topics-tags">B) Topics / Tags</h4>
+<ul>
+<li>Pricing / Platforms / Networks / Methods / Causal inference</li>
+<li>Clicking a tag filters (if you keep it simple, just jump to anchors).</li>
+</ul>
+</section>
+<section id="c-full-publications-list" class="level4">
+<h4 class="anchored" data-anchor-id="c-full-publications-list">C) Full publications list</h4>
+<ul>
+<li>Chronological, but with:
+<ul>
+<li>Year headings</li>
+<li>Compact entries</li>
+<li>Optional “bib” export link</li>
+</ul></li>
+</ul>
+<p>Optional: - Use <code>references.bib</code> to auto-render citations (Quarto can do this).</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="writing-notes-writing.qmd-posts" class="level1">
+<h1>5.3 Writing (Notes): <code>writing.qmd</code> + <code>posts/</code></h1>
+<p><strong>Purpose:</strong> Demonstrate judgment and technical taste; shareable content.</p>
+<p><strong>Optional at launch:</strong> For v1, implement <code>writing.qmd</code> with a short intro and an empty or placeholder listing. Add real posts when you have content; no need to block launch on “Suggested first 3 posts.”</p>
+<section id="writing.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="writing.qmd"><code>writing.qmd</code></h3>
+<ul>
+<li>Intro: what you write about</li>
+<li>Quarto listing of posts with:
+<ul>
+<li>title</li>
+<li>date</li>
+<li>description</li>
+<li>categories/tags</li>
+</ul></li>
+</ul>
+</section>
+<section id="posts_metadata.yml" class="level3">
+<h3 class="anchored" data-anchor-id="posts_metadata.yml"><code>posts/_metadata.yml</code></h3>
+<p>Default fields: - author - format - toc: true - code-fold: true - citations: optional</p>
+</section>
+<section id="post-format" class="level3">
+<h3 class="anchored" data-anchor-id="post-format">Post format</h3>
+<p>Each post should follow: - Problem statement (2–4 paragraphs) - Approach / intuition - Minimal math, optional appendix - Implementation snippet - “So what” takeaway (business relevance)</p>
+<p>Suggested first 3 posts (when ready): 1. Marketing × price elasticity interaction: intuition + empirical patterns 2. Measuring causal impact when data are messy: operationalizing ambiguity 3. Network systemic risk and why centrality-based interventions often fail</p>
+<hr>
+</section>
+</section>
+<section id="cv-cv.qmd" class="level1">
+<h1>5.4 CV: <code>cv.qmd</code></h1>
+<p><strong>Two options:</strong> - <strong>Option 1 (recommended):</strong> A simple page with buttons to download PDF(s). - <strong>Option 2:</strong> Render a short “web CV” with sections + PDF link.</p>
+<p>Structure (if web CV): - Summary + interests - Experience (tech + academia) - Education - Selected publications - Talks/teaching - Service</p>
+<hr>
+</section>
+<section id="contact-contact.qmd" class="level1">
+<h1>5.5 Contact: <code>contact.qmd</code></h1>
+<p><strong>Purpose:</strong> frictionless, current.</p>
+<p>Content: - Primary email (current) - LinkedIn - Optional: Calendly link - City/timezone (optional) - A short line about what kinds of messages you welcome: - Hiring conversations - Research collaborations - Speaking</p>
+<p><strong>Important:</strong> Remove legacy institutional address/phone unless you explicitly want it displayed.</p>
+<hr>
+<section id="content-data-files-yaml-specs" class="level2">
+<h2 class="anchored" data-anchor-id="content-data-files-yaml-specs">6) Content data files (YAML) specs</h2>
+<section id="datalinks.yml-single-source-of-truth-for-links" class="level3">
+<h3 class="anchored" data-anchor-id="datalinks.yml-single-source-of-truth-for-links">6.1 <code>data/links.yml</code> (single source of truth for links)</h3>
+<p>Centralize all external links so <strong>footer and contact page pull from this one file</strong> (e.g.&nbsp;via Quarto variables or a small include). One place to change GitHub, LinkedIn, email, etc. - github - linkedin - scholar - x - email - cv_pdf_path</p>
+</section>
+<section id="dataprojects.yml" class="level3">
+<h3 class="anchored" data-anchor-id="dataprojects.yml">6.2 <code>data/projects.yml</code></h3>
+<p>Fields per item: - <code>title</code> - <code>type</code> (industry / research / open-source) - <code>summary</code> (1–2 lines) - <code>methods</code> (list) - <code>tags</code> (list) - <code>links</code>: pdf, code, slides, post - <code>featured</code> (true/false)</p>
+</section>
+<section id="datapapers.yml" class="level3">
+<h3 class="anchored" data-anchor-id="datapapers.yml">6.3 <code>data/papers.yml</code></h3>
+<p>Fields per paper: - <code>title</code> - <code>authors</code> - <code>year</code> - <code>venue</code> - <code>abstract_blurb</code> (2–3 lines) - <code>tags</code> - <code>links</code>: pdf/arxiv/ssrn, code, slides - <code>featured</code> (true/false)</p>
+</section>
+<section id="datatalks.yml-optional" class="level3">
+<h3 class="anchored" data-anchor-id="datatalks.yml-optional">6.4 <code>data/talks.yml</code> (optional)</h3>
+<ul>
+<li>title, venue, date, slides link, video link</li>
+</ul>
+<p><strong>Rationale:</strong> Data files make updates painless and consistent.</p>
+<hr>
+</section>
+</section>
+<section id="launch-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="launch-checklist">7) Launch checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Replace JHU contact details with current ones</label></li>
+<li><label><input type="checkbox">Add headshot + social card image (placeholder 1200×630 PNG is fine until final art)</label></li>
+<li><label><input type="checkbox">Ensure all PDFs are reachable and stable</label></li>
+<li><label><input type="checkbox">Verify mobile layout (hero + cards)</label></li>
+<li><label><input type="checkbox">Check Lighthouse basics: title/description, og tags, favicon</label></li>
+<li><label><input type="checkbox">Add 3 “selected work” blurbs that sound non-academic and outcome-oriented</label></li>
+<li><label><input type="checkbox">Optional: add 2 short notes posts to seed Writing</label></li>
+</ul>
+<hr>
+</section>
+<section id="implementation-sequence-what-cursor-should-do" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-sequence-what-cursor-should-do">8) Implementation sequence (what Cursor should do)</h2>
+<ol type="1">
+<li>Create <code>_quarto.yml</code> with navbar + theme + metadata.</li>
+<li>Create <code>styles.scss</code> with typography + card/button classes.</li>
+<li>Create <code>index.qmd</code> with hero + cards + selected work placeholders.</li>
+<li>Create <code>research.qmd</code> with selected papers + full list structure.</li>
+<li>Create <code>writing.qmd</code> and <code>posts/</code> scaffolding with a listing (stub/empty listing is fine for v1).</li>
+<li>Create <code>cv.qmd</code> linking to <code>assets/files/cv.pdf</code>.</li>
+<li>Create <code>contact.qmd</code>.</li>
+<li>Add <code>data/*.yml</code> and wire pages to render from them (Phase 1: hardcode in <code>.qmd</code>; Phase 2: data-driven).</li>
+<li>Configure GitHub Pages: set <code>output-dir: docs</code> in <code>_quarto.yml</code> and point GitHub Pages to publish from the <code>docs</code> folder (or use default <code>_site</code> and a GitHub Action to deploy).</li>
+</ol>
+<hr>
+</section>
+<section id="copywriting-guidance-tone" class="level2">
+<h2 class="anchored" data-anchor-id="copywriting-guidance-tone">9) Copywriting guidance (tone)</h2>
+<ul>
+<li>Avoid “marketing fluff”; use <strong>specific problem language</strong>.</li>
+<li>Use active verbs: “I build”, “I estimate”, “I design”, “I measure”.</li>
+<li>For each claim, add one proof anchor (paper / repo / talk / employer).</li>
+</ul>
+<hr>
+</section>
+<section id="acceptance-criteria-definition-of-done" class="level2">
+<h2 class="anchored" data-anchor-id="acceptance-criteria-definition-of-done">10) Acceptance criteria (definition of done)</h2>
+<ul>
+<li>Home page clearly positions you as a tech-sector economist/data scientist.</li>
+<li>Research page is skimmable and categorized.</li>
+<li>Contact page is current and low friction.</li>
+<li>Site builds and deploys via GitHub Pages with Quarto.</li>
+</ul>
+<hr>
+</section>
+<section id="how-to-update-this-site-maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-update-this-site-maintenance">11) How to update this site (maintenance)</h2>
+<ul>
+<li><strong>Add a paper:</strong> Edit <code>data/papers.yml</code> (or the relevant <code>.qmd</code>) and add the entry; re-render.</li>
+<li><strong>Add a post:</strong> Create <code>posts/YYYY-MM-DD-slug.qmd</code>; the Writing listing will pick it up.</li>
+<li><strong>Update links (email, LinkedIn, etc.):</strong> Edit <code>data/links.yml</code> only; footer and contact pull from it.</li>
+<li><strong>Rebuild:</strong> Run <code>quarto render</code> locally, or push and let CI render and deploy.</li>
+<li><strong>Update CV:</strong> Replace <code>assets/files/cv.pdf</code>; optionally update the “Last updated” line in <code>cv.qmd</code>.</li>
+</ul>
+<hr>
+</section>
+<section id="appendix-example-homepage-hero-copy-templates" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-example-homepage-hero-copy-templates">Appendix: Example homepage hero copy (templates)</h2>
+<p>Pick one style:</p>
+<section id="template-a-direct" class="level3">
+<h3 class="anchored" data-anchor-id="template-a-direct">Template A (direct)</h3>
+<p><strong>Economist &amp; data scientist working on pricing, causal inference, and networked markets.</strong><br>
+I build measurement systems for demand and policy, and develop methods for inference at scale.</p>
+</section>
+<section id="template-b-problem-first" class="level3">
+<h3 class="anchored" data-anchor-id="template-b-problem-first">Template B (problem-first)</h3>
+<p><strong>I measure demand, design pricing experiments, and study network effects in digital markets.</strong><br>
+Research + production experience in causal inference, structural models, and ML.</p>
+</section>
+<section id="template-c-hybrid" class="level3">
+<h3 class="anchored" data-anchor-id="template-c-hybrid">Template C (hybrid)</h3>
+<p><strong>Tech economist focused on pricing algorithms and causal measurement.</strong><br>
+Background in network econometrics and large-scale inference; open-source contributor.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/meleangelo\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Angelo Mele · Economist &amp; data scientist</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:meleangelo@gmail.com">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/meleangelo">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/angelo-mele-b246182/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/angelo_mele">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

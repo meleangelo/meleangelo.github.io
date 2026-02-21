@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - research.qmd
+    - writing.qmd
+    - resume.qmd
+    - contact.qmd
+
+website:
+  title: "Angelo Mele"
+  description: "Economist & data scientist working on pricing, causal inference, and networked markets."
+  site-url: "https://meleangelo.github.io"
+  repo-url: "https://github.com/meleangelo/meleangelo.github.io"
+  open-graph: true
+  twitter-card: true
+  favicon: assets/img/favicon.png
+  page-navigation: true
+  navbar:
+    background: light
+    collapse-below: lg
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Writing
+        href: writing.qmd
+      - text: Resume
+        href: resume.qmd
+      - text: Contact
+        href: contact.qmd
+  page-footer:
+    left: "© 2026 Angelo Mele · Economist & data scientist"
+    right:
+      - icon: envelope
+        href: mailto:meleangelo@gmail.com
+      - icon: github
+        href: https://github.com/meleangelo
+      - icon: linkedin
+        href: https://www.linkedin.com/in/angelo-mele-b246182/
+      - icon: twitter
+        href: https://twitter.com/angelo_mele
+
+format:
+  html:
+    theme: flatly
+    css: styles.scss
+    toc: false
+    code-block-bg: true
+    code-block-border-left: true

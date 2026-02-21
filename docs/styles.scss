@@ -1,0 +1,58 @@
+/* Quarto website revamp — minimal styles for easy updates
+   Structure §4: theme overrides, .card, .btn-action, link styling */
+
+/* Typography and content width */
+$font-size-base: 1.05rem;
+$line-height-base: 1.6;
+$container-max-width: 920px;
+
+body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+.quarto-content,
+main .content {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card styling (use for hero chips, papers, selected work) */
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 0.35rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Action buttons: PDF / Code / Slides / Summary pills */
+.btn-action {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  &:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #212529;
+    text-decoration: none;
+  }
+}
+
+/* Links: understated, hover underline */
+a:not(.btn-action):not(.navbar-brand):not(.nav-link) {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

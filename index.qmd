@@ -1,0 +1,98 @@
+---
+title: "Angelo Mele"
+---
+
+::: {#hero .unnumbered}
+
+**Economist & data scientist working on pricing, causal inference, and networked markets.**
+
+I build measurement systems for demand and policy, and develop methods for inference at scale.
+
+::: {.d-flex .flex-wrap .gap-2 .my-3}
+- Pricing Algorithms (Wayfair)
+- Causal Measurement
+- Network Econometrics
+- Open-source R/Python
+- Platform Markets
+:::
+
+[Selected work](#selected-work){.btn .btn-primary .me-2} [Contact](contact.qmd){.btn .btn-outline-primary}
+
+---
+
+## What I do {#what-i-do}
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-4}
+**Pricing & demand**
+
+- Price elasticity, promo effects, margin optimization
+- Demand models (hierarchical, discrete choice, ML)
+- [Research →](research.qmd)
+:::
+::: {.g-col-12 .g-col-md-4}
+**Causal inference**
+
+- Experiments, quasi-experiments, DML at scale
+- Measurement systems for product and policy
+- [Research →](research.qmd)
+:::
+::: {.g-col-12 .g-col-md-4}
+**Networks**
+
+- Network formation, structural models, embeddings
+- Software and platform ecosystems
+- [Research →](research.qmd)
+:::
+:::
+
+---
+
+## Selected work {#selected-work}
+
+::: {.card .p-3 .mb-3}
+**Pricing algorithms and causal measurement**
+
+Demand and pricing optimization at scale; causal inference and ML in production.  
+[Research](research.qmd)
+:::
+
+::: {.card .p-3 .mb-3}
+**Software dependency networks**
+
+Structural model of package dependencies; systemic risk and vulnerability.  
+[Paper (EC24)](https://dl.acm.org/doi/10.1145/3670865.3673519) · [Research](research.qmd)
+:::
+
+::: {.card .p-3 .mb-3}
+**Spectral methods for stochastic blockmodels**
+
+ASE for SBMs with discrete covariates; scalable estimation and CLT.  
+[PDF](files/grdpg_march2021.pdf) · [Code (grdpg)](https://github.com/meleangelo/grdpg) · [Research](research.qmd)
+:::
+
+::: {.card .p-3 .mb-3}
+**Approximate variational estimation for network formation**
+
+Mean-field variational approximation for ERGM; $n^2$ algorithm.  
+[PDF](https://direct.mit.edu/rest/article-abstract/105/1/113/98191) · [Code (mfergm)](https://github.com/meleangelo/mfergm) · [Research](research.qmd)
+:::
+
+---
+
+## Bio {.unnumbered}
+
+I am an Economist and Data Scientist in the Pricing Algorithms team at Wayfair, where I use causal inference, machine learning and applied econometrics to optimize pricing. Before that, I was an Associate Professor of Applied Economics at Johns Hopkins University (Carey Business School), where I studied how social and strategic interactions shape individual and aggregate outcomes, using economic theory, econometrics, ML, applied probability and computational methods. Affiliations included the Hopkins Population Center, Institute for Data Intensive Engineering and Science (DIES), and the Data Science and AI Institute.
+My academic research is published in top economics journals, such as Econometrica, Review of Economics and Statistics, Journal of Business and Economic Statistics, American Economic Journal, ACM EC, and others.
+
+---
+
+## Updates {.unnumbered}
+
+- **January 2026:** Seminar at University of Central Florida 
+- **December 2025:** Seminar and visit at the Cowles Foundation - Yale University
+- **Summer 2025:** Joined Wayfair as Economist (Pricing Algorithms).
+- **April 2025:** Seminar at George Mason University, Department of Statistics.
+- **November 2024:** [Vulnerability Webs: Systemic Risk in Software Networks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5013411) — new version on SSRN.
+
+[More updates →](writing.qmd)

@@ -1,0 +1,18 @@
+# Phase 2: wire index "Selected work" to render from this; Phase 1: hardcode in index.qmd
+# Fields: title, type (industry/research/open-source), summary, methods, tags, links, featured
+- title: "Pricing algorithms and causal measurement"
+  type: industry
+  summary: "Demand and pricing optimization at scale; causal inference and ML in production."
+  methods: [causal inference, demand models, experimentation]
+  tags: [pricing, causal, Wayfair]
+  links: {}
+  featured: true
+
+- title: "Software dependency networks"
+  type: research
+  summary: "Structural model of package dependencies; systemic risk and vulnerability."
+  methods: [network formation, structural estimation]
+  tags: [networks, platforms]
+  links:
+    pdf: "https://dl.acm.org/doi/10.1145/3670865.3673519"
+  featured: true

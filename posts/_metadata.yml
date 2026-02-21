@@ -1,0 +1,7 @@
+# Default metadata for blog/notes posts (v1: empty listing; add posts when ready)
+author: "Angelo Mele"
+format:
+  html:
+    toc: true
+    code-fold: true
+    citations: true

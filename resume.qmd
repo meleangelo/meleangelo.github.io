@@ -1,0 +1,9 @@
+---
+title: "Resume"
+---
+
+Download my academic CV or a one-page resume for industry roles.
+
+[Academic CV (PDF)](assets/files/cv.pdf){.btn .btn-primary .me-2} [Resume (PDF)](assets/files/resume.pdf){.btn .btn-outline-primary}
+
+*Last updated: 2025.*
