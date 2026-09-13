@@ -1,0 +1,24 @@
+---
+title: "When treatment spills over: what networks change about experiments"
+description: "Proposed outline only."
+draft: true
+---
+
+PROPOSED WRITING. Not a finished article. Do not publish or backdate.
+
+## Why this note
+
+Experiments are harder to interpret when people interact. A treatment given to one person can change outcomes for others through a network.
+
+## Possible sections
+
+1. The usual no-interference assumption and why network data make it implausible.
+2. What changes in the estimand: direct effects, spillover, and equilibrium responses.
+3. Design choices that are already used in network settings, without inventing new results.
+4. Connection to my research on social interactions and school or professional networks, only where a published paper actually supports the point.
+5. Open questions I still want to write about carefully.
+
+## Sources to use if this is drafted later
+
+- Existing published papers on network formation and school interactions.
+- Do not add unpublished experimental results from industry work.

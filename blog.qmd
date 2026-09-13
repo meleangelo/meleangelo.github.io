@@ -1,0 +1,11 @@
+---
+title: "Writing"
+pagetitle: "Writing · Angelo Mele"
+description: "This page has moved to Writing."
+canonical: https://meleangelo.github.io/writing.html
+include-in-header:
+  - text: |
+      <meta http-equiv="refresh" content="0; url=./writing.html">
+---
+
+This page has moved to [Writing](writing.qmd).

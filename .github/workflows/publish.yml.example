@@ -1,0 +1,27 @@
+# EXAMPLE ONLY. Not an active workflow.
+# Rename to publish.yml only after reviewing the redesign and merging to master.
+# Do not add redesign-2026 or any preview branch to on.push.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render site
+        run: quarto render
+      # Publishing target must be chosen after review.
+      # A username.github.io repo currently publishes from the master root.
+      # Do not enable this job until that hosting choice is confirmed.

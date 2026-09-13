@@ -1,0 +1,71 @@
+---
+title: "Projects & Software"
+pagetitle: "Projects & Software · Angelo Mele"
+description: "Research software and applied projects on network estimation, software dependencies, and pricing."
+---
+
+A small set of research and software projects. Package authorship is shared unless noted otherwise.
+
+## Neural estimation of network models {#neural-estimation-of-network-models}
+
+<span class="status-pill">In development</span>
+
+**Problem.** Exponential random graph models are flexible for network formation but are hard to estimate because of an intractable normalizing constant. Standard methods such as MCMC-MLE rely on sequential simulation at each optimization step.
+
+**Approach.** The working paper [*Estimating Network Models using Neural Networks*](https://arxiv.org/abs/2502.01810) proposes training a neural network on parameter-simulation pairs to learn the map from parameters to average network statistics, then inverting that map for estimation.
+
+**Contribution.** Sole-authored working paper.
+
+**Current evidence.** The preprint describes the estimator and reports simple illustrative examples. I have not posted completed benchmarks, proven theorems, or final performance claims.
+
+**Status and limits.** The paper is in development. Remaining work includes simulations and theoretical points. I did not find a public code repository to link.
+
+[Paper](https://arxiv.org/abs/2502.01810)
+
+## Systemic risk in software dependency networks {#systemic-risk-in-software-dependency-networks}
+
+<span class="status-pill">Under review</span>
+
+**Problem.** Software development reuses code through dependencies. Those links can transmit vulnerabilities and create systemic risk.
+
+**Approach.** [*Vulnerability Webs: Systemic Risk in Software Networks*](https://arxiv.org/abs/2402.13375), with Cornelius Fritz, Co-Pierre Georg, and Michael Schweinberger, studies dependency formation with a strategic network model and analyzes vulnerability propagation. A related published paper, [*A Strategic Model of Software Dependency Networks*](https://dl.acm.org/doi/10.1145/3670865.3673519), appears in the *Proceedings of the 25th ACM Conference on Economics and Computation*.
+
+**Contribution.** Joint work. Author order on both papers is Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger.
+
+**Current evidence.** The working paper abstract reports an analysis of Python repository dependencies and a finding that dependency creation generates negative externalities. I am not restating unpublished numerical results beyond that public abstract.
+
+**Status and limits.** The Vulnerability Webs paper is under review. It should not be confused with the ACM EC proceedings paper.
+
+[Working paper](https://arxiv.org/abs/2402.13375) · [ACM EC paper](https://dl.acm.org/doi/10.1145/3670865.3673519)
+
+## Scalable network estimation software {#scalable-network-estimation-software}
+
+<span class="status-pill">Package contributions</span>
+
+**Problem.** Structural and statistical network models become difficult to estimate as networks grow.
+
+**Approach.** Several public R packages implement scalable estimators connected to this research.
+
+- [`grdpg`](https://github.com/meleangelo/grdpg) simulates and estimates generalized random dot product graph models and stochastic blockmodels with observed covariates using spectral methods. The repository lists additional contributors besides me.
+- [`lighthergm`](https://github.com/sansan-inc/lighthergm) estimates hierarchical ERGMs on large networks. It is maintained in the `sansan-inc` organization; I am a contributor, not the sole author.
+- [`bigergm`](https://cran.r-project.org/package=bigergm) fits, simulates, and diagnoses hierarchical ERGMs for large networks, building on `lighthergm` and `hergm`. I am a listed author; Cornelius Fritz is the maintainer.
+- [`dinnet`](https://github.com/meleangelo/dinnet) is a package for estimation of dynamic network models with fixed effects.
+- [`mfergm`](https://github.com/meleangelo/mfergm) implements variational mean-field estimation for some ERGM specifications, related to the paper with Lingjiong Zhu.
+- [`netnew`](https://github.com/meleangelo/netnew) is a replication package for the dense network-formation paper.
+- [`segnet`](https://github.com/meleangelo/segnet) contains replication files for the school-desegregation paper.
+
+**Status and limits.** I do not claim sole authorship or active maintenance unless that is documented above. `dinnet` has a public README and no further maintenance statement.
+
+## Pricing and experimentation {#pricing-and-experimentation}
+
+<span class="status-pill">Professional work</span>
+
+**Problem.** Firms need to set prices using evidence on demand, substitution, and customer response.
+
+**Approach.** I am an Economist in Wayfair’s Pricing Algorithms team. Public descriptions of that work are limited to causal inference, machine learning, and applied econometrics for pricing decisions.
+
+**Contribution.** Industry role, joined August 2025. Public title: Economist and Data Scientist at Wayfair.
+
+**Current evidence.** No client results, dashboards, or internal experiments are posted here.
+
+**Status and limits.** This section is a professional-scope overview only. It does not include confidential case studies or numerical impact claims.

@@ -1,0 +1,115 @@
+---
+title: "Angelo Mele"
+pagetitle: "Economist & Data Scientist"
+description: "Economist and data scientist working on applied econometrics, causal inference, pricing, and network models."
+format:
+  html:
+    title-block-style: none
+listing:
+  - id: selected-research
+    contents: data/publications.yml
+    template: ejs/selected.ejs.md
+    sort: featured_order
+    include:
+      featured: true
+    filter-ui: false
+    sort-ui: false
+  - id: recent-updates
+    contents: data/news.yml
+    template: ejs/news.ejs.md
+    sort: "date desc"
+    include:
+      homepage: true
+    max-items: 3
+    filter-ui: false
+    sort-ui: false
+---
+
+::: {.hero}
+![](images/Angelo_Mele.jpg){.hero-portrait fig-alt="Portrait of Angelo Mele"}
+
+::: {.hero-copy}
+# Angelo Mele
+<p class="hero-kicker">Economist & Data Scientist</p>
+<p class="hero-role">Applied econometrics, causal inference, pricing, and network models</p>
+
+I use econometrics, machine learning, and network models to understand behavior and improve economic decisions. I am an Economist in Wayfair’s Pricing Algorithms team and previously served as an Associate Professor at Johns Hopkins Carey Business School.
+
+My research studies social interactions, scalable estimation of network models, and counterfactual analysis of those models.
+
+::: {.actions}
+[Research](research.qmd){.primary}
+[Projects & Software](projects.qmd)
+[GitHub](https://github.com/meleangelo)
+[LinkedIn](https://www.linkedin.com/in/angelo-mele-b246182/)
+:::
+:::
+:::
+
+## Areas of expertise
+
+::: {.expertise-grid}
+::: {.expertise-card}
+### Causal inference and experimentation
+
+I use applied econometrics and experimental methods to study behavior and to evaluate interventions, including work on social interactions and treatment environments shaped by networks.
+:::
+
+::: {.expertise-card}
+### Pricing and economic decision-making
+
+At Wayfair I work on pricing algorithms, using causal inference, machine learning, and applied econometrics to support pricing decisions.
+:::
+
+::: {.expertise-card}
+### Networks and computational social science
+
+A large part of my research develops structural and statistical models of network formation, with applications to schools, firms, professional contacts, and software dependencies.
+:::
+:::
+
+## Selected research
+
+::: {#selected-research}
+:::
+
+## Featured software and projects
+
+::: {.project-cards}
+::: {.project-card}
+### Neural estimation of network models
+
+A working paper on using neural networks to estimate exponential random graph models. The project is in development; remaining work includes simulations and theoretical points.
+
+[Paper](https://arxiv.org/abs/2502.01810) · [Project details](projects.qmd#neural-estimation-of-network-models)
+:::
+
+::: {.project-card}
+### Systemic risk in software networks
+
+A strategic model of software dependency networks and how vulnerabilities can propagate through those dependencies. Related to the published ACM EC paper on software dependency networks.
+
+[Paper](https://arxiv.org/abs/2402.13375) · [Project details](projects.qmd#systemic-risk-in-software-dependency-networks)
+:::
+
+::: {.project-card}
+### Scalable network estimation
+
+Package contributions for large-network estimation, including spectral methods and hierarchical ERGMs. Authorship is shared; I am not the sole author or current maintainer of every package.
+
+[Project details](projects.qmd#scalable-network-estimation-software)
+:::
+:::
+
+## Recent updates
+
+::: {#recent-updates}
+:::
+
+Older updates are listed on the [About](about.qmd#news-archive) page.
+
+## Contact
+
+::: {.contact-band}
+I am glad to discuss research or professional collaboration. Email [meleangelo\@gmail.com](mailto:meleangelo@gmail.com).
+:::

@@ -1,0 +1,13 @@
+---
+title: "Contact"
+pagetitle: "Contact · Angelo Mele"
+description: "Email and public profiles for Angelo Mele."
+---
+
+The best public email is [meleangelo\@gmail.com](mailto:meleangelo@gmail.com).
+
+- GitHub: [github.com/meleangelo](https://github.com/meleangelo)
+- LinkedIn: [angelo-mele-b246182](https://www.linkedin.com/in/angelo-mele-b246182/)
+- Google Scholar: [scholar profile](https://scholar.google.com/citations?user=w50a2ncAAAAJ)
+
+I am glad to discuss research or professional collaboration.

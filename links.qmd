@@ -1,0 +1,11 @@
+---
+title: "About"
+pagetitle: "About · Angelo Mele"
+description: "This page has moved to About."
+canonical: https://meleangelo.github.io/about.html
+include-in-header:
+  - text: |
+      <meta http-equiv="refresh" content="0; url=./about.html">
+---
+
+This page has moved to [About & CV](about.qmd).

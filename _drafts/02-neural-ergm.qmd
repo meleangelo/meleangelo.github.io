@@ -1,0 +1,23 @@
+---
+title: "Neural estimation of network models: accuracy, speed, and failure modes"
+description: "Proposed outline only."
+draft: true
+---
+
+PROPOSED WRITING. Not a finished article. Do not publish or backdate.
+
+## Why this note
+
+The working paper *Estimating Network Models using Neural Networks* is still in development. A public explainer should stay within what the preprint actually shows.
+
+## Possible sections
+
+1. Why ERGM estimation is sequential and computationally heavy.
+2. The proposed two-stage idea: train a map from parameters to expected statistics, then invert it.
+3. What the preprint currently claims, including that only simple illustrative examples are shown.
+4. Remaining work: simulations and theoretical points.
+5. Failure modes I would want to discuss only after those results exist.
+
+## Limits
+
+Do not invent completed benchmarks, speedups, proven theorems, or a public code repository unless one is verified later.
