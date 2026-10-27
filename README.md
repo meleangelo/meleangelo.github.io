@@ -40,8 +40,6 @@ This branch is Quarto-only. The previous R Markdown sources and generated root H
 - Do not change the repository Pages source until you have reviewed the site.
 - The file `.github/workflows/publish.yml.example` is an example only. It is not an active workflow.
 
-See `_private/MIGRATION.md` for preserved URLs and `_private/CONTENT_REVIEW.md` for factual questions.
-
 ## Adding content
 
 ### Paper

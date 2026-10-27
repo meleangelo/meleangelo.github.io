@@ -5,7 +5,6 @@ project:
     - "*.qmd"
     - "posts/**/*.qmd"
     - "!_drafts/"
-    - "!_private/"
   resources:
     - files/**
     - images/**

@@ -7,4 +7,5 @@
 /.quarto/
 /_site/
 /site_libs/
+/_private/
 **/*.quarto_ipynb
