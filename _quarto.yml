@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "!_drafts/"
+    - "!_private/"
+  resources:
+    - files/**
+    - images/**
+    - cv.pdf
+
+website:
+  title: "Angelo Mele"
+  site-url: https://meleangelo.github.io
+  description: "Economist and data scientist working on applied econometrics, causal inference, pricing, and network models."
+  favicon: images/favicon.svg
+  image: images/Angelo_Mele.jpg
+  search: false
+  navbar:
+    background: body
+    foreground: body
+    collapse-below: lg
+    title: Angelo Mele
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Projects & Software
+        href: projects.qmd
+      - text: Writing
+        href: writing.qmd
+      - text: About & CV
+        href: about.qmd
+    right:
+      - text: Contact
+        href: contact.qmd
+  page-footer:
+    left: "© 2026 Angelo Mele"
+    center:
+      - text: Teaching
+        href: teaching.qmd
+      - text: Contact
+        href: contact.qmd
+    right:
+      - text: GitHub
+        href: https://github.com/meleangelo
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/angelo-mele-b246182/
+      - text: Scholar
+        href: https://scholar.google.com/citations?user=w50a2ncAAAAJ
+  open-graph: true
+  twitter-card: true
+  page-navigation: false
+
+format:
+  html:
+    theme:
+      - litera
+      - styles.scss
+    toc: false
+    email-obfuscation: none
+    link-external-newwindow: true
+    respect-user-color-scheme: false
+    include-in-header: include/head.html
+    highlight-style: github
+    code-overflow: wrap
+    smooth-scroll: false
+
+execute:
+  freeze: auto

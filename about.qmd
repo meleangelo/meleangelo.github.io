@@ -1,0 +1,51 @@
+---
+title: "About & CV"
+pagetitle: "About & CV · Angelo Mele"
+description: "Biography, appointments, education, teaching, and contact for Angelo Mele."
+listing:
+  - id: news-archive-list
+    contents: data/news.yml
+    template: ejs/news.ejs.md
+    sort: "date desc"
+    filter-ui: false
+    sort-ui: false
+    page-size: 50
+---
+
+I am an economist and data scientist. I use econometrics, machine learning, and network models to study behavior and to support economic decisions.
+
+I am an Economist in Wayfair’s Pricing Algorithms team, which I joined in August 2025. From 2011 to August 2025 I was on the faculty of Johns Hopkins Carey Business School, as Assistant Professor (2011–2018) and Associate Professor of Economics (2018–August 2025). While at Johns Hopkins I also had affiliations with the [Hopkins Population Center](https://popcenter.jhu.edu), the [Institute for Data Intensive Engineering and Science](http://idies.jhu.edu), and the [Data Science and AI Institute](https://ai.jhu.edu).
+
+## Appointments
+
+::: {.timeline}
+- **Economist III, Pricing Algorithms, Wayfair**, August 2025–present. Public title: Economist and Data Scientist.
+- **Associate Professor of Economics, Johns Hopkins Carey Business School**, 2018–August 2025.
+- **Assistant Professor, Johns Hopkins Carey Business School**, 2011–2018.
+:::
+
+## Education
+
+- Ph.D. in Economics, University of Illinois Urbana-Champaign, 2011.
+- M.A. in Economics, New York University, 2005.
+- B.A. in Economics, Bocconi University, 2002.
+
+## CV and resume
+
+A current academic CV and a separate industry resume are not posted yet. The previous academic CV PDF remains at [`/cv.pdf`](cv.pdf) for URL compatibility. That file is dated December 30, 2024 and still lists Johns Hopkins as current, so it should not be treated as an up-to-date document.
+
+## Teaching
+
+Selected courses at Johns Hopkins University are listed on the [Teaching](teaching.qmd) page, including Nonlinear Econometrics for Finance, Networked Organizations, and Quantitative Methods for MBAs.
+
+## Contact
+
+Email: [meleangelo\@gmail.com](mailto:meleangelo@gmail.com)  
+GitHub: [github.com/meleangelo](https://github.com/meleangelo)  
+LinkedIn: [angelo-mele-b246182](https://www.linkedin.com/in/angelo-mele-b246182/)  
+Google Scholar: [profile](https://scholar.google.com/citations?user=w50a2ncAAAAJ)
+
+## News archive
+
+::: {#news-archive-list}
+:::

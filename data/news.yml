@@ -1,0 +1,131 @@
+- date: "2026-01-01"
+  date_label: "January 2026"
+  title: "Seminar at University of Central Florida."
+  url: ""
+  homepage: true
+
+- date: "2025-12-01"
+  date_label: "December 2025"
+  title: "Seminar and visit at the Cowles Foundation - Yale University."
+  url: ""
+  homepage: true
+
+- date: "2025-08-01"
+  date_label: "August 2025"
+  title: "Joined Wayfair as an Economist."
+  url: ""
+  homepage: true
+
+- date: "2025-04-01"
+  date_label: "April 2025"
+  title: "Seminar at George Mason University, Department of Statistics."
+  url: ""
+  homepage: true
+
+- date: "2024-11-20"
+  date_label: "November 2024"
+  title: "New version of the paper on software networks, with the title Vulnerability Webs: Systemic Risk in Software Networks."
+  url: "https://arxiv.org/abs/2402.13375"
+  homepage: true
+
+- date: "2024-11-15"
+  date_label: "November 15, 2024"
+  title: "Seminar presentation at University of Glasgow."
+  url: ""
+  homepage: false
+
+- date: "2024-11-05"
+  date_label: "November 5, 2024"
+  title: "Seminar at Tippie School of Business, University of Iowa."
+  url: ""
+  homepage: false
+
+- date: "2024-10-01"
+  date_label: "October 2024"
+  title: "Presented two papers at the Midwest Econometrics Group 2024 at the University of Kentucky."
+  url: ""
+  homepage: false
+
+- date: "2024-08-01"
+  date_label: "August 2024"
+  title: "Presentation at the ESIF ML+AI Conference at Cornell."
+  url: ""
+  homepage: false
+
+- date: "2024-07-01"
+  date_label: "July 2024"
+  title: "Presentation at the Workshop on Empirical Estimation of Games in Stony Brook."
+  url: ""
+  homepage: false
+
+- date: "2024-06-01"
+  date_label: "June 2024"
+  title: "Paper on software networks presented at EC 2024 at Yale."
+  url: ""
+  homepage: false
+
+- date: "2024-04-01"
+  date_label: "April 2024"
+  title: "Presented at the Conference on Peer Effects and Networks at Tippie School of Business, University of Iowa."
+  url: ""
+  homepage: false
+
+- date: "2024-02-01"
+  date_label: "February 2024"
+  title: "New version of A Strategic Model of Software Dependency Networks, with Co-Pierre Georg, Cornelius Fritz, and Michael Schweinberger."
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082"
+  homepage: false
+
+- date: "2023-12-01"
+  date_label: "December 2023"
+  title: "Returned to Johns Hopkins Carey after a sabbatical at the University of Pennsylvania."
+  url: ""
+  homepage: false
+
+- date: "2023-08-01"
+  date_label: "August 2023"
+  title: "Started a sabbatical at the University of Pennsylvania Economics Department."
+  url: ""
+  homepage: false
+
+- date: "2023-08-15"
+  date_label: "August 2023"
+  title: "A model of inter-organizational network formation, with Shweta Gaonkar, accepted at the Journal of Economic Behavior & Organization."
+  url: "files/firmnetworks_ergm_may2023.pdf"
+  homepage: false
+
+- date: "2023-05-01"
+  date_label: "May 2023"
+  title: "Homophily and Community Structure at Scale appeared in AEA Papers and Proceedings 2023."
+  url: "files/PP-Article.pdf"
+  homepage: false
+
+- date: "2023-04-01"
+  date_label: "April 2023"
+  title: "Received an IDIES Seed Funding Grant to study software dependency networks, with Co-Pierre Georg."
+  url: "https://www.idies.jhu.edu/2023-seed-awardees/"
+  homepage: false
+
+- date: "2023-01-20"
+  date_label: "January 2023"
+  title: "Approximate Variational Estimation for a Model of Network Formation, with Lingjiong Zhu, appeared in the Review of Economics and Statistics."
+  url: "https://arxiv.org/abs/1702.00308"
+  homepage: false
+
+- date: "2023-01-15"
+  date_label: "January 2023"
+  title: "Homophily and Community Structure at Scale forthcoming at AEA Papers and Proceedings."
+  url: "files/PP-Article.pdf"
+  homepage: false
+
+- date: "2023-01-10"
+  date_label: "January 2023"
+  title: "New working paper A Strategic Model of Software Dependency Networks, with Co-Pierre Georg."
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082"
+  homepage: false
+
+- date: "2022-10-01"
+  date_label: "October 2022"
+  title: "Spectral estimation of large stochastic blockmodels with discrete nodal covariates forthcoming at the Journal of Business & Economic Statistics."
+  url: "files/grdpg_march2021.pdf"
+  homepage: false

@@ -1,0 +1,23 @@
+---
+title: "What software dependency networks tell us about systemic risk"
+description: "Proposed outline only."
+draft: true
+---
+
+PROPOSED WRITING. Not a finished article. Do not publish or backdate.
+
+## Why this note
+
+There are two related public papers: the ACM EC proceedings paper on software dependency networks, and the working paper *Vulnerability Webs: Systemic Risk in Software Networks*. They should stay distinct.
+
+## Possible sections
+
+1. Why software dependencies are an economic network, not only an engineering graph.
+2. What the published ACM EC paper is about.
+3. What the Vulnerability Webs working paper adds, using only public abstracts and manuscripts.
+4. Limits of the current evidence, including that I should not discuss journal status beyond "under review."
+5. What I would not claim: live dashboards, confidential industry impact, or a downloadable proprietary dataset.
+
+## Limits
+
+Do not mention a destination journal. Do not treat the two papers as the same publication.

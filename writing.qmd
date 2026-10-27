@@ -1,0 +1,23 @@
+---
+title: "Writing"
+pagetitle: "Writing · Angelo Mele"
+description: "Notes and articles on networks, estimation, and applied economics."
+listing:
+  - id: posts
+    contents: posts
+    type: default
+    sort: "date desc"
+    categories: false
+    filter-ui: false
+    sort-ui: false
+    feed: true
+---
+
+I will use this page for longer notes on research methods and applications. There are no published posts yet.
+
+::: {.empty-state}
+No articles have been posted. When a post is ready, it will appear below and in the site feed.
+:::
+
+::: {#posts}
+:::
