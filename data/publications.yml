@@ -1,0 +1,308 @@
+- title: "A Strategic Model of Software Dependency Networks"
+  authors: "Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger"
+  year: 2024
+  venue: "Proceedings of the 25th ACM Conference on Economics and Computation"
+  venue_detail: "EC 2024, pp. 863–892"
+  status: published
+  kind: proceedings
+  featured: false
+  topics: [networks, software]
+  paper: "https://dl.acm.org/doi/10.1145/3670865.3673519"
+  preprint: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4318082"
+
+- title: "Spectral estimation of large stochastic blockmodels with discrete nodal covariates"
+  authors: "Angelo Mele, Lingxin Hao, Joshua Cape, Carey Priebe"
+  year: 2023
+  venue: "Journal of Business & Economic Statistics"
+  venue_detail: "41(4), pp. 1364–1376"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, spectral-methods]
+  paper: "files/grdpg_march2021.pdf"
+  code: "https://github.com/meleangelo/grdpg"
+
+- title: "A model of inter-organizational network formation"
+  authors: "Angelo Mele, Shweta Gaonkar"
+  year: 2023
+  venue: "Journal of Economic Behavior & Organization"
+  venue_detail: "214: 82–104"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, firms]
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S0167268123002615"
+  preprint: "files/firmnetworks_ergm_may2023.pdf"
+  extra_label_1: "Example code"
+  extra_url_1: "files/OnlineAppendix.pdf"
+  extra_label_2: "Data"
+  extra_url_2: "files/data.RData"
+  note: "The posted data file is an example dataset; the original data cannot be shared."
+
+- title: "Homophily and Community Structure at Scale: An Application to a Large Professional Network"
+  authors: "Angelo Mele, Juan Nelson Martinez Dahbura, Shota Komatsu, Takanori Nishida"
+  year: 2023
+  venue: "AEA Papers and Proceedings"
+  venue_detail: "2023"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, homophily]
+  paper: "files/PP-Article.pdf"
+
+- title: "Approximate Variational Estimation for a Model of Network Formation"
+  authors: "Angelo Mele, Lingjiong Zhu"
+  year: 2023
+  venue: "Review of Economics and Statistics"
+  venue_detail: "105(1): 113–124"
+  status: published
+  kind: journal
+  featured: true
+  featured_order: 2
+  featured_summary: "A mean-field variational approximation of the ERGM normalizing constant, with an iterative estimator that scales in order n² steps."
+  topics: [networks, estimation]
+  paper: "https://direct.mit.edu/rest/article-abstract/105/1/113/98191/Approximate-Variational-Estimation-for-a-Model-of?redirectedFrom=fulltext"
+  preprint: "https://arxiv.org/abs/1702.00308"
+  code: "https://github.com/meleangelo/mfergm"
+
+- title: "On spectral algorithms for community detection in stochastic blockmodel graphs with vertex covariates"
+  authors: "Angelo Mele, Cong Mu, Avanti Athreya, Lingxin Hao, Joshua Cape, Carey Priebe"
+  year: 2022
+  venue: "IEEE Transactions on Network Science and Engineering"
+  venue_detail: "9(5), pp. 3373–3384"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, spectral-methods]
+  paper: "https://arxiv.org/abs/2007.02156"
+  doi: "https://ieeexplore.ieee.org/document/9782588"
+
+- title: "A Structural Model of Homophily and Clustering in Social Networks"
+  authors: "Angelo Mele"
+  year: 2022
+  venue: "Journal of Business & Economic Statistics"
+  venue_detail: "40(3), pp. 1377–1389"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, homophily]
+  paper: "files/homophily_dec2019_revisionJBES.pdf"
+  doi: "https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1930013"
+
+- title: "Does school desegregation promote diverse interactions? An equilibrium model of segregation within schools"
+  authors: "Angelo Mele"
+  year: 2020
+  venue: "American Economic Journal: Economic Policy"
+  venue_detail: "12(2), pp. 228–257"
+  status: published
+  kind: journal
+  featured: true
+  featured_order: 4
+  featured_summary: "An equilibrium model of within-school segregation, used to ask whether school desegregation leads to more diverse interactions."
+  topics: [networks, education]
+  paper: "files/segnet_revisionAEJ.pdf"
+  code: "https://github.com/meleangelo/segnet"
+
+- title: "A structural model of dense network formation"
+  authors: "Angelo Mele"
+  year: 2017
+  venue: "Econometrica"
+  venue_detail: "85(3), pp. 825–850"
+  status: published
+  kind: journal
+  featured: true
+  featured_order: 1
+  featured_summary: "A structural model of dense network formation, with online appendices and a replication package."
+  topics: [networks, structural-econometrics]
+  paper: "files/bayesnet_march2016.pdf"
+  doi: "https://www.econometricsociety.org/publications/econometrica/2017/05/01/structural-model-dense-network-formation"
+  code: "https://github.com/meleangelo/netnew"
+  extra_label_1: "Appendix A"
+  extra_url_1: "files/bayesnet_march2016_appendixA.pdf"
+  extra_label_2: "Appendix B"
+  extra_url_2: "files/bayesnet_march2016_appendixB.pdf"
+  extra_label_3: "Appendix C"
+  extra_url_3: "files/bayesnet_march2016_appendixC.pdf"
+  extra_label_4: "Appendix D"
+  extra_url_4: "files/bayesnet_march2016_appendixD.pdf"
+  extra_label_5: "Appendix E"
+  extra_url_5: "files/bayesnet_march2016_appendixE.pdf"
+
+- title: "Viral Altruism? Generosity and social contagion in online networks"
+  authors: "Angelo Mele, Mario Macis, Nicola Lacetera"
+  year: 2016
+  venue: "Sociological Science"
+  venue_detail: "March 2016"
+  status: published
+  kind: journal
+  featured: false
+  topics: [networks, altruism]
+  paper: "http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2441467"
+
+- title: "Structural Models of Complementary Choices"
+  authors: "Steve Berry, Ahmed Khwaja, Vineet Kumar, Andres Musalem, Ken Wilbur, Greg Allenby, Bharat Anand, Pradeep Chintagunta, Michael Hanemann, Przemek Jeziorski, Angelo Mele"
+  year: 2014
+  venue: "Marketing Letters"
+  venue_detail: "25(3), pp. 245–256"
+  status: published
+  kind: journal
+  featured: false
+  topics: [demand, choice]
+  paper: "files/ComplementaryChoices.pdf"
+  note: "Choice Symposium invited submission."
+
+- title: "Poisson Indices of Segregation"
+  authors: "Angelo Mele"
+  year: 2013
+  venue: "Regional Science and Urban Economics"
+  venue_detail: "43, pp. 65–85"
+  status: published
+  kind: journal
+  featured: false
+  topics: [segregation]
+  paper: "files/pps_applied.pdf"
+  extra_label_1: "Example code and data"
+  extra_url_1: "files/webexample.zip"
+
+- title: "Estimating Network Models using Neural Networks"
+  authors: "Angelo Mele"
+  year: 2025
+  venue: "Working paper"
+  venue_detail: "In development"
+  status: working-paper
+  kind: working-paper
+  featured: false
+  topics: [networks, estimation]
+  paper: "https://arxiv.org/abs/2502.01810"
+  note: "Working paper in development. Remaining work includes simulations and theoretical points."
+
+- title: "Vulnerability Webs: Systemic Risk in Software Networks"
+  authors: "Cornelius Fritz, Co-Pierre Georg, Angelo Mele, Michael Schweinberger"
+  year: 2025
+  venue: "Under review"
+  venue_detail: ""
+  status: under-review
+  kind: working-paper
+  featured: true
+  featured_order: 3
+  featured_summary: "A strategic model of software dependency networks and the propagation of vulnerabilities through those dependencies."
+  topics: [networks, software]
+  paper: "https://arxiv.org/abs/2402.13375"
+  preprint: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5013411"
+
+- title: "Latent Communities in Employment Relations and Wage Distributions: A Network Approach"
+  authors: "Angelo Mele, Lingxin Hao, Joshua Cape, Avanti Athreya, Cong Mu, Carey Priebe"
+  year: 2024
+  venue: "Under review"
+  venue_detail: ""
+  status: under-review
+  kind: working-paper
+  featured: false
+  topics: [networks, labor]
+
+- title: "A structural model of business card exchange networks"
+  authors: "Juan Nelson Martínez Dahbura, Shota Komatsu, Takanori Nishida, Angelo Mele"
+  year: 2021
+  venue: "Working paper"
+  venue_detail: ""
+  status: working-paper
+  kind: working-paper
+  featured: false
+  topics: [networks, homophily]
+  paper: "https://arxiv.org/abs/2105.12704"
+  code: "https://github.com/sansan-inc/lighthergm"
+  note: "The Sansan collaboration has ended, and the underlying data are not available to share."
+
+- title: "A structural model of firm collaborations with unobserved heterogeneity"
+  authors: "Angelo Mele, Shweta Gaonkar"
+  year: 2018
+  venue: "Working paper"
+  venue_detail: ""
+  status: working-paper
+  kind: working-paper
+  featured: false
+  topics: [networks, firms]
+  paper: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3267047"
+
+- title: "Creativity and Market Success: Evidence from the movie industry"
+  authors: "Angelo Mele, Shweta Gaonkar"
+  year: 2018
+  venue: "Working paper"
+  venue_detail: ""
+  status: working-paper
+  kind: working-paper
+  featured: false
+  topics: [industrial-organization]
+  note: "No public manuscript link is posted on the previous site."
+
+- title: "Spectral estimation of a dynamic network formation model"
+  authors: "Angelo Mele, Avanti Athreya, Joshua Cape, Cong Mu, Lingxin Hao, Carey Priebe"
+  year: 2024
+  venue: "In progress"
+  venue_detail: ""
+  status: in-progress
+  kind: in-progress
+  featured: false
+  topics: [networks]
+
+- title: "A variational exchange algorithm for Bayesian estimation of ERGM models"
+  authors: "Angelo Mele"
+  year: 2024
+  venue: "In progress"
+  venue_detail: ""
+  status: in-progress
+  kind: in-progress
+  featured: false
+  topics: [networks, estimation]
+
+- title: "Microeconomic foundations of a latent position network model"
+  authors: "Angelo Mele"
+  year: 2024
+  venue: "In progress"
+  venue_detail: ""
+  status: in-progress
+  kind: in-progress
+  featured: false
+  topics: [networks]
+
+- title: "Network (video)games"
+  authors: "Angelo Mele, Micah Pollak, Phil Solimine"
+  year: 2024
+  venue: "In progress"
+  venue_detail: ""
+  status: in-progress
+  kind: in-progress
+  featured: false
+  topics: [networks]
+
+- title: "Approximate Variational Inference for a Model of Social Interactions"
+  authors: "Angelo Mele"
+  year: 2015
+  venue: "Archive"
+  venue_detail: ""
+  status: archive
+  kind: archive
+  featured: false
+  topics: [networks]
+
+- title: "Racial Segregation and Public School Expenditure"
+  authors: "Eliana La Ferrara, Angelo Mele"
+  year: 2006
+  venue: "Archive"
+  venue_detail: ""
+  status: archive
+  kind: archive
+  featured: false
+  topics: [education]
+  paper: "files/LaFerraraMele.pdf"
+
+- title: "Who is afraid of the big bad wolf? Do pedophiles live closer to schools?"
+  authors: "Angelo Mele"
+  year: 2010
+  venue: "Archive"
+  venue_detail: ""
+  status: archive
+  kind: archive
+  featured: false
+  topics: [urban]
+  paper: "files/sexoff_paper.pdf"

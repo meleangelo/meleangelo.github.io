@@ -1,0 +1,101 @@
+---
+title: "Research"
+pagetitle: "Research · Angelo Mele"
+description: "Publications and working papers on network formation, scalable estimation, and applied economics."
+listing:
+  - id: journal-articles
+    contents: data/publications.yml
+    template: ejs/publications.ejs.md
+    sort: "year desc"
+    include:
+      kind: journal
+    filter-ui: [title, authors, venue, topics]
+    sort-ui: [year, title, venue]
+    page-size: 50
+    field-types:
+      year: number
+  - id: proceedings
+    contents: data/publications.yml
+    template: ejs/publications.ejs.md
+    sort: "year desc"
+    include:
+      kind: proceedings
+    filter-ui: false
+    sort-ui: false
+    field-types:
+      year: number
+  - id: working-papers
+    contents: data/publications.yml
+    template: ejs/publications.ejs.md
+    sort: "year desc"
+    include:
+      kind: working-paper
+    filter-ui: [title, authors, venue]
+    sort-ui: false
+    page-size: 50
+    field-types:
+      year: number
+  - id: in-progress
+    contents: data/publications.yml
+    template: ejs/publications.ejs.md
+    sort: "title"
+    include:
+      kind: in-progress
+    filter-ui: false
+    sort-ui: false
+  - id: archive
+    contents: data/publications.yml
+    template: ejs/publications.ejs.md
+    sort: "title"
+    include:
+      kind: archive
+    filter-ui: false
+    sort-ui: false
+---
+
+My research studies how social and strategic interactions shape individual and aggregate economic outcomes. The work combines structural models of network formation, scalable estimation methods, and applications to schools, firms, professional contacts, and software dependencies.
+
+## Selected contributions
+
+**A structural model of dense network formation** (*Econometrica*, 2017).  
+A structural model of how people form dense social networks, with online appendices and a [replication package](https://github.com/meleangelo/netnew).
+
+**Approximate Variational Estimation for a Model of Network Formation**, with Lingjiong Zhu (*Review of Economics and Statistics*, 2023).  
+A mean-field variational approximation of the ERGM normalizing constant, with an iterative estimator that scales in order $n^2$ steps.
+
+**Vulnerability Webs: Systemic Risk in Software Networks**, with Cornelius Fritz, Co-Pierre Georg, and Michael Schweinberger.  
+A strategic model of software dependency networks and the propagation of vulnerabilities. Under review. This paper is distinct from the related published ACM EC paper, *A Strategic Model of Software Dependency Networks*.
+
+**Does school desegregation promote diverse interactions?**, (*American Economic Journal: Economic Policy*, 2020).  
+An equilibrium model of segregation within schools, used to ask whether desegregation promotes more diverse interactions.
+
+The complete list is below. Filtering is optional; every entry remains visible without JavaScript.
+
+## Journal articles
+
+::: {#journal-articles}
+:::
+
+## Conference proceedings
+
+::: {#proceedings}
+:::
+
+## Working papers
+
+::: {#working-papers}
+:::
+
+## Work in progress
+
+These projects do not have public manuscripts posted here.
+
+::: {#in-progress}
+:::
+
+## Archive
+
+Earlier papers and inactive manuscripts. Files remain available at their existing URLs.
+
+::: {#archive}
+:::

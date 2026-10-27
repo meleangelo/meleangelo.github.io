@@ -1,0 +1,15 @@
+# Defaults for future writing posts. This folder is the public article system.
+toc: true
+toc-depth: 3
+number-sections: false
+citation: true
+reference-location: document
+date-format: long
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    code-overflow: wrap
+    html-math-method: mathjax
+    mermaid:
+      theme: neutral

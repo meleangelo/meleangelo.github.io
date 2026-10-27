@@ -1,0 +1,28 @@
+---
+title: "Article title"
+description: "One-sentence description."
+date: 2026-01-01
+author: Angelo Mele
+categories: [networks]
+draft: true
+image: false
+---
+
+PROPOSED WRITING / DRAFT TEMPLATE. This file is excluded from the public site.
+
+Use this front matter when adding a finished article under `posts/yyyy-mm-dd-slug/index.qmd`. Remove `draft: true` only when the article is ready to publish.
+
+## Section
+
+Body text, with optional equations:
+
+$$
+y = f(x)
+$$
+
+```r
+# Example code
+summary(lm(y ~ x, data = dat))
+```
+
+## References
